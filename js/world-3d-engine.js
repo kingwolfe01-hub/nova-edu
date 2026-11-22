@@ -20,7 +20,9 @@
   }
 
   function isElVisible(el) {
-    return !!(el && el.offsetParent !== null && el.clientWidth > 0 && el.clientHeight > 0);
+    if (!el) return false;
+    const r = el.getBoundingClientRect();
+    return r.width > 0 && r.height > 0;
   }
 
   let galaxyRafId = null;
@@ -58,7 +60,7 @@
     const key = `${planetId}_${planetColor}_v18`;
     if (_skinCache[key]) return _skinCache[key];
 
-    const w = 1024, h = 512;
+    const w = TEX_W, h = TEX_H;
     const colCanvas = document.createElement("canvas");
     colCanvas.width = w; colCanvas.height = h;
     const cCtx = colCanvas.getContext("2d");
@@ -83,6 +85,8 @@
     const snowCol = new THREE.Color("#f8fafc");
     const polarIce = new THREE.Color("#e0f2fe");
 
+    const pxCol = new THREE.Color();
+    const lowBiome = new THREE.Color();
     for (let y = 0; y < h; y++) {
       const ny = y / h;
       const latFactor = Math.abs(ny - 0.5) * 2; // 0 equator .. 1 poles
@@ -95,7 +99,6 @@
         const moist = fbm2D(Math.cos(angle) * 2.0 + 17, Math.sin(angle) * 2.0 + ny * 4.0, seed + 41);
 
         const idx = (y * w + x) * 4;
-        let pxCol = new THREE.Color();
         let bumpVal = 40;
 
         // Fractal polar cap threshold (organic North & South Pole icebergs/glaciers)
@@ -117,7 +120,7 @@
           // Land: smooth blend from Desert (low lat + low moisture) -> Forest -> Mountain -> Snow Peak
           const tLand = smoothstep(0.48, 0.85, elev);
           const dryFactor = smoothstep(0.65, 0.2, moist) * smoothstep(0.55, 0.12, latFactor);
-          const lowBiome = forestCol.clone().lerp(desertCol, dryFactor);
+          lowBiome.copy(forestCol).lerp(desertCol, dryFactor);
           if (tLand < 0.52) {
             pxCol.copy(shallowOcean).lerp(lowBiome, smoothstep(0.0, 0.12, tLand));
             bumpVal = Math.floor(75 + tLand * 120);
@@ -315,7 +318,7 @@
     gPointer = new THREE.Vector2();
     gRenderer.domElement.addEventListener("pointerdown", e => { gDownPos = { x: e.clientX, y: e.clientY }; });
     gRenderer.domElement.addEventListener("pointerup", e => {
-      if (Math.hypot(e.clientX - gDownPos.x, e.clientY - gDownPos.y) > 8) return;
+      if (Math.hypot(e.clientX - gDownPos.x, e.clientY - gDownPos.y) > 14) return;
       const rect = gRenderer.domElement.getBoundingClientRect();
       gPointer.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
       gPointer.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
@@ -685,7 +688,7 @@
     pointer = new THREE.Vector2();
     renderer.domElement.addEventListener("pointerdown", e => { pointerDownPos = { x: e.clientX, y: e.clientY }; });
     renderer.domElement.addEventListener("pointerup", e => {
-      if (Math.hypot(e.clientX - pointerDownPos.x, e.clientY - pointerDownPos.y) > 8) return;
+      if (Math.hypot(e.clientX - pointerDownPos.x, e.clientY - pointerDownPos.y) > 14) return;
       const rect = renderer.domElement.getBoundingClientRect();
       pointer.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
       pointer.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
