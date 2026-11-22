@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaEdu 銀河英語探險</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2/tsparticles.slim.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <style>
+    .nova-glass { background: rgba(15, 23, 42, 0.72); backdrop-filter: blur(14px); border: 1px solid rgba(148, 163, 184, 0.28); }
+    .nova-btn-3d { transition: transform 0.12s ease, box-shadow 0.12s ease; box-shadow: 0 4px 0 rgba(15, 23, 42, 0.35); }
+    .nova-btn-3d:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(15, 23, 42, 0.35); }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="bg-slate-950 text-slate-900 min-h-[100dvh]">
+
+  <!-- 1. 序號卡登入畫面 -->
+  <div id="login-wrapper" class="min-h-[100dvh] flex items-center justify-center p-4 bg-gradient-to-br from-slate-950 via-indigo-950 to-sky-950">
+    <div class="w-full max-w-md rounded-3xl bg-white/95 backdrop-blur-md p-6 sm:p-8 shadow-2xl border border-sky-200">
+      <div class="text-center mb-5">
+        <div class="text-4xl mb-2">🚀🪐</div>
+        <div id="lottie-login-rocket" class="w-16 h-16 mx-auto mb-1"></div>
+        <h1 class="text-2xl font-black text-slate-900 m-0">NovaEdu 銀河英語探險</h1>
+        <p class="text-xs text-slate-500 mt-1">國小 3–6 年級雙學制・在家自學互動平台</p>
+      </div>
+
+      <div class="space-y-3">
+        <div>
+          <label class="block text-xs font-black text-slate-700 mb-1">🎫 學習序號卡（開通後 1 年有效・最多綁定 3 台裝置）</label>
+          <input id="serial-input" type="text" placeholder="例：NOVA-ALL-DEMO" class="w-full px-3.5 py-2.5 rounded-xl border-2 border-slate-200 focus:border-sky-500 outline-none font-mono font-bold uppercase text-sm" />
+        </div>
+        <div>
+          <label class="block text-xs font-black text-slate-700 mb-1">🧑‍🚀 孩子自訂暱稱（顯示於學習報告）</label>
+          <input id="nickname-input" type="text" placeholder="例：小宇 / Mia" class="w-full px-3.5 py-2.5 rounded-xl border-2 border-slate-200 focus:border-sky-500 outline-none font-bold text-sm" />
+        </div>
+
+        <div id="login-error" style="display:none;" class="p-2.5 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-bold"></div>
+
+        <button id="login-btn" type="button" onclick="handleSerialLogin()" class="w-full py-3 rounded-xl nova-btn-3d bg-gradient-to-r from-sky-600 to-indigo-600 text-white font-black text-sm shadow-lg hover:opacity-95 transition">
+          🚀 啟動星際護照並進入星系
+        </button>
+
+        <div class="pt-2 border-t border-slate-100">
+          <div class="text-[11px] text-slate-500 font-bold mb-1.5">💡 快速體驗示範序號（點選自動填入）：</div>
+          <div class="flex flex-wrap gap-1.5">
+            <button type="button" onclick="fillDemoSerial('NOVA-ALL-DEMO')" class="px-2.5 py-1 rounded-lg bg-sky-50 border border-sky-200 text-sky-800 text-[11px] font-bold">全星系暢學卡</button>
+            <button type="button" onclick="fillDemoSerial('NOVA-G3-DEMO')" class="px-2.5 py-1 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-bold">三年級星系卡</button>
+            <button type="button" onclick="fillDemoSerial('NOVA-B1-DEMO')" class="px-2.5 py-1 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 text-[11px] font-bold">3上單冊卡</button>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between pt-2 text-xs">
+          <button type="button" onclick="openStudentGuideModal()" class="text-sky-700 font-bold hover:underline">📖 家長與學生使用說明</button>
+          <button type="button" onclick="openTeacherAuthModal()" class="text-slate-500 font-bold hover:text-indigo-700">🔒 總部序號管理後台</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. 年級星系總覽畫面 -->
+  <div id="galaxy-wrapper" style="display:none;" class="min-h-[100dvh] bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-900 p-4 sm:p-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+        <div>
+          <div class="flex items-center gap-2"><div id="lottie-galaxy-mascot" class="w-10 h-10 shrink-0"></div><h2 class="text-2xl font-black text-white m-0">選擇年級星系・開啟 3D 地球儀</h2></div>
+          <div id="galaxy-user-badge" class="text-xs text-sky-300 font-bold mt-1"></div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="openParentReportModal()" class="px-3.5 py-2 rounded-xl nova-btn-3d bg-amber-400 text-slate-950 font-black text-xs shadow">📊 家長學習報告</button>
+          <button type="button" onclick="logoutStudent()" class="px-3.5 py-2 rounded-xl bg-slate-800 text-slate-200 border border-slate-600 font-bold text-xs">🚪 切換序號</button>
+        </div>
+      </div>
+      <div id="galaxy-3d-canvas" class="w-full h-[40dvh] min-h-[240px] max-h-[340px] sm:h-[360px] sm:max-h-none rounded-3xl overflow-hidden border border-slate-700/80 mb-5 bg-slate-950 shadow-2xl"></div>
+      <div id="galaxy-grid-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+  </div>
+
+  <!-- 3. 3D 地球儀與學習主程式 -->
+  <div id="main-app" style="display:none;" class="min-h-[100dvh] bg-slate-50 flex flex-col">
+    <header class="bg-slate-900 text-white px-4 py-3 flex flex-wrap items-center justify-between gap-2 shadow-md">
+      <div class="flex items-center gap-2.5">
+        <button type="button" onclick="backToGalaxyHub()" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-black border border-slate-600">🌌 回年級星系</button>
+        <div>
+          <div id="dynamic-school-header" class="text-xs font-black text-sky-300">NovaEdu 銀河英語探險</div>
+          <div id="student-badge" class="text-[11px] text-slate-300 font-bold">小探險家</div>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center gap-1.5">
+        <button type="button" onclick="showModule('world')" class="px-3 py-1.5 rounded-xl bg-sky-600 text-white text-xs font-black">🌍 3D地球儀</button>
+        <button type="button" onclick="showModule('player')" class="px-3 py-1.5 rounded-xl bg-emerald-600 text-white text-xs font-black">🎧 單元播放器</button>
+        <button type="button" onclick="showModule('exam')" class="px-3 py-1.5 rounded-xl bg-indigo-600 text-white text-xs font-black">📝 4大自學測驗</button>
+        <button type="button" onclick="openParentReportModal()" class="px-3 py-1.5 rounded-xl nova-btn-3d bg-amber-400 text-slate-950 text-xs font-black">📊 學習報告</button>
+      </div>
+    </header>
+
+    <!-- 3D 地球儀探索區 -->
+    <section id="world-hub" class="flex-1 text-white p-3 sm:p-5" style="background: radial-gradient(circle at 50% 18%, #0f172a 0%, #020617 75%);">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div class="flex flex-wrap gap-2">
+            <button id="btn-hemi-north" type="button" onclick="switchPlanetSemester('上學期')" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-amber-400 text-slate-950">☀️ 北半球・上學期</button>
+            <button id="btn-hemi-south" type="button" onclick="switchPlanetSemester('下學期')" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-slate-900 text-slate-300">🌑 南半球・下學期</button>
+          </div>
+                    <div id="world-edition-bar" class="flex flex-wrap items-center gap-1.5">
+            <span class="text-[11px] font-black text-sky-300 mr-1">🎯 課綱版本：</span>
+            <button type="button" onclick="setGlobalEditionFilter('ALL')" id="world-ed-btn-ALL" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-indigo-600 text-white border-indigo-400">全部綜合</button>
+            <button type="button" onclick="setGlobalEditionFilter('Super')" id="world-ed-btn-Super" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-slate-900 text-slate-300 border-slate-700">Super</button>
+            <button type="button" onclick="setGlobalEditionFilter('Wonder')" id="world-ed-btn-Wonder" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-slate-900 text-slate-300 border-slate-700">Wonder</button>
+            <button type="button" onclick="setGlobalEditionFilter('Here')" id="world-ed-btn-Here" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-slate-900 text-slate-300 border-slate-700">Here</button>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button type="button" onclick="openSatelliteModal()" class="px-3 py-1.5 rounded-xl bg-indigo-500 text-white text-xs font-black shadow">🛰️ 衛星專區（發音/數字/節慶/用語）</button>
+            <button type="button" onclick="showModule('exam')" class="px-3 py-1.5 rounded-xl bg-amber-500 text-slate-950 text-xs font-black shadow">🌙 月球測驗站（4大考卷）</button>
+          </div>
+        </div>
+        <div id="globe-unit-pills" class="flex flex-wrap gap-1.5 mb-3"></div>
+        <div class="relative rounded-3xl overflow-hidden border-2 border-sky-500/40 shadow-[0_0_45px_rgba(56,189,248,0.18)] bg-slate-950">
+          <div id="world-canvas-container" class="w-full h-[42dvh] min-h-[260px] max-h-[380px] sm:h-[460px] sm:max-h-none lg:h-[520px]"></div>
+          <div id="globe-ceremony-banner" style="display:none;" class="px-4 py-2.5 bg-amber-400/95 text-slate-950 text-xs sm:text-sm font-black items-center justify-center gap-2 border-t border-amber-300 animate-pulse"></div>
+
+          </div>
+        <div class="flex justify-center gap-2 mt-3">
+          <button type="button" onclick="stepGlobeUnit(-1)" class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-600 text-xs font-black">◀ 上一單元</button>
+          <button type="button" onclick="resetGlobeOverview()" class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-600 text-xs font-black">🌐 地球全景旋轉</button>
+          <button type="button" onclick="stepGlobeUnit(1)" class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-600 text-xs font-black">下一單元 ▶</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 單字圖卡與練習區 -->
+    <section id="vocab-section" style="display:none;" class="max-w-4xl mx-auto w-full p-4">
+      <div class="flex flex-wrap justify-between items-center gap-2 mb-3">
+        <h2 class="text-lg font-black text-slate-800 m-0">📚 單字圖卡與練習</h2>
+        <div class="flex gap-2">
+          <button type="button" onclick="backToActiveUnitModal()" class="px-3 py-1.5 rounded-xl bg-sky-500 text-slate-950 text-xs font-black shadow-sm">↩️ 回本單元選單</button>
+          <button type="button" onclick="backToMenu()" class="px-3 py-1.5 rounded-xl bg-slate-200 text-slate-800 text-xs font-black">← 返回地球儀</button>
+        </div>
+      </div>
+      <div id="vocab-content" class="bg-white rounded-3xl p-5 shadow border border-slate-200"></div>
+    </section>
+
+    <!-- 句型練習區 -->
+    <section id="sentence-section" style="display:none;" class="max-w-4xl mx-auto w-full p-4">
+      <div class="flex flex-wrap justify-between items-center gap-2 mb-3">
+        <h2 class="text-lg font-black text-slate-800 m-0">💬 句型與對話練習</h2>
+        <div class="flex gap-2">
+          <button type="button" onclick="backToActiveUnitModal()" class="px-3 py-1.5 rounded-xl bg-sky-500 text-slate-950 text-xs font-black shadow-sm">↩️ 回本單元選單</button>
+          <button type="button" onclick="backToMenu()" class="px-3 py-1.5 rounded-xl bg-slate-200 text-slate-800 text-xs font-black">← 返回地球儀</button>
+        </div>
+      </div>
+      <div id="sentence-content" class="bg-white rounded-3xl p-5 shadow border border-slate-200"></div>
+    </section>
+
+    <!-- 單元語音播放器 -->
+    <section id="player-section" style="display:none;" class="max-w-4xl mx-auto w-full p-4">
+      <div class="flex justify-between items-center mb-3">
+        <h2 class="text-lg font-black text-slate-800 m-0">🎧 單元原創語音跟讀播放器</h2>
+        <button type="button" onclick="backToMenu()" class="px-3 py-1.5 rounded-xl bg-slate-200 text-slate-800 text-xs font-black">← 返回地球儀</button>
+      </div>
+      <div class="bg-white rounded-3xl p-5 shadow border border-slate-200">
+        <div class="flex flex-wrap items-center gap-2 mb-4">
+          <select id="player-unit-select" onchange="renderAudioPlayerUnits()" class="w-full sm:flex-1 min-w-0 sm:min-w-[220px] p-2.5 rounded-xl border-2 border-slate-200 font-bold text-sm"></select>
+          <button id="player-autoplay-btn" type="button" onclick="togglePlayerAutoPlay()" class="px-4 py-2 rounded-xl nova-btn-3d bg-emerald-500 text-slate-950 text-xs font-black shadow">▶️ 全部自動連播</button>
+          <select id="player-gap-select" class="p-2 rounded-xl border border-slate-200 text-xs font-bold">
+            <option value="1000">間隔 1 秒</option>
+            <option value="1500" selected>間隔 1.5 秒</option>
+            <option value="2500">間隔 2.5 秒</option>
+          </select>
+          <label class="flex items-center gap-1 text-xs font-bold text-slate-600 cursor-pointer">
+            <input id="player-loop-chk" type="checkbox" /> 循環播放
+          </label>
+        </div>
+        <div id="player-track-list" class="space-y-2 max-h-[60dvh] overflow-y-auto"></div>
+      </div>
+    </section>
+
+    <!-- 4 大自學測驗區 -->
+    <section id="exam-section" style="display:none;" class="max-w-4xl mx-auto w-full p-4">
+      <div class="flex justify-between items-center mb-3">
+        <h2 class="text-lg font-black text-slate-800 m-0">📝 4 大自學模擬測驗中心</h2>
+        <button type="button" onclick="backToMenu()" class="px-3 py-1.5 rounded-xl bg-slate-200 text-slate-800 text-xs font-black">← 返回地球儀</button>
+      </div>
+
+      <div id="self-exam-hub" class="space-y-4">
+        <div id="exam-scope-banner" class="p-3.5 rounded-2xl bg-sky-50 border-2 border-sky-200 shadow-sm flex flex-wrap items-center justify-between gap-2"></div>
+        <div id="exam-edition-bar" class="p-3.5 rounded-2xl bg-white border-2 border-indigo-200 shadow-sm flex flex-wrap items-center justify-between gap-2">
+          <div class="text-xs font-black text-indigo-950">🎯 測驗課綱版本篩選（全冊與測驗同步套用）：</div>
+          <div class="flex flex-wrap gap-1.5">
+            <button type="button" onclick="setGlobalEditionFilter('ALL')" id="ed-btn-ALL" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-indigo-600 text-white border-indigo-500">全部綜合</button>
+            <button type="button" onclick="setGlobalEditionFilter('Super')" id="ed-btn-Super" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-slate-100 text-slate-700 border-slate-200">Super</button>
+            <button type="button" onclick="setGlobalEditionFilter('Wonder')" id="ed-btn-Wonder" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-slate-100 text-slate-700 border-slate-200">Wonder</button>
+            <button type="button" onclick="setGlobalEditionFilter('Here')" id="ed-btn-Here" class="px-3 py-1.5 rounded-xl text-xs font-black border bg-slate-100 text-slate-700 border-slate-200">Here</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="p-4 rounded-2xl bg-white border-2 border-sky-200 shadow-sm">
+            <h3 class="font-black text-sky-900 text-base m-0">1️⃣ 單元卷</h3>
+            <p class="text-xs text-slate-500 mt-1 mb-3">針對單一單元進行 15 題重點驗收。</p>
+            <select id="exam-unit-select" class="w-full p-2 rounded-xl border border-slate-200 text-xs font-bold mb-2"></select>
+            <button type="button" onclick="startSelfExam('unit')" class="w-full py-2 rounded-xl bg-sky-600 text-white font-black text-xs">開始單元卷</button>
+          </div>
+          <div class="p-4 rounded-2xl bg-white border-2 border-emerald-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <h3 class="font-black text-emerald-900 text-base m-0">2️⃣ 期中考卷</h3>
+              <p class="text-xs text-slate-500 mt-1 mb-3">自動抽選本冊前半部單元 20 題綜合測驗。</p>
+            </div>
+            <button type="button" onclick="startSelfExam('midterm')" class="w-full py-2 rounded-xl bg-emerald-600 text-white font-black text-xs">開始期中考卷</button>
+          </div>
+          <div class="p-4 rounded-2xl bg-white border-2 border-violet-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <h3 class="font-black text-violet-900 text-base m-0">3️⃣ 期末考卷</h3>
+              <p class="text-xs text-slate-500 mt-1 mb-3">涵蓋本冊全單元 25 題總複習大考驗。</p>
+            </div>
+            <button type="button" onclick="startSelfExam('final')" class="w-full py-2 rounded-xl bg-violet-600 text-white font-black text-xs">開始期末考卷</button>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white border-2 border-amber-200 shadow-sm">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div>
+              <h3 class="font-black text-amber-900 text-base m-0">4️⃣ 自挑單元卷（自由組卷）</h3>
+              <p class="text-xs text-slate-500 m-0">自由勾選想要複習的多個單元與題數：</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-1.5">
+              <button type="button" onclick="selectCustomExamPreset('all')" class="px-2.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-[11px] font-black">全選</button>
+              <button type="button" onclick="selectCustomExamPreset('none')" class="px-2.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-[11px] font-black">全不選</button>
+              <button type="button" onclick="selectCustomExamPreset('midterm')" class="px-2.5 py-1.5 rounded-lg bg-emerald-100 text-emerald-800 text-[11px] font-black">僅選期中</button>
+              <button type="button" onclick="selectCustomExamPreset('final')" class="px-2.5 py-1.5 rounded-lg bg-violet-100 text-violet-800 text-[11px] font-black">僅選期末</button>
+              <select id="exam-custom-type" class="p-2 rounded-xl border border-slate-200 text-xs font-bold">
+                <option value="all">綜合混合（單字+發音+句型）</option>
+                <option value="word">只考單字與發音</option>
+                <option value="sentence">只考句型與對話</option>
+              </select>
+              <select id="exam-custom-count" class="p-2 rounded-xl border border-slate-200 text-xs font-bold">
+                <option value="10">10 題</option>
+                <option value="20" selected>20 題</option>
+                <option value="30">30 題</option>
+              </select>
+              <button type="button" onclick="startSelfExam('custom')" class="px-4 py-2 rounded-xl bg-amber-500 text-slate-950 font-black text-xs">🚀 開始自挑組卷</button>
+            </div>
+          </div>
+          <div id="exam-custom-checkboxes" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2"></div>
+        </div>
+      </div>
+
+      <div id="self-exam-runner" style="display:none;" class="bg-white rounded-3xl p-5 shadow border border-slate-200 space-y-4">
+        <div class="flex justify-between items-center border-b pb-2">
+          <span id="exam-runner-title" class="font-black text-slate-800 text-sm"></span>
+          <span id="exam-runner-progress" class="text-xs font-black text-sky-700"></span>
+        </div>
+        <div id="exam-question-image" class="text-center"></div>
+        <div id="exam-question-prompt" class="text-center text-sm font-bold text-slate-600"></div>
+        <div class="text-center">
+          <button type="button" onclick="replayCurrentExamAudio()" class="px-5 py-2.5 rounded-2xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-black text-xs shadow">🔊 再聽一次發音</button>
+        </div>
+        <div id="exam-question-options" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+      </div>
+
+      <div id="self-exam-result" style="display:none;" class="bg-white rounded-3xl p-6 shadow border border-slate-200 text-center space-y-4">
+        <div id="exam-result-stars" class="text-2xl font-black text-amber-500"></div>
+        <div id="exam-result-score" class="text-3xl font-black text-slate-900"></div>
+        <div id="exam-upload-tip" class="text-xs font-bold text-emerald-700"></div>
+        <div class="text-left">
+          <div class="text-xs font-black text-slate-700 mb-2">📌 本次錯題檢視：</div>
+          <div id="exam-result-wrongs" class="space-y-1.5 max-h-52 overflow-y-auto"></div>
+        </div>
+        <button type="button" onclick="renderSelfExamHub()" class="px-5 py-2.5 rounded-xl bg-sky-600 text-white font-black text-sm">再考一次 / 換別張卷</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- 4. 家長學習報告彈窗 -->
+  <div id="parentReportModal" style="display:none;" class="fixed inset-0 z-50 bg-slate-950/75 items-center justify-center p-4">
+    <div class="bg-white w-full max-w-3xl rounded-3xl p-5 sm:p-6 shadow-2xl max-h-[88dvh] overflow-y-auto space-y-4">
+      <div class="flex justify-between items-center border-b pb-3">
+        <h3 class="text-lg font-black text-slate-900 m-0">📊 家長與孩子個人學習報告</h3>
+        <button type="button" onclick="closeParentReportModal()" class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 font-bold text-xs">✕ 關閉</button>
+      </div>
+      <div id="report-summary-cards" class="grid grid-cols-1 sm:grid-cols-3 gap-3"></div>
+      <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200"><div class="text-xs font-black text-slate-600 mb-1">📈 近期學習成績趨勢圖（Chart.js）</div><canvas id="parent-report-chart" height="120"></canvas></div>
+      <div>
+        <div class="text-xs font-black text-slate-700 mb-1.5">🔥 高頻錯題提醒（建議優先複習）：</div>
+        <div id="report-wrong-words" class="flex flex-wrap gap-1.5"></div>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs border-collapse">
+          <thead><tr class="bg-slate-100 text-left"><th class="p-2">日期</th><th class="p-2">冊別</th><th class="p-2">單元</th><th class="p-2">模式</th><th class="p-2">成績</th></tr></thead>
+          <tbody id="report-history-tbody" class="divide-y"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. 賣家總部序號管理後台 -->
+  <div id="admin-wrapper" style="display:none;" class="min-h-[100dvh] bg-slate-100 p-4 sm:p-6">
+    <div class="max-w-6xl mx-auto space-y-4">
+      <div class="bg-slate-900 text-white p-4 rounded-2xl flex flex-wrap justify-between items-center gap-2">
+        <h2 class="text-lg font-black m-0">🛠️ NovaEdu 總部・序號發卡與售後管理後台</h2>
+        <button type="button" onclick="closeAdminSection()" class="px-3 py-1.5 rounded-xl bg-rose-600 text-white text-xs font-black">離開後台</button>
+      </div>
+
+      <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 space-y-3">
+        <h3 class="text-sm font-black text-slate-800 m-0">🎫 批次產出印刷用序號卡</h3>
+        <div class="flex flex-wrap gap-2 items-end">
+          <div>
+            <label class="block text-[11px] font-bold text-slate-500">販售方案</label>
+            <select id="admin-plan-select" class="p-2 rounded-xl border text-xs font-bold">
+              <option value="ALL">全星系暢學卡 (L1–L8)</option>
+              <option value="G3">三年級星系卡 (3上+3下)</option>
+              <option value="G4">四年級星系卡 (4上+4下)</option>
+              <option value="G5">五年級星系卡 (5上+5下)</option>
+              <option value="G6">六年級星系卡 (6上+6下)</option>
+              <option value="nova1">第1冊(3上)單冊卡</option>
+              <option value="nova2">第2冊(3下)單冊卡</option>
+              <option value="nova3">第3冊(4上)單冊卡</option>
+              <option value="nova4">第4冊(4下)單冊卡</option>
+              <option value="nova5">第5冊(5上)單冊卡</option>
+              <option value="nova6">第6冊(5下)單冊卡</option>
+              <option value="nova7">第7冊(6上)單冊卡</option>
+              <option value="nova8">第8冊(6下)單冊卡</option>
+              <option value="nova9">第9冊(進階上)單冊卡</option>
+              <option value="nova10">第10冊(進階下)單冊卡</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[11px] font-bold text-slate-500">張數</label>
+            <input id="admin-gen-count" type="number" value="10" min="1" max="500" class="w-20 p-2 rounded-xl border text-xs font-bold" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-bold text-slate-500">有效天數</label>
+            <input id="admin-valid-days" type="number" value="365" class="w-20 p-2 rounded-xl border text-xs font-bold" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-bold text-slate-500">裝置上限</label>
+            <input id="admin-max-devices" type="number" value="3" class="w-16 p-2 rounded-xl border text-xs font-bold" />
+          </div>
+          <button type="button" onclick="generateBatchSerialCards()" class="px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-black">✨ 批次產出序號</button>
+          <button type="button" onclick="exportSerialsCsv()" class="px-4 py-2 rounded-xl bg-emerald-600 text-white text-xs font-black">📥 匯出印刷 CSV</button>
+        </div>
+        <div id="admin-gen-msg" class="text-xs font-bold text-emerald-700"></div>
+      </div>
+
+      <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 space-y-3">
+        <div class="flex flex-wrap justify-between items-center gap-2">
+          <h3 class="text-sm font-black text-slate-800 m-0">📋 序號開通與裝置綁定售後管理</h3>
+          <input id="admin-search-input" oninput="refreshAdminSerialTable()" type="text" placeholder="搜尋序號或暱稱..." class="p-2 rounded-xl border text-xs w-56" />
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs border-collapse">
+            <thead><tr class="bg-slate-100 text-left"><th class="p-2">序號</th><th class="p-2">方案</th><th class="p-2">狀態</th><th class="p-2">孩子暱稱</th><th class="p-2">開通日</th><th class="p-2">到期日</th><th class="p-2">裝置數</th><th class="p-2">售後操作</th></tr></thead>
+            <tbody id="admin-serial-tbody" class="divide-y"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 賣家登入密碼彈窗 -->
+  <div id="teacherAuthModal" style="display:none;" class="fixed inset-0 z-50 bg-slate-950/75 items-center justify-center p-4">
+    <div class="bg-white w-full max-w-sm rounded-3xl p-6 shadow-2xl space-y-3">
+      <h3 class="text-base font-black text-slate-900 m-0">🔒 總部序號管理後台登入</h3>
+      <input id="teacher-pass-input" type="password" placeholder="請輸入管理密碼" class="w-full p-2.5 rounded-xl border text-sm" />
+      <div id="teacher-auth-error" style="display:none;" class="text-xs text-rose-600 font-bold"></div>
+      <div class="flex gap-2">
+        <button type="button" onclick="handleTeacherModalLogin()" class="flex-1 py-2.5 rounded-xl bg-indigo-600 text-white font-black text-xs">進入後台</button>
+        <button type="button" onclick="closeTeacherAuthModal()" class="px-4 py-2.5 rounded-xl bg-slate-100 text-slate-700 font-bold text-xs">取消</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 家長與學生使用說明彈窗 -->
+  <div id="studentGuideModal" style="display:none;" class="fixed inset-0 z-50 bg-slate-950/75 items-center justify-center p-4">
+    <div class="bg-white w-full max-w-md rounded-3xl p-6 shadow-2xl space-y-3 text-xs text-slate-700">
+      <h3 class="text-base font-black text-sky-900 m-0">📖 NovaEdu 家長與孩子使用說明</h3>
+      <p>1. 輸入序號卡上的卡號與孩子暱稱即可開通，開通後享有 <b>1 年（365 天）</b> 完整自學權限。</p>
+      <p>2. 同一張序號卡最多可綁定 <b>3 台裝置</b>（如家長手機＋家中平板＋筆電），方便隨時複習。</p>
+      <p>3. 進入年級星系後，點擊已解鎖的星球即可展開 <b>3D 地球儀</b>，點選單元地標進行圖卡跟讀、聽力、拼字與 <b>4 大自學測驗</b>（單元卷／期中考／期末考／自挑單元卷）。</p>
+      <button type="button" onclick="closeStudentGuideModal()" class="w-full py-2.5 rounded-xl bg-sky-600 text-white font-black text-xs">我知道了，開始探險！</button>
+    </div>
+  </div>
+
+  <script src="data/nova-config.js"></script>
+  <script src="data/nova-lottie-pack.js"></script>
+  <script src="data/nova-galaxy-data.js"></script>
+  <script src="data/books.js"></script>
+  <script src="js/app-core.js"></script>
+  <script src="js/world-3d-engine.js"></script>
+  <script src="js/nova-practice-ui.js"></script>
+  <script src="js/self-exam.js"></script>
+  <script src="js/seller-admin.js"></script>
+
+  <!-- 🪐 點擊地標跳出的「單元互動小視窗」 -->
+  <div id="unit-station-modal" style="display:none;" class="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-sm items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 shadow-2xl border-2 border-sky-300 animate__animated animate__zoomIn animate__faster">
+      <div class="flex items-start justify-between gap-3 mb-3">
+        <div>
+          <div class="flex items-center gap-2"><div id="lottie-station-badge" class="w-9 h-9 shrink-0"></div><h3 id="station-modal-title" class="text-xl font-black text-slate-900 m-0">單元地標</h3>
+          </div><p id="station-modal-desc" class="text-xs text-slate-500 m-0 mt-0.5"></p>
+        </div>
+        <button type="button" onclick="closeUnitStationModal()" class="px-3 py-1.5 rounded-xl bg-slate-200 text-slate-800 text-xs font-black">✕ 關閉</button>
+      </div>
+      <div class="mb-3">
+        <div class="text-xs font-black text-slate-500 mb-1.5">1. 選擇子單元：</div>
+        <div id="station-modal-subunits" class="flex flex-wrap gap-2"></div>
+        <div id="station-modal-submeta" class="text-xs font-bold text-sky-700 mt-2"></div>
+      </div>
+      <div>
+        <div class="text-xs font-black text-slate-500 mb-1.5">2. 選擇學習或測驗活動：</div>
+        <div id="station-modal-actions" class="grid grid-cols-1 sm:grid-cols-3 gap-2.5"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
