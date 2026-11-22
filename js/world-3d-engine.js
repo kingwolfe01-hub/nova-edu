@@ -341,10 +341,9 @@
   }
 
   function animateGalaxy() {
-    galaxyRafId = null;
+    galaxyRafId = requestAnimationFrame(animateGalaxy);
     const container = document.getElementById("galaxy-3d-canvas");
     if (document.hidden || !isElVisible(container)) return;
-    galaxyRafId = requestAnimationFrame(animateGalaxy);
     const t = Date.now() * 0.00035;
     gPlanetMeshes.forEach((item, idx) => {
       const ang = item.baseAngle + t * item.speed;
@@ -739,12 +738,11 @@
   }
 
   function animate() {
-    planetRafId = null;
+    planetRafId = requestAnimationFrame(animate);
     const container = document.getElementById("world-canvas-container");
     const modalOpen = document.getElementById("unit-station-modal")?.style.display === "flex"
       || document.getElementById("parentReportModal")?.style.display === "flex";
     if (document.hidden || !isElVisible(container) || modalOpen) return;
-    planetRafId = requestAnimationFrame(animate);
     const t = Date.now() * 0.001;
     if (autoRotate && globeGroup) globeGroup.rotation.y += 0.002;
     if (cloudMesh) cloudMesh.rotation.y += 0.00075;
@@ -799,6 +797,9 @@
     if (!globeGroup || !book) return;
     clearMarkers();
     selectedStationIdx = -1;
+    autoRotate = true;
+    targetGlobeRotY = null;
+    targetCamY = null;
 
     const sem = activeSemester || book.semester || "上學期";
     if (earthMesh) applyPlanetSkin(earthMesh.material, book.planetId, book.planetColor, true);
@@ -1098,6 +1099,11 @@
   };
 
   window.refresh3DWorldProgress = function() {};
+  window.resumeNova3DLoops = function() {
+    if (gInitialized && !galaxyRafId) animateGalaxy();
+    if (isInitialized && !planetRafId) animate();
+    window.dispatchEvent(new Event("resize"));
+  };
 })();
 
 function backToActiveUnitModal() {
