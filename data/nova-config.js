@@ -55,10 +55,10 @@ const DEMO_SERIAL_CARDS = {
 
 // 預留高清星球貼圖路徑（日後將高清貼圖放入 textures/ 資料夾並取消註解或對應檔名即可自動套用）
 const NOVA_HD_PLANET_TEXTURES = {
-  planet1: "textures/planet1.jpg",
-  planet2: "textures/planet2.jpg",
-  planet3: "textures/planet3.jpg",
-  planet4: "textures/planet4.jpg",
-  planet5: "textures/planet5.jpg",
-  planet6: "textures/planet6.jpg"
+  planet1: "",
+  planet2: "",
+  planet3: "",
+  planet4: "",
+  planet5: "",
+  planet6: ""
 };
