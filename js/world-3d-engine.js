@@ -287,7 +287,7 @@
     gScene.background = new THREE.Color("#030712");
     const w = container.clientWidth || 900, h = container.clientHeight || 360;
     gCamera = new THREE.PerspectiveCamera(45, w / h, 0.1, 300);
-    gCamera.position.set(0, 12.5, 22);
+    gCamera.position.set(0, 12.0, 23.5);
 
     gRenderer = new THREE.WebGLRenderer({ antialias: true });
     gRenderer.setSize(w, h);
@@ -367,7 +367,7 @@
     gPlanetMeshes = [];
 
     (planets || []).forEach((pl, idx) => {
-      const radius = 3.8 + idx * 2.15;
+      const radius = 3.1 + idx * 1.72;
       const unlocked = allowedSet.has(pl.planetId);
       const colHex = new THREE.Color(pl.planetColor || "#38bdf8");
 
@@ -1030,7 +1030,7 @@
 
     if (actBox) {
       if (isSentenceType) {
-        const isG3 = currentBook?.planetId === "planet2" && typeof Grade3QuizEngine !== "undefined";
+        const isG3 = ["planet2", "planet3", "planet4", "planet5", "planet6"].includes(currentBook?.planetId) && typeof Grade3QuizEngine !== "undefined";
         actBox.innerHTML = `
           <button type="button" onclick="launchStationActivity('sentence_cards')" class="p-4 rounded-2xl nova-btn-3d bg-sky-500 hover:bg-sky-400 text-slate-950 font-black text-sm shadow transition flex flex-col items-center gap-1">
             <span class="text-2xl">🃏</span><span>閃卡活動</span><span class="text-[11px] font-bold opacity-80">句型卡＋標準發音</span>
@@ -1085,7 +1085,7 @@
       return ["vocab_cards", "listen_image", "listen_word"];
     }
     const seq = ["sentence_cards", "listen_sentence", "listen_zh"];
-    if (currentBook?.planetId === "planet2" && typeof Grade3QuizEngine !== "undefined") {
+    if (["planet2", "planet3", "planet4", "planet5", "planet6"].includes(currentBook?.planetId) && typeof Grade3QuizEngine !== "undefined") {
       seq.push("g3_qa_listening", "g3_block_puzzle", "g3_grammar_blank");
     }
     return seq;

@@ -210,7 +210,7 @@ function startSelfExam(examMode) {
     return { ...item, _subMode: i % 2 === 0 ? "listen_sentence" : "listen_zh" };
   });
 
-  if (typeof Grade3QuizEngine !== "undefined" && currentBook?.planetId === "planet2") {
+  if (typeof Grade3QuizEngine !== "undefined" && ["planet2", "planet3", "planet4", "planet5", "planet6"].includes(currentBook?.planetId)) {
     const selectedIds = examMode === "unit"
       ? [groups[Number(document.getElementById("exam-unit-select")?.value || 0)]?.id]
       : (examMode === "custom" ? [...document.querySelectorAll(".custom-unit-chk:checked")].map(el => groups[Number(el.value)]?.id) : []);
@@ -373,10 +373,11 @@ function answerSelfExam(isCorrect, btn) {
     if (btn) btn.classList.add("bg-rose-50", "border-rose-500", "text-rose-800");
     selfExamWrongs.push({ word: getItemText(q), meaning: getItemMeaning(q) });
   }
+  const delayMs = isCorrect ? 750 : (q?.type === "block_puzzle" ? 1800 : 1300);
   setTimeout(() => {
     selfExamIndex++;
     renderSelfExamQuestion();
-  }, isCorrect ? 750 : 1300);
+  }, delayMs);
 }
 
 function finishSelfExam() {
@@ -408,6 +409,7 @@ function finishSelfExam() {
     score: selfExamScore,
     correct: selfExamScore,
     total,
+    wrongWords: selfExamWrongs.map(w => w.word),
     wrongs: selfExamWrongs
   });
 }
@@ -416,6 +418,17 @@ function finishSelfExam() {
 // 三年級進階題型於「4大自學模擬測驗（無即時提示擬真考卷）」的專用渲染
 let examBuiltBlocks = [];
 let examPoolBlocks = [];
+let examPuzzleLocked = false;
+
+function shuffleExamPuzzleBlocks(blocks, answer) {
+  const arr = [...(blocks || [])];
+  if (arr.length <= 1) return arr;
+  let out = shuffle(arr);
+  for (let t = 0; t < 5 && Array.isArray(answer) && out.length === answer.length && out.every((v, i) => v === answer[i]); t++) {
+    out = shuffle(arr);
+  }
+  return out;
+}
 
 function renderG3RichExamQuestion(q) {
   const imgBox = document.getElementById("exam-question-image");
@@ -458,8 +471,9 @@ function renderG3RichExamQuestion(q) {
       }).join("");
     }
   } else if (q.type === "block_puzzle") {
+    examPuzzleLocked = false;
     examBuiltBlocks = [];
-    examPoolBlocks = q.blocks.map((t, i) => ({ id: i, text: t, used: false }));
+    examPoolBlocks = shuffleExamPuzzleBlocks(q.blocks, q.answer).map((t, i) => ({ id: i, text: t, used: false }));
     if (imgBox) imgBox.innerHTML = `<div class="p-3.5 rounded-2xl bg-indigo-50 border border-indigo-200 text-base font-black text-indigo-950 max-w-lg mx-auto">中文題意：${escapeHtml(q.promptZh)}</div>`;
     if (optEl) {
       optEl.innerHTML = `
@@ -467,9 +481,10 @@ function renderG3RichExamQuestion(q) {
           <div id="exam-pz-ans" class="min-h-[52px] p-3 rounded-2xl bg-slate-100 border-2 border-dashed border-slate-300 flex flex-wrap justify-center gap-2"></div>
           <div id="exam-pz-pool" class="flex flex-wrap justify-center gap-2"></div>
           <div class="flex justify-center gap-2">
-            <button type="button" onclick="resetExamPuzzle()" class="px-4 py-2 rounded-xl bg-slate-200 text-slate-700 font-black text-xs">↩️ 清除</button>
-            <button type="button" onclick="submitExamPuzzle()" class="px-5 py-2 rounded-xl bg-emerald-500 text-slate-950 font-black text-xs">✅ 確認送出</button>
+            <button id="exam-pz-reset-btn" type="button" onclick="resetExamPuzzle()" class="px-4 py-2 rounded-xl bg-slate-200 text-slate-700 font-black text-xs">↩️ 清除</button>
+            <button id="exam-pz-check-btn" type="button" disabled onclick="submitExamPuzzle()" class="px-5 py-2 rounded-xl bg-emerald-500 text-slate-950 font-black text-xs opacity-45 cursor-not-allowed">✅ 確認送出</button>
           </div>
+          <div id="exam-pz-feedback" style="display:none;" class="p-3 rounded-2xl text-xs font-bold text-left max-w-lg mx-auto"></div>
         </div>`;
       renderExamPuzzleUI();
     }
@@ -481,17 +496,47 @@ function renderExamPuzzleUI() {
   const pEl = document.getElementById("exam-pz-pool");
   if (!aEl || !pEl) return;
   aEl.innerHTML = examBuiltBlocks.length
-    ? examBuiltBlocks.map((b, i) => `<button type="button" onclick="removeExamPuzzleBlock(${i})" class="px-3 py-1.5 rounded-xl bg-sky-600 text-white font-black text-sm">${escapeHtml(b.text)}</button>`).join("")
+    ? examBuiltBlocks.map((b, i) => `<button type="button" ${examPuzzleLocked ? "disabled" : ""} onclick="removeExamPuzzleBlock(${i})" class="px-3 py-1.5 rounded-xl bg-sky-600 text-white font-black text-sm">${escapeHtml(b.text)}</button>`).join("")
     : `<span class="text-xs font-bold text-slate-400">請點擊下方積木組出句子</span>`;
-  pEl.innerHTML = examPoolBlocks.map((b, i) => `<button type="button" ${b.used ? "disabled" : ""} onclick="pickExamPuzzleBlock(${i})" class="px-3 py-1.5 rounded-xl border-2 font-black text-sm ${b.used ? "opacity-30 bg-slate-100" : "bg-white border-indigo-300 text-indigo-950"}">${escapeHtml(b.text)}</button>`).join("");
+  pEl.innerHTML = examPoolBlocks.map((b, i) => `<button type="button" ${(b.used || examPuzzleLocked) ? "disabled" : ""} onclick="pickExamPuzzleBlock(${i})" class="px-3 py-1.5 rounded-xl border-2 font-black text-sm ${(b.used || examPuzzleLocked) ? "opacity-30 bg-slate-100 cursor-not-allowed" : "bg-white border-indigo-300 text-indigo-950"}">${escapeHtml(b.text)}</button>`).join("");
+
+  const resetBtn = document.getElementById("exam-pz-reset-btn");
+  if (resetBtn) resetBtn.disabled = examPuzzleLocked;
+  const checkBtn = document.getElementById("exam-pz-check-btn");
+  if (checkBtn) {
+    const ready = !examPuzzleLocked && examBuiltBlocks.length === examPoolBlocks.length && examPoolBlocks.length > 0;
+    checkBtn.disabled = !ready;
+    checkBtn.className = ready
+      ? "px-5 py-2 rounded-xl bg-emerald-500 text-slate-950 font-black text-xs"
+      : "px-5 py-2 rounded-xl bg-emerald-500 text-slate-950 font-black text-xs opacity-45 cursor-not-allowed";
+  }
 }
-function pickExamPuzzleBlock(i) { if (examPoolBlocks[i] && !examPoolBlocks[i].used) { examPoolBlocks[i].used = true; examBuiltBlocks.push(examPoolBlocks[i]); renderExamPuzzleUI(); } }
-function removeExamPuzzleBlock(i) { const r = examBuiltBlocks.splice(i, 1)[0]; if (r) r.used = false; renderExamPuzzleUI(); }
-function resetExamPuzzle() { examBuiltBlocks = []; examPoolBlocks.forEach(b => b.used = false); renderExamPuzzleUI(); }
+function pickExamPuzzleBlock(i) { if (examPuzzleLocked) return; if (examPoolBlocks[i] && !examPoolBlocks[i].used) { examPoolBlocks[i].used = true; examBuiltBlocks.push(examPoolBlocks[i]); renderExamPuzzleUI(); } }
+function removeExamPuzzleBlock(i) { if (examPuzzleLocked) return; const r = examBuiltBlocks.splice(i, 1)[0]; if (r) r.used = false; renderExamPuzzleUI(); }
+function resetExamPuzzle() { if (examPuzzleLocked) return; examBuiltBlocks = []; examPoolBlocks.forEach(b => b.used = false); renderExamPuzzleUI(); }
 function submitExamPuzzle() {
   const q = selfExamQueue[selfExamIndex];
-  if (!q || !examBuiltBlocks.length) return;
+  if (examPuzzleLocked || !q || examBuiltBlocks.length < examPoolBlocks.length) return;
+  examPuzzleLocked = true;
   const userSeq = examBuiltBlocks.map(b => b.text);
   const ok = userSeq.length === q.answer.length && userSeq.every((t, i) => t === q.answer[i]);
+  renderExamPuzzleUI();
+
+  const aEl = document.getElementById("exam-pz-ans");
+  if (aEl) {
+    aEl.classList.remove("bg-slate-100", "border-slate-300", "border-dashed");
+    aEl.classList.add(...(ok ? ["bg-emerald-50", "border-emerald-500"] : ["bg-rose-50", "border-rose-400"]));
+  }
+  const fullSentence = q.answer.join(" ").replace(/\s+([?.!])/g, "$1");
+  const fbEl = document.getElementById("exam-pz-feedback");
+  if (fbEl) {
+    fbEl.style.display = "block";
+    fbEl.className = ok
+      ? "p-3 rounded-2xl bg-emerald-50 border border-emerald-400 text-emerald-900 text-xs font-bold text-left max-w-lg mx-auto"
+      : "p-3 rounded-2xl bg-rose-50 border border-rose-400 text-rose-900 text-xs font-bold text-left max-w-lg mx-auto";
+    fbEl.innerHTML = ok
+      ? `✅ 答對了！正確句子：<b>${escapeHtml(fullSentence)}</b>`
+      : `❌ 正確答案：<b>${escapeHtml(fullSentence)}</b>`;
+  }
   answerSelfExam(ok, null);
 }

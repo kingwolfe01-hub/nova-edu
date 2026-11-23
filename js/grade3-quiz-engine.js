@@ -35,8 +35,21 @@ window.Grade3QuizEngine = (function() {
     window.speechSynthesis.speak(u);
   }
 
+  function getQuestionsForPlanet(planetId) {
+    const map = {
+      planet2: window.NOVA_G3_QUESTIONS,
+      planet3: window.NOVA_G4_QUESTIONS,
+      planet4: window.NOVA_G5_QUESTIONS,
+      planet5: window.NOVA_G6_QUESTIONS,
+      planet6: window.NOVA_ADV_QUESTIONS
+    };
+    const arr = map[planetId || "planet2"];
+    return Array.isArray(arr) ? arr : [];
+  }
+
   function getPool(opts) {
-    const all = Array.isArray(window.NOVA_G3_QUESTIONS) ? window.NOVA_G3_QUESTIONS : [];
+    const pid = opts?.planetId || (typeof currentBook !== "undefined" && currentBook?.planetId) || "planet2";
+    const all = getQuestionsForPlanet(pid);
     const sem = opts?.semester || (typeof currentSemester !== "undefined" ? currentSemester : "上學期");
     const ed = opts?.edition || (typeof currentEditionFilter !== "undefined" ? currentEditionFilter : "ALL");
     const unitId = opts?.unitId || "";
@@ -64,6 +77,18 @@ window.Grade3QuizEngine = (function() {
   let pLastParams = null;
   let builtBlocks = [];
   let poolBlocks = [];
+  let puzzleLocked = false;
+  let isCrossUnitFallback = false;
+
+  function shufflePuzzleBlocks(blocks, answer) {
+    const arr = [...(blocks || [])];
+    if (arr.length <= 1) return arr;
+    let out = shuffle(arr);
+    for (let t = 0; t < 5 && Array.isArray(answer) && out.length === answer.length && out.every((v, i) => v === answer[i]); t++) {
+      out = shuffle(arr);
+    }
+    return out;
+  }
 
   function startGrade3Practice(params) {
     pLastParams = params || {};
@@ -83,9 +108,11 @@ window.Grade3QuizEngine = (function() {
       type: params?.type || "all"
     });
     if (!pool.length) {
+      isCrossUnitFallback = true;
       const fallback = getPool({ semester: currentSemester, edition: "ALL", stage: "practice", type: params?.type || "all" });
       pQueue = shuffle(fallback).slice(0, 8);
     } else {
+      isCrossUnitFallback = false;
       pQueue = shuffle(pool).slice(0, 8);
     }
     pIdx = 0;
@@ -136,6 +163,7 @@ window.Grade3QuizEngine = (function() {
         <div class="flex items-center gap-1.5">
           <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-black">${escapeHtml(pModeTitle)}</span>
           <span class="px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 text-[11px] font-bold">${escapeHtml(q.topic)}</span>
+          ${isCrossUnitFallback ? `<span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[10px] font-black">本單元暫無此題型・跨單元精選</span>` : ""}
         </div>
         <span class="text-xs font-black text-slate-500">第 ${pIdx + 1} / ${pQueue.length} 題</span>
       </div>`;
@@ -166,7 +194,7 @@ window.Grade3QuizEngine = (function() {
           <div class="p-5 rounded-2xl bg-amber-50/70 border-2 border-amber-200 text-lg sm:text-xl font-black text-slate-900 max-w-xl mx-auto">
             ${escapeHtml(parts[0] || "")}<span id="g3-blank-slot" class="inline-block min-w-[68px] px-3 py-0.5 mx-1 rounded-xl bg-white border-2 border-dashed border-amber-500 text-amber-600">？</span>${escapeHtml(parts[1] || "")}
           </div>
-          <div class="grid grid-cols-3 gap-2.5 max-w-md mx-auto" id="g3-opt-list">
+          <div class="grid ${q.options.length >= 4 ? "grid-cols-2 sm:grid-cols-4 max-w-xl" : "grid-cols-3 max-w-md"} gap-2.5 mx-auto" id="g3-opt-list">
             ${q.options.map((opt, idx) => `
               <button type="button" data-idx="${idx}" onclick="Grade3QuizEngine.submitChoice(${idx}, this)"
                 class="p-3.5 rounded-2xl nova-btn-3d bg-white border-2 border-slate-200 hover:border-amber-400 transition font-black text-base text-slate-800">
@@ -194,8 +222,9 @@ window.Grade3QuizEngine = (function() {
           </div>
         </div>`;
     } else if (q.type === "block_puzzle") {
+      puzzleLocked = false;
       builtBlocks = [];
-      poolBlocks = q.blocks.map((txt, i) => ({ id: i, text: txt, used: false }));
+      poolBlocks = shufflePuzzleBlocks(q.blocks, q.answer).map((txt, i) => ({ id: i, text: txt, used: false }));
       bodyHtml = `
         <div class="text-center space-y-3 max-w-xl mx-auto">
           <p class="text-xs font-bold text-slate-500">🧱 【積木重組造句】依序點擊下方積木，排出正確的英文句子：</p>
@@ -207,8 +236,8 @@ window.Grade3QuizEngine = (function() {
           </div>
           <div id="g3-puzzle-pool-zone" class="flex flex-wrap items-center justify-center gap-2 pt-1"></div>
           <div class="flex justify-center gap-2 pt-2">
-            <button type="button" onclick="Grade3QuizEngine.resetPuzzle()" class="px-4 py-2 rounded-xl bg-slate-200 text-slate-700 font-black text-xs">↩️ 清除重排</button>
-            <button id="g3-puzzle-check-btn" type="button" onclick="Grade3QuizEngine.checkPuzzle()" class="px-5 py-2 rounded-xl nova-btn-3d bg-emerald-500 text-slate-950 font-black text-xs shadow">✅ 檢查句子</button>
+            <button id="g3-puzzle-reset-btn" type="button" onclick="Grade3QuizEngine.resetPuzzle()" class="px-4 py-2 rounded-xl bg-slate-200 text-slate-700 font-black text-xs">↩️ 清除重排</button>
+            <button id="g3-puzzle-check-btn" type="button" disabled onclick="Grade3QuizEngine.checkPuzzle()" class="px-5 py-2 rounded-xl bg-emerald-500 text-slate-950 font-black text-xs shadow opacity-45 cursor-not-allowed">✅ 檢查句子</button>
           </div>
         </div>`;
     }
@@ -231,20 +260,36 @@ window.Grade3QuizEngine = (function() {
 
     ansZone.innerHTML = builtBlocks.length
       ? builtBlocks.map((b, idx) => `
-          <button type="button" onclick="Grade3QuizEngine.removePuzzleBlock(${idx})"
-            class="px-3.5 py-2 rounded-xl bg-sky-600 text-white font-black text-sm shadow-sm hover:bg-sky-500">
+          <button type="button" ${puzzleLocked ? "disabled" : ""} onclick="Grade3QuizEngine.removePuzzleBlock(${idx})"
+            class="px-3.5 py-2 rounded-xl bg-sky-600 text-white font-black text-sm shadow-sm ${puzzleLocked ? "opacity-90 cursor-default" : "hover:bg-sky-500"}">
             ${escapeHtml(b.text)}
           </button>`).join("")
       : `<span class="text-xs font-bold text-slate-400">請點選下方積木排列句子...</span>`;
 
     poolZone.innerHTML = poolBlocks.map((b, idx) => `
-      <button type="button" ${b.used ? "disabled" : ""} onclick="Grade3QuizEngine.pickPuzzleBlock(${idx})"
-        class="px-3.5 py-2 rounded-xl font-black text-sm border-2 transition ${b.used ? "opacity-30 bg-slate-100 border-slate-200 text-slate-400 cursor-not-allowed" : "nova-btn-3d bg-white border-indigo-300 text-indigo-950 hover:border-indigo-500"}">
+      <button type="button" ${(b.used || puzzleLocked) ? "disabled" : ""} onclick="Grade3QuizEngine.pickPuzzleBlock(${idx})"
+        class="px-3.5 py-2 rounded-xl font-black text-sm border-2 transition ${(b.used || puzzleLocked) ? "opacity-30 bg-slate-100 border-slate-200 text-slate-400 cursor-not-allowed" : "nova-btn-3d bg-white border-indigo-300 text-indigo-950 hover:border-indigo-500"}">
         ${escapeHtml(b.text)}
       </button>`).join("");
+
+    const resetBtn = document.getElementById("g3-puzzle-reset-btn");
+    if (resetBtn) {
+      resetBtn.disabled = puzzleLocked;
+      resetBtn.classList.toggle("opacity-45", puzzleLocked);
+      resetBtn.classList.toggle("cursor-not-allowed", puzzleLocked);
+    }
+    const checkBtn = document.getElementById("g3-puzzle-check-btn");
+    if (checkBtn) {
+      const ready = !puzzleLocked && builtBlocks.length === poolBlocks.length && poolBlocks.length > 0;
+      checkBtn.disabled = !ready;
+      checkBtn.className = ready
+        ? "px-5 py-2 rounded-xl nova-btn-3d bg-emerald-500 text-slate-950 font-black text-xs shadow"
+        : "px-5 py-2 rounded-xl bg-emerald-500 text-slate-950 font-black text-xs shadow opacity-45 cursor-not-allowed";
+    }
   }
 
   function pickPuzzleBlock(poolIdx) {
+    if (puzzleLocked) return;
     const item = poolBlocks[poolIdx];
     if (!item || item.used) return;
     item.used = true;
@@ -253,12 +298,14 @@ window.Grade3QuizEngine = (function() {
   }
 
   function removePuzzleBlock(ansIdx) {
+    if (puzzleLocked) return;
     const removed = builtBlocks.splice(ansIdx, 1)[0];
     if (removed) removed.used = false;
     renderPuzzleZones();
   }
 
   function resetPuzzle() {
+    if (puzzleLocked) return;
     builtBlocks = [];
     poolBlocks.forEach(b => { b.used = false; });
     renderPuzzleZones();
@@ -266,14 +313,24 @@ window.Grade3QuizEngine = (function() {
 
   function checkPuzzle() {
     const q = pQueue[pIdx];
-    if (!q || !builtBlocks.length) return;
+    if (puzzleLocked || !q || builtBlocks.length < poolBlocks.length) return;
+    puzzleLocked = true;
     const userSeq = builtBlocks.map(b => b.text);
     const isOk = userSeq.length === q.answer.length && userSeq.every((t, i) => t === q.answer[i]);
-    const checkBtn = document.getElementById("g3-puzzle-check-btn");
-    if (checkBtn) checkBtn.disabled = true;
+    renderPuzzleZones();
+
+    const ansZone = document.getElementById("g3-puzzle-answer-zone");
+    if (ansZone) {
+      ansZone.classList.remove("bg-slate-100", "border-slate-300", "border-dashed");
+      ansZone.classList.add(...(isOk ? ["bg-emerald-50", "border-emerald-500"] : ["bg-rose-50", "border-rose-400"]));
+    }
 
     const fullSentence = q.answer.join(" ").replace(/\s+([?.!])/g, "$1");
-    speakFallback(fullSentence, 0.85);
+    if (q.audioFile) {
+      playPromptAudio({ audioFile: q.audioFile, promptAudio: fullSentence }, false);
+    } else {
+      speakFallback(fullSentence, 0.85);
+    }
     showPracticeFeedback(isOk, q, fullSentence);
   }
 
@@ -332,10 +389,10 @@ window.Grade3QuizEngine = (function() {
 
   // ==================== 段考／總檢測出題橋接（供 js/self-exam.js 呼叫） ====================
   function getExamQuestionsForBook(book, examMode, selectedGroupIds) {
-    if (!book || book.planetId !== "planet2") return [];
+    if (!book || !["planet2", "planet3", "planet4", "planet5", "planet6"].includes(book.planetId)) return [];
     const sem = book.semester;
     const ed = typeof currentEditionFilter !== "undefined" ? currentEditionFilter : "ALL";
-    let pool = getPool({ semester: sem, edition: ed, stage: "exam" });
+    let pool = getPool({ planetId: book.planetId, semester: sem, edition: ed, stage: "exam" });
 
     if (examMode === "midterm") {
       pool = pool.filter(q => q.examHalf === "midterm");
@@ -355,7 +412,7 @@ window.Grade3QuizEngine = (function() {
       ...q,
       _isG3Rich: true,
       word: q.promptAudio || q.promptZh || q.sentence || q.situationZh,
-      meaning: q.type === "block_puzzle" ? q.answer.join(" ") : (q.options ? q.options[q.correctIndex] : "")
+      meaning: q.type === "block_puzzle" ? q.answer.join(" ").replace(/\s+([?.!])/g, "$1") : (q.options ? q.options[q.correctIndex] : "")
     }));
   }
 

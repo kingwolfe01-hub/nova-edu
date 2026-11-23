@@ -50,6 +50,15 @@ const DEMO_SERIAL_CARDS = {
     validDays: 365,
     maxDevices: 3,
     status: "ACTIVE"
+  },
+  "NOVA-ADV-DEMO": {
+    serial: "NOVA-ADV-DEMO",
+    planType: "進階榮耀星卡（含啟航暖身星・上下學期）",
+    allowedPlanets: ["planet1", "planet6"],
+    allowedSemesters: ["上學期", "下學期"],
+    validDays: 365,
+    maxDevices: 3,
+    status: "ACTIVE"
   }
 };
 

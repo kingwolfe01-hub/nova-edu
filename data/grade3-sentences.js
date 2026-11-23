@@ -127,13 +127,13 @@ window.NOVA_G3_QUESTIONS = [
   },
   {
     id: "g3_up_u2_blk_02",
-    grade: 3, semester: "上學期", unitIds: ["sentence_u4"], examHalf: "final",
+    grade: 3, semester: "上學期", unitIds: ["sentence_u2"], examHalf: "midterm",
     editions: ["Super", "Wonder", "Here"], topic: "心情與狀態（Be 動詞與形容詞）",
     stage: ["practice"], type: "block_puzzle",
     promptZh: "不，我不是。我很難過。",
-    blocks: ["I'm sad.", "No,", "I'm not."],
-    answer: ["No,", "I'm not.", "I'm sad."],
-    hint: "先說「不 No,」，再說「我不是 I'm not.」，最後補充心情！",
+    blocks: ["sad.", "No,", "I'm", "not.", "I'm"],
+    answer: ["No,", "I'm", "not.", "I'm", "sad."],
+    hint: "先說「No, I'm not.」，再說「I'm sad.」！",
     explanation: "否定簡答後接肯定句說明狀態：No, I'm not. I'm sad."
   },
   {
@@ -437,7 +437,7 @@ window.NOVA_G3_QUESTIONS = [
   },
   {
     id: "g3_dn_u2_blk_02",
-    grade: 3, semester: "下學期", unitIds: ["sentence_u4"], examHalf: "final",
+    grade: 3, semester: "下學期", unitIds: ["sentence_u2"], examHalf: "midterm",
     editions: ["Super", "Wonder", "Here"], topic: "超能力測試（情態助動詞 Can）",
     stage: ["practice"], type: "block_puzzle",
     promptZh: "不，我不會。",

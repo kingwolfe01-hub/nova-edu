@@ -1171,7 +1171,139 @@ const NOVA_GALAXY_PLANETS = [
             "sentences": []
           }
         ],
-        "satelliteUnits": []
+        "satelliteUnits": [
+          {
+            "id": "numbers_上學期",
+            "title": "數字 0–10",
+            "category": "numbers",
+            "badgeIcon": "🔢",
+            "examHalf": "midterm",
+            "words": [
+              {
+                "word": "zero",
+                "meaning": "零",
+                "image": "num_000_zero.webp",
+                "audio": "zero.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "one",
+                "meaning": "一",
+                "image": "num_001_one.webp",
+                "audio": "one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "two",
+                "meaning": "二",
+                "image": "num_002_two.webp",
+                "audio": "two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "three",
+                "meaning": "三",
+                "image": "num_003_three.webp",
+                "audio": "three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "four",
+                "meaning": "四",
+                "image": "num_004_four.webp",
+                "audio": "four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "five",
+                "meaning": "五",
+                "image": "num_005_five.webp",
+                "audio": "five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "six",
+                "meaning": "六",
+                "image": "num_006_six.webp",
+                "audio": "six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seven",
+                "meaning": "七",
+                "image": "num_007_seven.webp",
+                "audio": "seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eight",
+                "meaning": "八",
+                "image": "num_008_eight.webp",
+                "audio": "eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "nine",
+                "meaning": "九",
+                "image": "num_009_nine.webp",
+                "audio": "nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ten",
+                "meaning": "十",
+                "image": "num_010_ten.webp",
+                "audio": "ten.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              }
+            ],
+            "sentences": []
+          }
+        ]
       },
       "下學期": {
         "semester": "下學期",
@@ -2193,7 +2325,128 @@ const NOVA_GALAXY_PLANETS = [
             "sentences": []
           }
         ],
-        "satelliteUnits": []
+        "satelliteUnits": [
+          {
+            "id": "numbers_下學期",
+            "title": "數字 11–20",
+            "category": "numbers",
+            "badgeIcon": "🔢",
+            "examHalf": "midterm",
+            "words": [
+              {
+                "word": "eleven",
+                "meaning": "十一",
+                "image": "num_011_eleven.webp",
+                "audio": "eleven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twelve",
+                "meaning": "十二",
+                "image": "num_012_twelve.webp",
+                "audio": "twelve.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirteen",
+                "meaning": "十三",
+                "image": "num_013_thirteen.webp",
+                "audio": "thirteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fourteen",
+                "meaning": "十四",
+                "image": "num_014_fourteen.webp",
+                "audio": "fourteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifteen",
+                "meaning": "十五",
+                "image": "num_015_fifteen.webp",
+                "audio": "fifteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixteen",
+                "meaning": "十六",
+                "image": "num_016_sixteen.webp",
+                "audio": "sixteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventeen",
+                "meaning": "十七",
+                "image": "num_017_seventeen.webp",
+                "audio": "seventeen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighteen",
+                "meaning": "十八",
+                "image": "num_018_eighteen.webp",
+                "audio": "eighteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "nineteen",
+                "meaning": "十九",
+                "image": "num_019_nineteen.webp",
+                "audio": "nineteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty",
+                "meaning": "二十",
+                "image": "num_020_twenty.webp",
+                "audio": "twenty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              }
+            ],
+            "sentences": []
+          }
+        ]
       }
     }
   },
@@ -6996,7 +7249,7 @@ const NOVA_GALAXY_PLANETS = [
           },
           {
             "id": "numbers_上學期",
-            "title": "數字 1–10",
+            "title": "數字 0–10",
             "subtitle": "上學期・10 個數字",
             "category": "numbers",
             "semester": "上學期",
@@ -7004,263 +7257,124 @@ const NOVA_GALAXY_PLANETS = [
             "badgeIcon": "🔢",
             "words": [
               {
-                "kind": "word",
+                "word": "zero",
+                "meaning": "零",
+                "image": "num_000_zero.webp",
+                "audio": "zero.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "one",
-                "sentence": "one",
                 "meaning": "一",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_001_one.webp",
                 "audio": "one.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "cone",
-                  "on",
-                  "phone",
-                  "June",
-                  "dune",
-                  "nine",
-                  "pine",
-                  "stone"
                 ]
               },
               {
-                "kind": "word",
                 "word": "two",
-                "sentence": "two",
                 "meaning": "二",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_002_two.webp",
                 "audio": "two.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "do",
-                  "tag",
-                  "tap",
-                  "tea",
-                  "ten",
-                  "tie",
-                  "tip",
-                  "top"
                 ]
               },
               {
-                "kind": "word",
                 "word": "three",
-                "sentence": "three",
                 "meaning": "三",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_003_three.webp",
                 "audio": "three.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "tree",
-                  "there",
-                  "these",
-                  "thief",
-                  "those",
-                  "tired",
-                  "bee",
-                  "knee"
                 ]
               },
               {
-                "kind": "word",
                 "word": "four",
-                "sentence": "four",
                 "meaning": "四",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_004_four.webp",
                 "audio": "four.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "sour",
-                  "your",
-                  "our",
-                  "fourth",
-                  "foot",
-                  "fork",
-                  "fox",
-                  "fun"
                 ]
               },
               {
-                "kind": "word",
                 "word": "five",
-                "sentence": "five",
                 "meaning": "五",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_005_five.webp",
                 "audio": "five.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "have",
-                  "love",
-                  "wave",
-                  "fish",
-                  "fix",
-                  "fuse",
-                  "fifth",
-                  "fever"
                 ]
               },
               {
-                "kind": "word",
                 "word": "six",
-                "sentence": "six",
                 "meaning": "六",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_006_six.webp",
                 "audio": "six.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "fix",
-                  "mix",
-                  "sip",
-                  "sit",
-                  "sick",
-                  "sixth",
-                  "sea",
-                  "see"
                 ]
               },
               {
-                "kind": "word",
                 "word": "seven",
-                "sentence": "seven",
                 "meaning": "七",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_007_seven.webp",
                 "audio": "seven.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "seventh",
-                  "eleven",
-                  "teen",
-                  "see",
-                  "seed",
-                  "seventy",
-                  "fever",
-                  "sixteen"
                 ]
               },
               {
-                "kind": "word",
                 "word": "eight",
-                "sentence": "eight",
                 "meaning": "八",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_008_eight.webp",
                 "audio": "eight.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "fight",
-                  "light",
-                  "night",
-                  "right",
-                  "eighth",
-                  "eighty",
-                  "bright",
-                  "knight"
                 ]
               },
               {
-                "kind": "word",
                 "word": "nine",
-                "sentence": "nine",
                 "meaning": "九",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_009_nine.webp",
                 "audio": "nine.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "pine",
-                  "wine",
-                  "shine",
-                  "ninth",
-                  "June",
-                  "cone",
-                  "dune",
-                  "one"
                 ]
               },
               {
-                "kind": "word",
                 "word": "ten",
-                "sentence": "ten",
                 "meaning": "十",
-                "sourceUnit": "3年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_010_ten.webp",
                 "audio": "ten.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "den",
-                  "teen",
-                  "hen",
-                  "pen",
-                  "tea",
-                  "tenth",
-                  "when",
-                  "tag"
                 ]
               }
             ],
@@ -12408,7 +12522,7 @@ const NOVA_GALAXY_PLANETS = [
           },
           {
             "id": "numbers_下學期",
-            "title": "數字 11–15",
+            "title": "數字 11–20",
             "subtitle": "下學期・6 個數字",
             "category": "numbers",
             "semester": "下學期",
@@ -12416,155 +12530,113 @@ const NOVA_GALAXY_PLANETS = [
             "badgeIcon": "🔢",
             "words": [
               {
-                "kind": "word",
-                "word": "six",
-                "sentence": "six",
-                "meaning": "六",
-                "sourceUnit": "3年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_006_six.webp",
-                "audio": "six.mp3",
-                "editions": [
-                  "Super"
-                ],
-                "similarWords": [
-                  "fix",
-                  "mix",
-                  "sip",
-                  "sit",
-                  "sick",
-                  "sixth",
-                  "sea",
-                  "see"
-                ]
-              },
-              {
-                "kind": "word",
                 "word": "eleven",
-                "sentence": "eleven",
                 "meaning": "十一",
-                "sourceUnit": "3年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_011_eleven.webp",
                 "audio": "eleven.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "seven",
-                  "eighteen",
-                  "garden",
-                  "green",
-                  "queen",
-                  "teen",
-                  "between",
-                  "den"
                 ]
               },
               {
-                "kind": "word",
                 "word": "twelve",
-                "sentence": "twelve",
                 "meaning": "十二",
-                "sourceUnit": "3年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_012_twelve.webp",
                 "audio": "twelve.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "wave",
-                  "five",
-                  "have",
-                  "love",
-                  "fifty-five",
-                  "forty-five"
                 ]
               },
               {
-                "kind": "word",
                 "word": "thirteen",
-                "sentence": "thirteen",
                 "meaning": "十三",
-                "sourceUnit": "3年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_013_thirteen.webp",
                 "audio": "thirteen.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "twenty-seven",
-                  "fourteen",
-                  "eighteen",
-                  "nineteen",
-                  "fifteen",
-                  "sixteen",
-                  "chicken",
-                  "green"
                 ]
               },
               {
-                "kind": "word",
                 "word": "fourteen",
-                "sentence": "fourteen",
                 "meaning": "十四",
-                "sourceUnit": "3年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_014_fourteen.webp",
                 "audio": "fourteen.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "fifteen",
-                  "thirteen",
-                  "eighteen",
-                  "nineteen",
-                  "green",
-                  "queen",
-                  "sixteen",
-                  "between"
                 ]
               },
               {
-                "kind": "word",
                 "word": "fifteen",
-                "sentence": "fifteen",
                 "meaning": "十五",
-                "sourceUnit": "3年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_015_fifteen.webp",
                 "audio": "fifteen.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "sixteen",
-                  "fourteen",
-                  "between",
-                  "kitchen",
-                  "chicken",
-                  "eighteen",
-                  "nineteen",
-                  "teen"
+                ]
+              },
+              {
+                "word": "sixteen",
+                "meaning": "十六",
+                "image": "num_016_sixteen.webp",
+                "audio": "sixteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventeen",
+                "meaning": "十七",
+                "image": "num_017_seventeen.webp",
+                "audio": "seventeen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighteen",
+                "meaning": "十八",
+                "image": "num_018_eighteen.webp",
+                "audio": "eighteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "nineteen",
+                "meaning": "十九",
+                "image": "num_019_nineteen.webp",
+                "audio": "nineteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty",
+                "meaning": "二十",
+                "image": "num_020_twenty.webp",
+                "audio": "twenty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               }
             ],
@@ -18713,7 +18785,7 @@ const NOVA_GALAXY_PLANETS = [
           },
           {
             "id": "numbers_上學期",
-            "title": "數字 16–20 與整十 20–50",
+            "title": "數字 16–50 完整收錄",
             "subtitle": "上學期・15 個數字",
             "category": "numbers",
             "semester": "上學期",
@@ -18721,368 +18793,388 @@ const NOVA_GALAXY_PLANETS = [
             "badgeIcon": "🔢",
             "words": [
               {
-                "kind": "word",
-                "word": "ten",
-                "sentence": "ten",
-                "meaning": "十",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_010_ten.webp",
-                "audio": "ten.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": [
-                  "den",
-                  "teen",
-                  "hen",
-                  "pen",
-                  "tea",
-                  "tenth",
-                  "when",
-                  "tag"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "eleven",
-                "sentence": "eleven",
-                "meaning": "十一",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_011_eleven.webp",
-                "audio": "eleven.mp3",
-                "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "seven",
-                  "eighteen",
-                  "garden",
-                  "green",
-                  "queen",
-                  "teen",
-                  "between",
-                  "den"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "twelve",
-                "sentence": "twelve",
-                "meaning": "十二",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_012_twelve.webp",
-                "audio": "twelve.mp3",
-                "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "wave",
-                  "five",
-                  "have",
-                  "love",
-                  "fifty-five",
-                  "forty-five"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "thirteen",
-                "sentence": "thirteen",
-                "meaning": "十三",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_013_thirteen.webp",
-                "audio": "thirteen.mp3",
-                "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "twenty-seven",
-                  "fourteen",
-                  "eighteen",
-                  "nineteen",
-                  "fifteen",
-                  "sixteen",
-                  "chicken",
-                  "green"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "fourteen",
-                "sentence": "fourteen",
-                "meaning": "十四",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_014_fourteen.webp",
-                "audio": "fourteen.mp3",
-                "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "fifteen",
-                  "thirteen",
-                  "eighteen",
-                  "nineteen",
-                  "green",
-                  "queen",
-                  "sixteen",
-                  "between"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "fifteen",
-                "sentence": "fifteen",
-                "meaning": "十五",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_015_fifteen.webp",
-                "audio": "fifteen.mp3",
-                "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "sixteen",
-                  "fourteen",
-                  "between",
-                  "kitchen",
-                  "chicken",
-                  "eighteen",
-                  "nineteen",
-                  "teen"
-                ]
-              },
-              {
-                "kind": "word",
                 "word": "sixteen",
-                "sentence": "sixteen",
                 "meaning": "十六",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_016_sixteen.webp",
                 "audio": "sixteen.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "fifteen",
-                  "seven",
-                  "seventeen",
-                  "between",
-                  "kitchen",
-                  "chicken",
-                  "eighteen",
-                  "nineteen"
                 ]
               },
               {
-                "kind": "word",
                 "word": "seventeen",
-                "sentence": "seventeen",
                 "meaning": "十七",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_017_seventeen.webp",
                 "audio": "seventeen.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "sixteen",
-                  "eighteen",
-                  "nineteen",
-                  "between",
-                  "eleven",
-                  "fifteen",
-                  "fourteen",
-                  "thirteen"
                 ]
               },
               {
-                "kind": "word",
                 "word": "eighteen",
-                "sentence": "eighteen",
                 "meaning": "十八",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_018_eighteen.webp",
                 "audio": "eighteen.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "eleven",
-                  "nineteen",
-                  "fourteen",
-                  "thirteen",
-                  "fifteen",
-                  "sixteen",
-                  "green",
-                  "seventeen"
                 ]
               },
               {
-                "kind": "word",
                 "word": "nineteen",
-                "sentence": "nineteen",
                 "meaning": "十九",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_019_nineteen.webp",
                 "audio": "nineteen.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "eighteen",
-                  "fourteen",
-                  "thirteen",
-                  "fifteen",
-                  "sixteen",
-                  "between",
-                  "seventeen",
-                  "eleven"
                 ]
               },
               {
-                "kind": "word",
                 "word": "twenty",
-                "sentence": "twenty",
                 "meaning": "二十",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_020_twenty.webp",
                 "audio": "twenty.mp3",
                 "editions": [
                   "Super",
                   "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "tenth",
-                  "thirty",
-                  "thirsty",
-                  "eighty",
-                  "ninety",
-                  "seventy",
-                  "city",
-                  "dirty"
                 ]
               },
               {
-                "kind": "word",
+                "word": "twenty-one",
+                "meaning": "二十一",
+                "image": "num_021_twenty_one.webp",
+                "audio": "twenty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-two",
+                "meaning": "二十二",
+                "image": "num_022_twenty_two.webp",
+                "audio": "twenty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-three",
+                "meaning": "二十三",
+                "image": "num_023_twenty_three.webp",
+                "audio": "twenty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-four",
+                "meaning": "二十四",
+                "image": "num_024_twenty_four.webp",
+                "audio": "twenty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "twenty-five",
-                "sentence": "twenty-five",
                 "meaning": "二十五",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_025_twenty_five.webp",
                 "audio": "twenty_five.mp3",
                 "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "twenty-nine",
-                  "thirty-five",
-                  "fifty-five",
-                  "forty-five"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
+                "word": "twenty-six",
+                "meaning": "二十六",
+                "image": "num_026_twenty_six.webp",
+                "audio": "twenty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-seven",
+                "meaning": "二十七",
+                "image": "num_027_twenty_seven.webp",
+                "audio": "twenty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-eight",
+                "meaning": "二十八",
+                "image": "num_028_twenty_eight.webp",
+                "audio": "twenty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-nine",
+                "meaning": "二十九",
+                "image": "num_029_twenty_nine.webp",
+                "audio": "twenty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "thirty",
-                "sentence": "thirty",
                 "meaning": "三十",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_030_thirty.webp",
                 "audio": "thirty.mp3",
                 "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "thirsty",
-                  "dirty",
-                  "third",
-                  "T-shirt",
-                  "twenty",
-                  "shirt",
-                  "eighty",
-                  "ninety"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
+                "word": "thirty-one",
+                "meaning": "三十一",
+                "image": "num_031_thirty_one.webp",
+                "audio": "thirty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-two",
+                "meaning": "三十二",
+                "image": "num_032_thirty_two.webp",
+                "audio": "thirty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-three",
+                "meaning": "三十三",
+                "image": "num_033_thirty_three.webp",
+                "audio": "thirty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-four",
+                "meaning": "三十四",
+                "image": "num_034_thirty_four.webp",
+                "audio": "thirty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-five",
+                "meaning": "三十五",
+                "image": "num_035_thirty_five.webp",
+                "audio": "thirty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-six",
+                "meaning": "三十六",
+                "image": "num_036_thirty_six.webp",
+                "audio": "thirty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-seven",
+                "meaning": "三十七",
+                "image": "num_037_thirty_seven.webp",
+                "audio": "thirty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-eight",
+                "meaning": "三十八",
+                "image": "num_038_thirty_eight.webp",
+                "audio": "thirty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-nine",
+                "meaning": "三十九",
+                "image": "num_039_thirty_nine.webp",
+                "audio": "thirty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "forty",
-                "sentence": "forty",
                 "meaning": "四十",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_040_forty.webp",
                 "audio": "forty.mp3",
                 "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "fifty",
-                  "dirty",
-                  "party",
-                  "foggy",
-                  "foot",
-                  "fork",
-                  "fourth",
-                  "kitty"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
+                "word": "forty-one",
+                "meaning": "四十一",
+                "image": "num_041_forty_one.webp",
+                "audio": "forty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-two",
+                "meaning": "四十二",
+                "image": "num_042_forty_two.webp",
+                "audio": "forty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-three",
+                "meaning": "四十三",
+                "image": "num_043_forty_three.webp",
+                "audio": "forty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-four",
+                "meaning": "四十四",
+                "image": "num_044_forty_four.webp",
+                "audio": "forty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-five",
+                "meaning": "四十五",
+                "image": "num_045_forty_five.webp",
+                "audio": "forty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-six",
+                "meaning": "四十六",
+                "image": "num_046_forty_six.webp",
+                "audio": "forty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-seven",
+                "meaning": "四十七",
+                "image": "num_047_forty_seven.webp",
+                "audio": "forty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-eight",
+                "meaning": "四十八",
+                "image": "num_048_forty_eight.webp",
+                "audio": "forty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-nine",
+                "meaning": "四十九",
+                "image": "num_049_forty_nine.webp",
+                "audio": "forty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "fifty",
-                "sentence": "fifty",
                 "meaning": "五十",
-                "sourceUnit": "4年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_050_fifty.webp",
                 "audio": "fifty.mp3",
                 "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "fifth",
-                  "forty",
-                  "dirty",
-                  "kitty",
-                  "sixty",
-                  "city",
-                  "gift",
-                  "party"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               }
             ],
@@ -25639,577 +25731,561 @@ const NOVA_GALAXY_PLANETS = [
           },
           {
             "id": "numbers_下學期",
-            "title": "數字 21–30 與 60–100",
+            "title": "數字 51–100 完整收錄",
             "subtitle": "下學期・26 個數字",
             "category": "numbers",
             "semester": "下學期",
-            "examHalf": "midterm",
+            "examHalf": "final",
             "badgeIcon": "🔢",
             "words": [
               {
-                "kind": "word",
-                "word": "three",
-                "sentence": "three",
-                "meaning": "三",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_003_three.webp",
-                "audio": "three.mp3",
-                "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "tree",
-                  "there",
-                  "these",
-                  "thief",
-                  "those",
-                  "tired",
-                  "bee",
-                  "knee"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "five",
-                "sentence": "five",
-                "meaning": "五",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_005_five.webp",
-                "audio": "five.mp3",
-                "editions": [
-                  "Super"
-                ],
-                "similarWords": [
-                  "have",
-                  "love",
-                  "wave",
-                  "fish",
-                  "fix",
-                  "fuse",
-                  "fifth",
-                  "fever"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "ten",
-                "sentence": "ten",
-                "meaning": "十",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_010_ten.webp",
-                "audio": "ten.mp3",
-                "editions": [
-                  "Super"
-                ],
-                "similarWords": [
-                  "den",
-                  "teen",
-                  "hen",
-                  "pen",
-                  "tea",
-                  "tenth",
-                  "when",
-                  "tag"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "eleven",
-                "sentence": "eleven",
-                "meaning": "十一",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_011_eleven.webp",
-                "audio": "eleven.mp3",
-                "editions": [
-                  "Super"
-                ],
-                "similarWords": [
-                  "seven",
-                  "eighteen",
-                  "garden",
-                  "green",
-                  "queen",
-                  "teen",
-                  "between",
-                  "den"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "twelve",
-                "sentence": "twelve",
-                "meaning": "十二",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_012_twelve.webp",
-                "audio": "twelve.mp3",
-                "editions": [
-                  "Super"
-                ],
-                "similarWords": [
-                  "wave",
-                  "five",
-                  "have",
-                  "love",
-                  "fifty-five",
-                  "forty-five"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "twenty",
-                "sentence": "twenty",
-                "meaning": "二十",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_020_twenty.webp",
-                "audio": "twenty.mp3",
+                "word": "fifty-one",
+                "meaning": "五十一",
+                "image": "num_051_fifty_one.webp",
+                "audio": "fifty_one.mp3",
                 "editions": [
                   "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "tenth",
-                  "thirty",
-                  "thirsty",
-                  "eighty",
-                  "ninety",
-                  "seventy",
-                  "city",
-                  "dirty"
                 ]
               },
               {
-                "kind": "word",
-                "word": "twenty-one",
-                "sentence": "twenty-one",
-                "meaning": "二十一",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_021_twenty_one.webp",
-                "audio": "twenty_one.mp3",
+                "word": "fifty-two",
+                "meaning": "五十二",
+                "image": "num_052_fifty_two.webp",
+                "audio": "fifty_two.mp3",
                 "editions": [
                   "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "twenty-nine",
-                  "a candy cane",
-                  "smartphone"
                 ]
               },
               {
-                "kind": "word",
-                "word": "twenty-two",
-                "sentence": "twenty-two",
-                "meaning": "二十二",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_022_twenty_two.webp",
-                "audio": "twenty_two.mp3",
+                "word": "fifty-three",
+                "meaning": "五十三",
+                "image": "num_053_fifty_three.webp",
+                "audio": "fifty_three.mp3",
                 "editions": [
                   "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": []
-              },
-              {
-                "kind": "word",
-                "word": "twenty-three",
-                "sentence": "twenty-three",
-                "meaning": "二十三",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_023_twenty_three.webp",
-                "audio": "twenty_three.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": [
-                  "Christmas tree",
-                  "a Christmas tree"
                 ]
               },
               {
-                "kind": "word",
-                "word": "twenty-four",
-                "sentence": "twenty-four",
-                "meaning": "二十四",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_024_twenty_four.webp",
-                "audio": "twenty_four.mp3",
+                "word": "fifty-four",
+                "meaning": "五十四",
+                "image": "num_054_fifty_four.webp",
+                "audio": "fifty_four.mp3",
                 "editions": [
                   "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": []
-              },
-              {
-                "kind": "word",
-                "word": "twenty-five",
-                "sentence": "twenty-five",
-                "meaning": "二十五",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_025_twenty_five.webp",
-                "audio": "twenty_five.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": [
-                  "twenty-nine",
-                  "thirty-five",
-                  "fifty-five",
-                  "forty-five"
                 ]
               },
               {
-                "kind": "word",
-                "word": "twenty-six",
-                "sentence": "twenty-six",
-                "meaning": "二十六",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_026_twenty_six.webp",
-                "audio": "twenty_six.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": []
-              },
-              {
-                "kind": "word",
-                "word": "twenty-seven",
-                "sentence": "twenty-seven",
-                "meaning": "二十七",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_027_twenty_seven.webp",
-                "audio": "twenty_seven.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": [
-                  "thirteen",
-                  "seventeen",
-                  "eighteen",
-                  "fourteen",
-                  "nineteen"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "twenty-eight",
-                "sentence": "twenty-eight",
-                "meaning": "二十八",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_028_twenty_eight.webp",
-                "audio": "twenty_eight.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": [
-                  "last night"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "twenty-nine",
-                "sentence": "twenty-nine",
-                "meaning": "二十九",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_029_twenty_nine.webp",
-                "audio": "twenty_nine.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": [
-                  "twenty-one",
-                  "twenty-five",
-                  "a candy cane",
-                  "smartphone"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "thirty",
-                "sentence": "thirty",
-                "meaning": "三十",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_030_thirty.webp",
-                "audio": "thirty.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": [
-                  "thirsty",
-                  "dirty",
-                  "third",
-                  "T-shirt",
-                  "twenty",
-                  "shirt",
-                  "eighty",
-                  "ninety"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "thirty-five",
-                "sentence": "thirty-five",
-                "meaning": "三十五",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_035_thirty_five.webp",
-                "audio": "thirty_five.mp3",
-                "editions": [
-                  "Here"
-                ],
-                "similarWords": [
-                  "twenty-five",
-                  "fifty-five",
-                  "forty-five"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "forty",
-                "sentence": "forty",
-                "meaning": "四十",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_040_forty.webp",
-                "audio": "forty.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": [
-                  "fifty",
-                  "dirty",
-                  "party",
-                  "foggy",
-                  "foot",
-                  "fork",
-                  "fourth",
-                  "kitty"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "forty-five",
-                "sentence": "forty-five",
-                "meaning": "四十五",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_045_forty_five.webp",
-                "audio": "forty_five.mp3",
-                "editions": [
-                  "Here"
-                ],
-                "similarWords": [
-                  "fifty-five",
-                  "thirty-five",
-                  "twenty-five",
-                  "twelve"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "fifty",
-                "sentence": "fifty",
-                "meaning": "五十",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_050_fifty.webp",
-                "audio": "fifty.mp3",
-                "editions": [
-                  "Super",
-                  "Here"
-                ],
-                "similarWords": [
-                  "fifth",
-                  "forty",
-                  "dirty",
-                  "kitty",
-                  "sixty",
-                  "city",
-                  "gift",
-                  "party"
-                ]
-              },
-              {
-                "kind": "word",
                 "word": "fifty-five",
-                "sentence": "fifty-five",
                 "meaning": "五十五",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_055_fifty_five.webp",
                 "audio": "fifty_five.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "forty-five",
-                  "thirty-five",
-                  "twenty-five",
-                  "twelve"
                 ]
               },
               {
-                "kind": "word",
+                "word": "fifty-six",
+                "meaning": "五十六",
+                "image": "num_056_fifty_six.webp",
+                "audio": "fifty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-seven",
+                "meaning": "五十七",
+                "image": "num_057_fifty_seven.webp",
+                "audio": "fifty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-eight",
+                "meaning": "五十八",
+                "image": "num_058_fifty_eight.webp",
+                "audio": "fifty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-nine",
+                "meaning": "五十九",
+                "image": "num_059_fifty_nine.webp",
+                "audio": "fifty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "sixty",
-                "sentence": "sixty",
                 "meaning": "六十",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_060_sixty.webp",
                 "audio": "sixty.mp3",
                 "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "sixth",
-                  "salty",
-                  "dirty",
-                  "fifty",
-                  "kitty",
-                  "city",
-                  "sit",
-                  "six"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
+                "word": "sixty-one",
+                "meaning": "六十一",
+                "image": "num_061_sixty_one.webp",
+                "audio": "sixty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-two",
+                "meaning": "六十二",
+                "image": "num_062_sixty_two.webp",
+                "audio": "sixty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-three",
+                "meaning": "六十三",
+                "image": "num_063_sixty_three.webp",
+                "audio": "sixty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-four",
+                "meaning": "六十四",
+                "image": "num_064_sixty_four.webp",
+                "audio": "sixty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-five",
+                "meaning": "六十五",
+                "image": "num_065_sixty_five.webp",
+                "audio": "sixty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-six",
+                "meaning": "六十六",
+                "image": "num_066_sixty_six.webp",
+                "audio": "sixty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-seven",
+                "meaning": "六十七",
+                "image": "num_067_sixty_seven.webp",
+                "audio": "sixty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-eight",
+                "meaning": "六十八",
+                "image": "num_068_sixty_eight.webp",
+                "audio": "sixty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-nine",
+                "meaning": "六十九",
+                "image": "num_069_sixty_nine.webp",
+                "audio": "sixty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "seventy",
-                "sentence": "seventy",
                 "meaning": "七十",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_070_seventy.webp",
                 "audio": "seventy.mp3",
                 "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "seventh",
-                  "seven",
-                  "salty",
-                  "sixty",
-                  "thirsty",
-                  "twenty",
-                  "eighty",
-                  "ninety"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
+                "word": "seventy-one",
+                "meaning": "七十一",
+                "image": "num_071_seventy_one.webp",
+                "audio": "seventy_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-two",
+                "meaning": "七十二",
+                "image": "num_072_seventy_two.webp",
+                "audio": "seventy_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-three",
+                "meaning": "七十三",
+                "image": "num_073_seventy_three.webp",
+                "audio": "seventy_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-four",
+                "meaning": "七十四",
+                "image": "num_074_seventy_four.webp",
+                "audio": "seventy_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-five",
+                "meaning": "七十五",
+                "image": "num_075_seventy_five.webp",
+                "audio": "seventy_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-six",
+                "meaning": "七十六",
+                "image": "num_076_seventy_six.webp",
+                "audio": "seventy_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-seven",
+                "meaning": "七十七",
+                "image": "num_077_seventy_seven.webp",
+                "audio": "seventy_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-eight",
+                "meaning": "七十八",
+                "image": "num_078_seventy_eight.webp",
+                "audio": "seventy_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-nine",
+                "meaning": "七十九",
+                "image": "num_079_seventy_nine.webp",
+                "audio": "seventy_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "eighty",
-                "sentence": "eighty",
                 "meaning": "八十",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_080_eighty.webp",
                 "audio": "eighty.mp3",
                 "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "eight",
-                  "eighth",
-                  "fight",
-                  "light",
-                  "night",
-                  "right",
-                  "ninety",
-                  "thirty"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
+                "word": "eighty-one",
+                "meaning": "八十一",
+                "image": "num_081_eighty_one.webp",
+                "audio": "eighty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-two",
+                "meaning": "八十二",
+                "image": "num_082_eighty_two.webp",
+                "audio": "eighty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-three",
+                "meaning": "八十三",
+                "image": "num_083_eighty_three.webp",
+                "audio": "eighty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-four",
+                "meaning": "八十四",
+                "image": "num_084_eighty_four.webp",
+                "audio": "eighty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-five",
+                "meaning": "八十五",
+                "image": "num_085_eighty_five.webp",
+                "audio": "eighty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-six",
+                "meaning": "八十六",
+                "image": "num_086_eighty_six.webp",
+                "audio": "eighty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-seven",
+                "meaning": "八十七",
+                "image": "num_087_eighty_seven.webp",
+                "audio": "eighty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-eight",
+                "meaning": "八十八",
+                "image": "num_088_eighty_eight.webp",
+                "audio": "eighty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-nine",
+                "meaning": "八十九",
+                "image": "num_089_eighty_nine.webp",
+                "audio": "eighty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "ninety",
-                "sentence": "ninety",
                 "meaning": "九十",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_090_ninety.webp",
                 "audio": "ninety.mp3",
                 "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "nine",
-                  "ninth",
-                  "eighty",
-                  "thirty",
-                  "twenty",
-                  "city",
-                  "dirty",
-                  "fifty"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
+                "word": "ninety-one",
+                "meaning": "九十一",
+                "image": "num_091_ninety_one.webp",
+                "audio": "ninety_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-two",
+                "meaning": "九十二",
+                "image": "num_092_ninety_two.webp",
+                "audio": "ninety_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-three",
+                "meaning": "九十三",
+                "image": "num_093_ninety_three.webp",
+                "audio": "ninety_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-four",
+                "meaning": "九十四",
+                "image": "num_094_ninety_four.webp",
+                "audio": "ninety_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-five",
+                "meaning": "九十五",
+                "image": "num_095_ninety_five.webp",
+                "audio": "ninety_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-six",
+                "meaning": "九十六",
+                "image": "num_096_ninety_six.webp",
+                "audio": "ninety_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-seven",
+                "meaning": "九十七",
+                "image": "num_097_ninety_seven.webp",
+                "audio": "ninety_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-eight",
+                "meaning": "九十八",
+                "image": "num_098_ninety_eight.webp",
+                "audio": "ninety_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-nine",
+                "meaning": "九十九",
+                "image": "num_099_ninety_nine.webp",
+                "audio": "ninety_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "one hundred",
-                "sentence": "one hundred",
                 "meaning": "一百",
-                "sourceUnit": "4年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_100_one_hundred.webp",
                 "audio": "one_hundred.mp3",
                 "editions": [
-                  "Wonder"
-                ],
-                "similarWords": [
-                  "nine hundred",
-                  "six hundred",
-                  "two hundred",
-                  "five hundred",
-                  "four hundred",
-                  "hundred",
-                  "seven hundred",
-                  "three hundred"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               }
             ],
@@ -33235,7 +33311,7 @@ const NOVA_GALAXY_PLANETS = [
           },
           {
             "id": "numbers_上學期",
-            "title": "數字 10–100 整十複習",
+            "title": "數字 0–50 總匯",
             "subtitle": "上學期・12 個數字",
             "category": "numbers",
             "semester": "上學期",
@@ -33243,291 +33319,564 @@ const NOVA_GALAXY_PLANETS = [
             "badgeIcon": "🔢",
             "words": [
               {
-                "kind": "word",
+                "word": "zero",
+                "meaning": "零",
+                "image": "num_000_zero.webp",
+                "audio": "zero.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "one",
+                "meaning": "一",
+                "image": "num_001_one.webp",
+                "audio": "one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "two",
+                "meaning": "二",
+                "image": "num_002_two.webp",
+                "audio": "two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "three",
-                "sentence": "three",
-                "meaning": "三（數字）",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
+                "meaning": "三",
                 "image": "num_003_three.webp",
                 "audio": "three.mp3",
                 "editions": [
-                  "Super"
-                ],
-                "similarWords": [
-                  "tree",
-                  "there",
-                  "these",
-                  "thief",
-                  "those",
-                  "tired",
-                  "bee",
-                  "knee"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
+                "word": "four",
+                "meaning": "四",
+                "image": "num_004_four.webp",
+                "audio": "four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "five",
+                "meaning": "五",
+                "image": "num_005_five.webp",
+                "audio": "five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "six",
+                "meaning": "六",
+                "image": "num_006_six.webp",
+                "audio": "six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seven",
+                "meaning": "七",
+                "image": "num_007_seven.webp",
+                "audio": "seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eight",
+                "meaning": "八",
+                "image": "num_008_eight.webp",
+                "audio": "eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "nine",
-                "sentence": "nine",
                 "meaning": "九",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_009_nine.webp",
                 "audio": "nine.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "pine",
-                  "wine",
-                  "shine",
-                  "ninth",
-                  "June",
-                  "cone",
-                  "dune",
-                  "one"
                 ]
               },
               {
-                "kind": "word",
                 "word": "ten",
-                "sentence": "ten",
                 "meaning": "十",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_010_ten.webp",
                 "audio": "ten.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "den",
-                  "teen",
-                  "hen",
-                  "pen",
-                  "tea",
-                  "tenth",
-                  "when",
-                  "tag"
                 ]
               },
               {
-                "kind": "word",
+                "word": "eleven",
+                "meaning": "十一",
+                "image": "num_011_eleven.webp",
+                "audio": "eleven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twelve",
+                "meaning": "十二",
+                "image": "num_012_twelve.webp",
+                "audio": "twelve.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirteen",
+                "meaning": "十三",
+                "image": "num_013_thirteen.webp",
+                "audio": "thirteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fourteen",
+                "meaning": "十四",
+                "image": "num_014_fourteen.webp",
+                "audio": "fourteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifteen",
+                "meaning": "十五",
+                "image": "num_015_fifteen.webp",
+                "audio": "fifteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixteen",
+                "meaning": "十六",
+                "image": "num_016_sixteen.webp",
+                "audio": "sixteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventeen",
+                "meaning": "十七",
+                "image": "num_017_seventeen.webp",
+                "audio": "seventeen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighteen",
+                "meaning": "十八",
+                "image": "num_018_eighteen.webp",
+                "audio": "eighteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "nineteen",
+                "meaning": "十九",
+                "image": "num_019_nineteen.webp",
+                "audio": "nineteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "twenty",
-                "sentence": "twenty",
                 "meaning": "二十",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_020_twenty.webp",
                 "audio": "twenty.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "tenth",
-                  "thirty",
-                  "thirsty",
-                  "eighty",
-                  "ninety",
-                  "seventy",
-                  "city",
-                  "dirty"
                 ]
               },
               {
-                "kind": "word",
+                "word": "twenty-one",
+                "meaning": "二十一",
+                "image": "num_021_twenty_one.webp",
+                "audio": "twenty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-two",
+                "meaning": "二十二",
+                "image": "num_022_twenty_two.webp",
+                "audio": "twenty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-three",
+                "meaning": "二十三",
+                "image": "num_023_twenty_three.webp",
+                "audio": "twenty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-four",
+                "meaning": "二十四",
+                "image": "num_024_twenty_four.webp",
+                "audio": "twenty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-five",
+                "meaning": "二十五",
+                "image": "num_025_twenty_five.webp",
+                "audio": "twenty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-six",
+                "meaning": "二十六",
+                "image": "num_026_twenty_six.webp",
+                "audio": "twenty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-seven",
+                "meaning": "二十七",
+                "image": "num_027_twenty_seven.webp",
+                "audio": "twenty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-eight",
+                "meaning": "二十八",
+                "image": "num_028_twenty_eight.webp",
+                "audio": "twenty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-nine",
+                "meaning": "二十九",
+                "image": "num_029_twenty_nine.webp",
+                "audio": "twenty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "thirty",
-                "sentence": "thirty",
                 "meaning": "三十",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_030_thirty.webp",
                 "audio": "thirty.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "thirsty",
-                  "dirty",
-                  "third",
-                  "T-shirt",
-                  "twenty",
-                  "shirt",
-                  "eighty",
-                  "ninety"
                 ]
               },
               {
-                "kind": "word",
+                "word": "thirty-one",
+                "meaning": "三十一",
+                "image": "num_031_thirty_one.webp",
+                "audio": "thirty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-two",
+                "meaning": "三十二",
+                "image": "num_032_thirty_two.webp",
+                "audio": "thirty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-three",
+                "meaning": "三十三",
+                "image": "num_033_thirty_three.webp",
+                "audio": "thirty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-four",
+                "meaning": "三十四",
+                "image": "num_034_thirty_four.webp",
+                "audio": "thirty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-five",
+                "meaning": "三十五",
+                "image": "num_035_thirty_five.webp",
+                "audio": "thirty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-six",
+                "meaning": "三十六",
+                "image": "num_036_thirty_six.webp",
+                "audio": "thirty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-seven",
+                "meaning": "三十七",
+                "image": "num_037_thirty_seven.webp",
+                "audio": "thirty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-eight",
+                "meaning": "三十八",
+                "image": "num_038_thirty_eight.webp",
+                "audio": "thirty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-nine",
+                "meaning": "三十九",
+                "image": "num_039_thirty_nine.webp",
+                "audio": "thirty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "forty",
-                "sentence": "forty",
                 "meaning": "四十",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_040_forty.webp",
                 "audio": "forty.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "fifty",
-                  "dirty",
-                  "party",
-                  "foggy",
-                  "foot",
-                  "fork",
-                  "fourth",
-                  "kitty"
                 ]
               },
               {
-                "kind": "word",
+                "word": "forty-one",
+                "meaning": "四十一",
+                "image": "num_041_forty_one.webp",
+                "audio": "forty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-two",
+                "meaning": "四十二",
+                "image": "num_042_forty_two.webp",
+                "audio": "forty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-three",
+                "meaning": "四十三",
+                "image": "num_043_forty_three.webp",
+                "audio": "forty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-four",
+                "meaning": "四十四",
+                "image": "num_044_forty_four.webp",
+                "audio": "forty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-five",
+                "meaning": "四十五",
+                "image": "num_045_forty_five.webp",
+                "audio": "forty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-six",
+                "meaning": "四十六",
+                "image": "num_046_forty_six.webp",
+                "audio": "forty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-seven",
+                "meaning": "四十七",
+                "image": "num_047_forty_seven.webp",
+                "audio": "forty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-eight",
+                "meaning": "四十八",
+                "image": "num_048_forty_eight.webp",
+                "audio": "forty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-nine",
+                "meaning": "四十九",
+                "image": "num_049_forty_nine.webp",
+                "audio": "forty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "fifty",
-                "sentence": "fifty",
                 "meaning": "五十",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_050_fifty.webp",
                 "audio": "fifty.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "fifth",
-                  "forty",
-                  "dirty",
-                  "kitty",
-                  "sixty",
-                  "city",
-                  "gift",
-                  "party"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "sixty",
-                "sentence": "sixty",
-                "meaning": "六十",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_060_sixty.webp",
-                "audio": "sixty.mp3",
-                "editions": [
-                  "Here"
-                ],
-                "similarWords": [
-                  "sixth",
-                  "salty",
-                  "dirty",
-                  "fifty",
-                  "kitty",
-                  "city",
-                  "sit",
-                  "six"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "seventy",
-                "sentence": "seventy",
-                "meaning": "七十",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_070_seventy.webp",
-                "audio": "seventy.mp3",
-                "editions": [
-                  "Here"
-                ],
-                "similarWords": [
-                  "seventh",
-                  "seven",
-                  "salty",
-                  "sixty",
-                  "thirsty",
-                  "twenty",
-                  "eighty",
-                  "ninety"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "eighty",
-                "sentence": "eighty",
-                "meaning": "八十",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_080_eighty.webp",
-                "audio": "eighty.mp3",
-                "editions": [
-                  "Here"
-                ],
-                "similarWords": [
-                  "eight",
-                  "eighth",
-                  "fight",
-                  "light",
-                  "night",
-                  "right",
-                  "ninety",
-                  "thirty"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "ninety",
-                "sentence": "ninety",
-                "meaning": "九十",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_090_ninety.webp",
-                "audio": "ninety.mp3",
-                "editions": [
-                  "Here"
-                ],
-                "similarWords": [
-                  "nine",
-                  "ninth",
-                  "eighty",
-                  "thirty",
-                  "twenty",
-                  "city",
-                  "dirty",
-                  "fifty"
-                ]
-              },
-              {
-                "kind": "word",
-                "word": "one hundred",
-                "sentence": "one hundred",
-                "meaning": "一百",
-                "sourceUnit": "5年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_100_one_hundred.webp",
-                "audio": "one_hundred.mp3",
-                "editions": [
-                  "Here"
-                ],
-                "similarWords": [
-                  "nine hundred",
-                  "six hundred",
-                  "two hundred",
-                  "five hundred",
-                  "four hundred",
-                  "hundred",
-                  "seven hundred",
-                  "three hundred"
                 ]
               }
             ],
@@ -40094,83 +40443,561 @@ const NOVA_GALAXY_PLANETS = [
           },
           {
             "id": "numbers_下學期",
-            "title": "數字 100–1000 整百進階",
+            "title": "數字 51–100 與整百千",
             "subtitle": "下學期・12 個數字",
             "category": "numbers",
             "semester": "下學期",
-            "examHalf": "midterm",
+            "examHalf": "final",
             "badgeIcon": "🔢",
             "words": [
               {
-                "kind": "word",
-                "word": "three",
-                "sentence": "three",
-                "meaning": "三",
-                "sourceUnit": "5年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_003_three.webp",
-                "audio": "three.mp3",
+                "word": "fifty-one",
+                "meaning": "五十一",
+                "image": "num_051_fifty_one.webp",
+                "audio": "fifty_one.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "tree",
-                  "there",
-                  "these",
-                  "thief",
-                  "those",
-                  "tired",
-                  "bee",
-                  "knee"
                 ]
               },
               {
-                "kind": "word",
-                "word": "nine",
-                "sentence": "nine",
-                "meaning": "九（數字）",
-                "sourceUnit": "5年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_009_nine.webp",
-                "audio": "nine.mp3",
+                "word": "fifty-two",
+                "meaning": "五十二",
+                "image": "num_052_fifty_two.webp",
+                "audio": "fifty_two.mp3",
                 "editions": [
-                  "Super"
-                ],
-                "similarWords": [
-                  "pine",
-                  "wine",
-                  "shine",
-                  "ninth",
-                  "June",
-                  "cone",
-                  "dune",
-                  "one"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
+                "word": "fifty-three",
+                "meaning": "五十三",
+                "image": "num_053_fifty_three.webp",
+                "audio": "fifty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-four",
+                "meaning": "五十四",
+                "image": "num_054_fifty_four.webp",
+                "audio": "fifty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-five",
+                "meaning": "五十五",
+                "image": "num_055_fifty_five.webp",
+                "audio": "fifty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-six",
+                "meaning": "五十六",
+                "image": "num_056_fifty_six.webp",
+                "audio": "fifty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-seven",
+                "meaning": "五十七",
+                "image": "num_057_fifty_seven.webp",
+                "audio": "fifty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-eight",
+                "meaning": "五十八",
+                "image": "num_058_fifty_eight.webp",
+                "audio": "fifty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-nine",
+                "meaning": "五十九",
+                "image": "num_059_fifty_nine.webp",
+                "audio": "fifty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty",
+                "meaning": "六十",
+                "image": "num_060_sixty.webp",
+                "audio": "sixty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-one",
+                "meaning": "六十一",
+                "image": "num_061_sixty_one.webp",
+                "audio": "sixty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-two",
+                "meaning": "六十二",
+                "image": "num_062_sixty_two.webp",
+                "audio": "sixty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-three",
+                "meaning": "六十三",
+                "image": "num_063_sixty_three.webp",
+                "audio": "sixty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-four",
+                "meaning": "六十四",
+                "image": "num_064_sixty_four.webp",
+                "audio": "sixty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-five",
+                "meaning": "六十五",
+                "image": "num_065_sixty_five.webp",
+                "audio": "sixty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-six",
+                "meaning": "六十六",
+                "image": "num_066_sixty_six.webp",
+                "audio": "sixty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-seven",
+                "meaning": "六十七",
+                "image": "num_067_sixty_seven.webp",
+                "audio": "sixty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-eight",
+                "meaning": "六十八",
+                "image": "num_068_sixty_eight.webp",
+                "audio": "sixty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-nine",
+                "meaning": "六十九",
+                "image": "num_069_sixty_nine.webp",
+                "audio": "sixty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy",
+                "meaning": "七十",
+                "image": "num_070_seventy.webp",
+                "audio": "seventy.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-one",
+                "meaning": "七十一",
+                "image": "num_071_seventy_one.webp",
+                "audio": "seventy_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-two",
+                "meaning": "七十二",
+                "image": "num_072_seventy_two.webp",
+                "audio": "seventy_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-three",
+                "meaning": "七十三",
+                "image": "num_073_seventy_three.webp",
+                "audio": "seventy_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-four",
+                "meaning": "七十四",
+                "image": "num_074_seventy_four.webp",
+                "audio": "seventy_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-five",
+                "meaning": "七十五",
+                "image": "num_075_seventy_five.webp",
+                "audio": "seventy_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-six",
+                "meaning": "七十六",
+                "image": "num_076_seventy_six.webp",
+                "audio": "seventy_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-seven",
+                "meaning": "七十七",
+                "image": "num_077_seventy_seven.webp",
+                "audio": "seventy_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-eight",
+                "meaning": "七十八",
+                "image": "num_078_seventy_eight.webp",
+                "audio": "seventy_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-nine",
+                "meaning": "七十九",
+                "image": "num_079_seventy_nine.webp",
+                "audio": "seventy_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty",
+                "meaning": "八十",
+                "image": "num_080_eighty.webp",
+                "audio": "eighty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-one",
+                "meaning": "八十一",
+                "image": "num_081_eighty_one.webp",
+                "audio": "eighty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-two",
+                "meaning": "八十二",
+                "image": "num_082_eighty_two.webp",
+                "audio": "eighty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-three",
+                "meaning": "八十三",
+                "image": "num_083_eighty_three.webp",
+                "audio": "eighty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-four",
+                "meaning": "八十四",
+                "image": "num_084_eighty_four.webp",
+                "audio": "eighty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-five",
+                "meaning": "八十五",
+                "image": "num_085_eighty_five.webp",
+                "audio": "eighty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-six",
+                "meaning": "八十六",
+                "image": "num_086_eighty_six.webp",
+                "audio": "eighty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-seven",
+                "meaning": "八十七",
+                "image": "num_087_eighty_seven.webp",
+                "audio": "eighty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-eight",
+                "meaning": "八十八",
+                "image": "num_088_eighty_eight.webp",
+                "audio": "eighty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-nine",
+                "meaning": "八十九",
+                "image": "num_089_eighty_nine.webp",
+                "audio": "eighty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety",
+                "meaning": "九十",
+                "image": "num_090_ninety.webp",
+                "audio": "ninety.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-one",
+                "meaning": "九十一",
+                "image": "num_091_ninety_one.webp",
+                "audio": "ninety_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-two",
+                "meaning": "九十二",
+                "image": "num_092_ninety_two.webp",
+                "audio": "ninety_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-three",
+                "meaning": "九十三",
+                "image": "num_093_ninety_three.webp",
+                "audio": "ninety_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-four",
+                "meaning": "九十四",
+                "image": "num_094_ninety_four.webp",
+                "audio": "ninety_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-five",
+                "meaning": "九十五",
+                "image": "num_095_ninety_five.webp",
+                "audio": "ninety_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-six",
+                "meaning": "九十六",
+                "image": "num_096_ninety_six.webp",
+                "audio": "ninety_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-seven",
+                "meaning": "九十七",
+                "image": "num_097_ninety_seven.webp",
+                "audio": "ninety_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-eight",
+                "meaning": "九十八",
+                "image": "num_098_ninety_eight.webp",
+                "audio": "ninety_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-nine",
+                "meaning": "九十九",
+                "image": "num_099_ninety_nine.webp",
+                "audio": "ninety_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
                 "word": "one hundred",
-                "sentence": "one hundred",
                 "meaning": "一百",
-                "sourceUnit": "5年級下學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
                 "image": "num_100_one_hundred.webp",
                 "audio": "one_hundred.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
-                ],
-                "similarWords": [
-                  "nine hundred",
-                  "six hundred",
-                  "two hundred",
-                  "five hundred",
-                  "four hundred",
-                  "hundred",
-                  "seven hundred",
-                  "three hundred"
                 ]
               },
               {
@@ -40184,6 +41011,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "two_hundred.webp",
                 "audio": "two_hundred.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
                 ],
                 "similarWords": [
@@ -40208,6 +41037,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "three_hundred.webp",
                 "audio": "three_hundred.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
                 ],
                 "similarWords": [
@@ -40232,6 +41063,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "four_hundred.webp",
                 "audio": "four_hundred.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
                 ],
                 "similarWords": [
@@ -40256,6 +41089,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "five_hundred.webp",
                 "audio": "five_hundred.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
                 ],
                 "similarWords": [
@@ -40280,6 +41115,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "six_hundred.webp",
                 "audio": "six_hundred.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
                 ],
                 "similarWords": [
@@ -40304,6 +41141,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "seven_hundred.webp",
                 "audio": "seven_hundred.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
                 ],
                 "similarWords": [
@@ -40328,6 +41167,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "eight_hundred.webp",
                 "audio": "eight_hundred.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
                 ],
                 "similarWords": [
@@ -40352,6 +41193,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "nine_hundred.webp",
                 "audio": "nine_hundred.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
                 ],
                 "similarWords": [
@@ -40376,6 +41219,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "one_thousand.webp",
                 "audio": "one_thousand.mp3",
                 "editions": [
+                  "Super",
+                  "Wonder",
                   "Here"
                 ],
                 "similarWords": [
@@ -46255,7 +47100,7 @@ const NOVA_GALAXY_PLANETS = [
           },
           {
             "id": "numbers_上學期",
-            "title": "數字高頻複習",
+            "title": "數字 0–50 高頻複習",
             "subtitle": "上學期・2 個數字",
             "category": "numbers",
             "semester": "上學期",
@@ -46263,51 +47108,564 @@ const NOVA_GALAXY_PLANETS = [
             "badgeIcon": "🔢",
             "words": [
               {
-                "kind": "word",
-                "word": "forty",
-                "sentence": "forty",
-                "meaning": "四十（數字）",
-                "sourceUnit": "6年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_040_forty.webp",
-                "audio": "forty.mp3",
+                "word": "zero",
+                "meaning": "零",
+                "image": "num_000_zero.webp",
+                "audio": "zero.mp3",
                 "editions": [
-                  "Super"
-                ],
-                "similarWords": [
-                  "fifty",
-                  "dirty",
-                  "party",
-                  "foggy",
-                  "foot",
-                  "fork",
-                  "fourth",
-                  "kitty"
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               },
               {
-                "kind": "word",
-                "word": "hundred",
-                "sentence": "hundred",
-                "meaning": "百（數字）",
-                "sourceUnit": "6年級上學期數字",
-                "category": "numbers",
-                "examHalf": "midterm",
-                "image": "num_100_one_hundred.webp",
-                "audio": "one_hundred.mp3",
+                "word": "one",
+                "meaning": "一",
+                "image": "num_001_one.webp",
+                "audio": "one.mp3",
                 "editions": [
-                  "Super"
-                ],
-                "similarWords": [
-                  "helped",
-                  "go to bed",
-                  "shouted",
-                  "visited",
-                  "watched",
-                  "landed",
-                  "one hundred",
-                  "six hundred"
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "two",
+                "meaning": "二",
+                "image": "num_002_two.webp",
+                "audio": "two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "three",
+                "meaning": "三",
+                "image": "num_003_three.webp",
+                "audio": "three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "four",
+                "meaning": "四",
+                "image": "num_004_four.webp",
+                "audio": "four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "five",
+                "meaning": "五",
+                "image": "num_005_five.webp",
+                "audio": "five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "six",
+                "meaning": "六",
+                "image": "num_006_six.webp",
+                "audio": "six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seven",
+                "meaning": "七",
+                "image": "num_007_seven.webp",
+                "audio": "seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eight",
+                "meaning": "八",
+                "image": "num_008_eight.webp",
+                "audio": "eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "nine",
+                "meaning": "九",
+                "image": "num_009_nine.webp",
+                "audio": "nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ten",
+                "meaning": "十",
+                "image": "num_010_ten.webp",
+                "audio": "ten.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eleven",
+                "meaning": "十一",
+                "image": "num_011_eleven.webp",
+                "audio": "eleven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twelve",
+                "meaning": "十二",
+                "image": "num_012_twelve.webp",
+                "audio": "twelve.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirteen",
+                "meaning": "十三",
+                "image": "num_013_thirteen.webp",
+                "audio": "thirteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fourteen",
+                "meaning": "十四",
+                "image": "num_014_fourteen.webp",
+                "audio": "fourteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifteen",
+                "meaning": "十五",
+                "image": "num_015_fifteen.webp",
+                "audio": "fifteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixteen",
+                "meaning": "十六",
+                "image": "num_016_sixteen.webp",
+                "audio": "sixteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventeen",
+                "meaning": "十七",
+                "image": "num_017_seventeen.webp",
+                "audio": "seventeen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighteen",
+                "meaning": "十八",
+                "image": "num_018_eighteen.webp",
+                "audio": "eighteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "nineteen",
+                "meaning": "十九",
+                "image": "num_019_nineteen.webp",
+                "audio": "nineteen.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty",
+                "meaning": "二十",
+                "image": "num_020_twenty.webp",
+                "audio": "twenty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-one",
+                "meaning": "二十一",
+                "image": "num_021_twenty_one.webp",
+                "audio": "twenty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-two",
+                "meaning": "二十二",
+                "image": "num_022_twenty_two.webp",
+                "audio": "twenty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-three",
+                "meaning": "二十三",
+                "image": "num_023_twenty_three.webp",
+                "audio": "twenty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-four",
+                "meaning": "二十四",
+                "image": "num_024_twenty_four.webp",
+                "audio": "twenty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-five",
+                "meaning": "二十五",
+                "image": "num_025_twenty_five.webp",
+                "audio": "twenty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-six",
+                "meaning": "二十六",
+                "image": "num_026_twenty_six.webp",
+                "audio": "twenty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-seven",
+                "meaning": "二十七",
+                "image": "num_027_twenty_seven.webp",
+                "audio": "twenty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-eight",
+                "meaning": "二十八",
+                "image": "num_028_twenty_eight.webp",
+                "audio": "twenty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-nine",
+                "meaning": "二十九",
+                "image": "num_029_twenty_nine.webp",
+                "audio": "twenty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty",
+                "meaning": "三十",
+                "image": "num_030_thirty.webp",
+                "audio": "thirty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-one",
+                "meaning": "三十一",
+                "image": "num_031_thirty_one.webp",
+                "audio": "thirty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-two",
+                "meaning": "三十二",
+                "image": "num_032_thirty_two.webp",
+                "audio": "thirty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-three",
+                "meaning": "三十三",
+                "image": "num_033_thirty_three.webp",
+                "audio": "thirty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-four",
+                "meaning": "三十四",
+                "image": "num_034_thirty_four.webp",
+                "audio": "thirty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-five",
+                "meaning": "三十五",
+                "image": "num_035_thirty_five.webp",
+                "audio": "thirty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-six",
+                "meaning": "三十六",
+                "image": "num_036_thirty_six.webp",
+                "audio": "thirty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-seven",
+                "meaning": "三十七",
+                "image": "num_037_thirty_seven.webp",
+                "audio": "thirty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-eight",
+                "meaning": "三十八",
+                "image": "num_038_thirty_eight.webp",
+                "audio": "thirty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-nine",
+                "meaning": "三十九",
+                "image": "num_039_thirty_nine.webp",
+                "audio": "thirty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty",
+                "meaning": "四十",
+                "image": "num_040_forty.webp",
+                "audio": "forty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-one",
+                "meaning": "四十一",
+                "image": "num_041_forty_one.webp",
+                "audio": "forty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-two",
+                "meaning": "四十二",
+                "image": "num_042_forty_two.webp",
+                "audio": "forty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-three",
+                "meaning": "四十三",
+                "image": "num_043_forty_three.webp",
+                "audio": "forty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-four",
+                "meaning": "四十四",
+                "image": "num_044_forty_four.webp",
+                "audio": "forty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-five",
+                "meaning": "四十五",
+                "image": "num_045_forty_five.webp",
+                "audio": "forty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-six",
+                "meaning": "四十六",
+                "image": "num_046_forty_six.webp",
+                "audio": "forty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-seven",
+                "meaning": "四十七",
+                "image": "num_047_forty_seven.webp",
+                "audio": "forty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-eight",
+                "meaning": "四十八",
+                "image": "num_048_forty_eight.webp",
+                "audio": "forty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-nine",
+                "meaning": "四十九",
+                "image": "num_049_forty_nine.webp",
+                "audio": "forty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty",
+                "meaning": "五十",
+                "image": "num_050_fifty.webp",
+                "audio": "fifty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
                 ]
               }
             ],
@@ -52787,6 +54145,566 @@ const NOVA_GALAXY_PLANETS = [
                 ]
               }
             ]
+          },
+          {
+            "id": "numbers_下學期",
+            "title": "數字 51–100 高頻複習",
+            "category": "numbers",
+            "badgeIcon": "🔢",
+            "examHalf": "final",
+            "words": [
+              {
+                "word": "fifty-one",
+                "meaning": "五十一",
+                "image": "num_051_fifty_one.webp",
+                "audio": "fifty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-two",
+                "meaning": "五十二",
+                "image": "num_052_fifty_two.webp",
+                "audio": "fifty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-three",
+                "meaning": "五十三",
+                "image": "num_053_fifty_three.webp",
+                "audio": "fifty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-four",
+                "meaning": "五十四",
+                "image": "num_054_fifty_four.webp",
+                "audio": "fifty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-five",
+                "meaning": "五十五",
+                "image": "num_055_fifty_five.webp",
+                "audio": "fifty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-six",
+                "meaning": "五十六",
+                "image": "num_056_fifty_six.webp",
+                "audio": "fifty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-seven",
+                "meaning": "五十七",
+                "image": "num_057_fifty_seven.webp",
+                "audio": "fifty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-eight",
+                "meaning": "五十八",
+                "image": "num_058_fifty_eight.webp",
+                "audio": "fifty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-nine",
+                "meaning": "五十九",
+                "image": "num_059_fifty_nine.webp",
+                "audio": "fifty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty",
+                "meaning": "六十",
+                "image": "num_060_sixty.webp",
+                "audio": "sixty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-one",
+                "meaning": "六十一",
+                "image": "num_061_sixty_one.webp",
+                "audio": "sixty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-two",
+                "meaning": "六十二",
+                "image": "num_062_sixty_two.webp",
+                "audio": "sixty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-three",
+                "meaning": "六十三",
+                "image": "num_063_sixty_three.webp",
+                "audio": "sixty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-four",
+                "meaning": "六十四",
+                "image": "num_064_sixty_four.webp",
+                "audio": "sixty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-five",
+                "meaning": "六十五",
+                "image": "num_065_sixty_five.webp",
+                "audio": "sixty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-six",
+                "meaning": "六十六",
+                "image": "num_066_sixty_six.webp",
+                "audio": "sixty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-seven",
+                "meaning": "六十七",
+                "image": "num_067_sixty_seven.webp",
+                "audio": "sixty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-eight",
+                "meaning": "六十八",
+                "image": "num_068_sixty_eight.webp",
+                "audio": "sixty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-nine",
+                "meaning": "六十九",
+                "image": "num_069_sixty_nine.webp",
+                "audio": "sixty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy",
+                "meaning": "七十",
+                "image": "num_070_seventy.webp",
+                "audio": "seventy.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-one",
+                "meaning": "七十一",
+                "image": "num_071_seventy_one.webp",
+                "audio": "seventy_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-two",
+                "meaning": "七十二",
+                "image": "num_072_seventy_two.webp",
+                "audio": "seventy_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-three",
+                "meaning": "七十三",
+                "image": "num_073_seventy_three.webp",
+                "audio": "seventy_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-four",
+                "meaning": "七十四",
+                "image": "num_074_seventy_four.webp",
+                "audio": "seventy_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-five",
+                "meaning": "七十五",
+                "image": "num_075_seventy_five.webp",
+                "audio": "seventy_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-six",
+                "meaning": "七十六",
+                "image": "num_076_seventy_six.webp",
+                "audio": "seventy_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-seven",
+                "meaning": "七十七",
+                "image": "num_077_seventy_seven.webp",
+                "audio": "seventy_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-eight",
+                "meaning": "七十八",
+                "image": "num_078_seventy_eight.webp",
+                "audio": "seventy_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-nine",
+                "meaning": "七十九",
+                "image": "num_079_seventy_nine.webp",
+                "audio": "seventy_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty",
+                "meaning": "八十",
+                "image": "num_080_eighty.webp",
+                "audio": "eighty.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-one",
+                "meaning": "八十一",
+                "image": "num_081_eighty_one.webp",
+                "audio": "eighty_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-two",
+                "meaning": "八十二",
+                "image": "num_082_eighty_two.webp",
+                "audio": "eighty_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-three",
+                "meaning": "八十三",
+                "image": "num_083_eighty_three.webp",
+                "audio": "eighty_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-four",
+                "meaning": "八十四",
+                "image": "num_084_eighty_four.webp",
+                "audio": "eighty_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-five",
+                "meaning": "八十五",
+                "image": "num_085_eighty_five.webp",
+                "audio": "eighty_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-six",
+                "meaning": "八十六",
+                "image": "num_086_eighty_six.webp",
+                "audio": "eighty_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-seven",
+                "meaning": "八十七",
+                "image": "num_087_eighty_seven.webp",
+                "audio": "eighty_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-eight",
+                "meaning": "八十八",
+                "image": "num_088_eighty_eight.webp",
+                "audio": "eighty_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-nine",
+                "meaning": "八十九",
+                "image": "num_089_eighty_nine.webp",
+                "audio": "eighty_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety",
+                "meaning": "九十",
+                "image": "num_090_ninety.webp",
+                "audio": "ninety.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-one",
+                "meaning": "九十一",
+                "image": "num_091_ninety_one.webp",
+                "audio": "ninety_one.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-two",
+                "meaning": "九十二",
+                "image": "num_092_ninety_two.webp",
+                "audio": "ninety_two.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-three",
+                "meaning": "九十三",
+                "image": "num_093_ninety_three.webp",
+                "audio": "ninety_three.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-four",
+                "meaning": "九十四",
+                "image": "num_094_ninety_four.webp",
+                "audio": "ninety_four.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-five",
+                "meaning": "九十五",
+                "image": "num_095_ninety_five.webp",
+                "audio": "ninety_five.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-six",
+                "meaning": "九十六",
+                "image": "num_096_ninety_six.webp",
+                "audio": "ninety_six.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-seven",
+                "meaning": "九十七",
+                "image": "num_097_ninety_seven.webp",
+                "audio": "ninety_seven.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-eight",
+                "meaning": "九十八",
+                "image": "num_098_ninety_eight.webp",
+                "audio": "ninety_eight.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-nine",
+                "meaning": "九十九",
+                "image": "num_099_ninety_nine.webp",
+                "audio": "ninety_nine.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "one hundred",
+                "meaning": "一百",
+                "image": "num_100_one_hundred.webp",
+                "audio": "one_hundred.mp3",
+                "editions": [
+                  "Super",
+                  "Wonder",
+                  "Here"
+                ]
+              }
+            ],
+            "sentences": []
           }
         ]
       }
@@ -56674,6 +58592,1026 @@ const NOVA_GALAXY_PLANETS = [
               }
             ],
             "sentences": []
+          },
+          {
+            "id": "numbers_上學期",
+            "title": "數字 0–100 全覽複習",
+            "category": "numbers",
+            "badgeIcon": "🔢",
+            "examHalf": "midterm",
+            "words": [
+              {
+                "word": "zero",
+                "meaning": "零",
+                "image": "num_000_zero.webp",
+                "audio": "zero.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "one",
+                "meaning": "一",
+                "image": "num_001_one.webp",
+                "audio": "one.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "two",
+                "meaning": "二",
+                "image": "num_002_two.webp",
+                "audio": "two.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "three",
+                "meaning": "三",
+                "image": "num_003_three.webp",
+                "audio": "three.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "four",
+                "meaning": "四",
+                "image": "num_004_four.webp",
+                "audio": "four.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "five",
+                "meaning": "五",
+                "image": "num_005_five.webp",
+                "audio": "five.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "six",
+                "meaning": "六",
+                "image": "num_006_six.webp",
+                "audio": "six.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seven",
+                "meaning": "七",
+                "image": "num_007_seven.webp",
+                "audio": "seven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eight",
+                "meaning": "八",
+                "image": "num_008_eight.webp",
+                "audio": "eight.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "nine",
+                "meaning": "九",
+                "image": "num_009_nine.webp",
+                "audio": "nine.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ten",
+                "meaning": "十",
+                "image": "num_010_ten.webp",
+                "audio": "ten.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eleven",
+                "meaning": "十一",
+                "image": "num_011_eleven.webp",
+                "audio": "eleven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twelve",
+                "meaning": "十二",
+                "image": "num_012_twelve.webp",
+                "audio": "twelve.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirteen",
+                "meaning": "十三",
+                "image": "num_013_thirteen.webp",
+                "audio": "thirteen.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fourteen",
+                "meaning": "十四",
+                "image": "num_014_fourteen.webp",
+                "audio": "fourteen.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifteen",
+                "meaning": "十五",
+                "image": "num_015_fifteen.webp",
+                "audio": "fifteen.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixteen",
+                "meaning": "十六",
+                "image": "num_016_sixteen.webp",
+                "audio": "sixteen.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventeen",
+                "meaning": "十七",
+                "image": "num_017_seventeen.webp",
+                "audio": "seventeen.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighteen",
+                "meaning": "十八",
+                "image": "num_018_eighteen.webp",
+                "audio": "eighteen.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "nineteen",
+                "meaning": "十九",
+                "image": "num_019_nineteen.webp",
+                "audio": "nineteen.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty",
+                "meaning": "二十",
+                "image": "num_020_twenty.webp",
+                "audio": "twenty.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-one",
+                "meaning": "二十一",
+                "image": "num_021_twenty_one.webp",
+                "audio": "twenty_one.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-two",
+                "meaning": "二十二",
+                "image": "num_022_twenty_two.webp",
+                "audio": "twenty_two.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-three",
+                "meaning": "二十三",
+                "image": "num_023_twenty_three.webp",
+                "audio": "twenty_three.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-four",
+                "meaning": "二十四",
+                "image": "num_024_twenty_four.webp",
+                "audio": "twenty_four.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-five",
+                "meaning": "二十五",
+                "image": "num_025_twenty_five.webp",
+                "audio": "twenty_five.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-six",
+                "meaning": "二十六",
+                "image": "num_026_twenty_six.webp",
+                "audio": "twenty_six.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-seven",
+                "meaning": "二十七",
+                "image": "num_027_twenty_seven.webp",
+                "audio": "twenty_seven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-eight",
+                "meaning": "二十八",
+                "image": "num_028_twenty_eight.webp",
+                "audio": "twenty_eight.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "twenty-nine",
+                "meaning": "二十九",
+                "image": "num_029_twenty_nine.webp",
+                "audio": "twenty_nine.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty",
+                "meaning": "三十",
+                "image": "num_030_thirty.webp",
+                "audio": "thirty.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-one",
+                "meaning": "三十一",
+                "image": "num_031_thirty_one.webp",
+                "audio": "thirty_one.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-two",
+                "meaning": "三十二",
+                "image": "num_032_thirty_two.webp",
+                "audio": "thirty_two.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-three",
+                "meaning": "三十三",
+                "image": "num_033_thirty_three.webp",
+                "audio": "thirty_three.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-four",
+                "meaning": "三十四",
+                "image": "num_034_thirty_four.webp",
+                "audio": "thirty_four.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-five",
+                "meaning": "三十五",
+                "image": "num_035_thirty_five.webp",
+                "audio": "thirty_five.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-six",
+                "meaning": "三十六",
+                "image": "num_036_thirty_six.webp",
+                "audio": "thirty_six.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-seven",
+                "meaning": "三十七",
+                "image": "num_037_thirty_seven.webp",
+                "audio": "thirty_seven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-eight",
+                "meaning": "三十八",
+                "image": "num_038_thirty_eight.webp",
+                "audio": "thirty_eight.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "thirty-nine",
+                "meaning": "三十九",
+                "image": "num_039_thirty_nine.webp",
+                "audio": "thirty_nine.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty",
+                "meaning": "四十",
+                "image": "num_040_forty.webp",
+                "audio": "forty.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-one",
+                "meaning": "四十一",
+                "image": "num_041_forty_one.webp",
+                "audio": "forty_one.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-two",
+                "meaning": "四十二",
+                "image": "num_042_forty_two.webp",
+                "audio": "forty_two.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-three",
+                "meaning": "四十三",
+                "image": "num_043_forty_three.webp",
+                "audio": "forty_three.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-four",
+                "meaning": "四十四",
+                "image": "num_044_forty_four.webp",
+                "audio": "forty_four.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-five",
+                "meaning": "四十五",
+                "image": "num_045_forty_five.webp",
+                "audio": "forty_five.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-six",
+                "meaning": "四十六",
+                "image": "num_046_forty_six.webp",
+                "audio": "forty_six.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-seven",
+                "meaning": "四十七",
+                "image": "num_047_forty_seven.webp",
+                "audio": "forty_seven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-eight",
+                "meaning": "四十八",
+                "image": "num_048_forty_eight.webp",
+                "audio": "forty_eight.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "forty-nine",
+                "meaning": "四十九",
+                "image": "num_049_forty_nine.webp",
+                "audio": "forty_nine.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty",
+                "meaning": "五十",
+                "image": "num_050_fifty.webp",
+                "audio": "fifty.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-one",
+                "meaning": "五十一",
+                "image": "num_051_fifty_one.webp",
+                "audio": "fifty_one.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-two",
+                "meaning": "五十二",
+                "image": "num_052_fifty_two.webp",
+                "audio": "fifty_two.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-three",
+                "meaning": "五十三",
+                "image": "num_053_fifty_three.webp",
+                "audio": "fifty_three.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-four",
+                "meaning": "五十四",
+                "image": "num_054_fifty_four.webp",
+                "audio": "fifty_four.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-five",
+                "meaning": "五十五",
+                "image": "num_055_fifty_five.webp",
+                "audio": "fifty_five.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-six",
+                "meaning": "五十六",
+                "image": "num_056_fifty_six.webp",
+                "audio": "fifty_six.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-seven",
+                "meaning": "五十七",
+                "image": "num_057_fifty_seven.webp",
+                "audio": "fifty_seven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-eight",
+                "meaning": "五十八",
+                "image": "num_058_fifty_eight.webp",
+                "audio": "fifty_eight.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "fifty-nine",
+                "meaning": "五十九",
+                "image": "num_059_fifty_nine.webp",
+                "audio": "fifty_nine.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty",
+                "meaning": "六十",
+                "image": "num_060_sixty.webp",
+                "audio": "sixty.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-one",
+                "meaning": "六十一",
+                "image": "num_061_sixty_one.webp",
+                "audio": "sixty_one.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-two",
+                "meaning": "六十二",
+                "image": "num_062_sixty_two.webp",
+                "audio": "sixty_two.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-three",
+                "meaning": "六十三",
+                "image": "num_063_sixty_three.webp",
+                "audio": "sixty_three.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-four",
+                "meaning": "六十四",
+                "image": "num_064_sixty_four.webp",
+                "audio": "sixty_four.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-five",
+                "meaning": "六十五",
+                "image": "num_065_sixty_five.webp",
+                "audio": "sixty_five.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-six",
+                "meaning": "六十六",
+                "image": "num_066_sixty_six.webp",
+                "audio": "sixty_six.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-seven",
+                "meaning": "六十七",
+                "image": "num_067_sixty_seven.webp",
+                "audio": "sixty_seven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-eight",
+                "meaning": "六十八",
+                "image": "num_068_sixty_eight.webp",
+                "audio": "sixty_eight.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "sixty-nine",
+                "meaning": "六十九",
+                "image": "num_069_sixty_nine.webp",
+                "audio": "sixty_nine.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy",
+                "meaning": "七十",
+                "image": "num_070_seventy.webp",
+                "audio": "seventy.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-one",
+                "meaning": "七十一",
+                "image": "num_071_seventy_one.webp",
+                "audio": "seventy_one.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-two",
+                "meaning": "七十二",
+                "image": "num_072_seventy_two.webp",
+                "audio": "seventy_two.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-three",
+                "meaning": "七十三",
+                "image": "num_073_seventy_three.webp",
+                "audio": "seventy_three.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-four",
+                "meaning": "七十四",
+                "image": "num_074_seventy_four.webp",
+                "audio": "seventy_four.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-five",
+                "meaning": "七十五",
+                "image": "num_075_seventy_five.webp",
+                "audio": "seventy_five.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-six",
+                "meaning": "七十六",
+                "image": "num_076_seventy_six.webp",
+                "audio": "seventy_six.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-seven",
+                "meaning": "七十七",
+                "image": "num_077_seventy_seven.webp",
+                "audio": "seventy_seven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-eight",
+                "meaning": "七十八",
+                "image": "num_078_seventy_eight.webp",
+                "audio": "seventy_eight.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "seventy-nine",
+                "meaning": "七十九",
+                "image": "num_079_seventy_nine.webp",
+                "audio": "seventy_nine.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty",
+                "meaning": "八十",
+                "image": "num_080_eighty.webp",
+                "audio": "eighty.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-one",
+                "meaning": "八十一",
+                "image": "num_081_eighty_one.webp",
+                "audio": "eighty_one.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-two",
+                "meaning": "八十二",
+                "image": "num_082_eighty_two.webp",
+                "audio": "eighty_two.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-three",
+                "meaning": "八十三",
+                "image": "num_083_eighty_three.webp",
+                "audio": "eighty_three.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-four",
+                "meaning": "八十四",
+                "image": "num_084_eighty_four.webp",
+                "audio": "eighty_four.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-five",
+                "meaning": "八十五",
+                "image": "num_085_eighty_five.webp",
+                "audio": "eighty_five.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-six",
+                "meaning": "八十六",
+                "image": "num_086_eighty_six.webp",
+                "audio": "eighty_six.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-seven",
+                "meaning": "八十七",
+                "image": "num_087_eighty_seven.webp",
+                "audio": "eighty_seven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-eight",
+                "meaning": "八十八",
+                "image": "num_088_eighty_eight.webp",
+                "audio": "eighty_eight.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "eighty-nine",
+                "meaning": "八十九",
+                "image": "num_089_eighty_nine.webp",
+                "audio": "eighty_nine.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety",
+                "meaning": "九十",
+                "image": "num_090_ninety.webp",
+                "audio": "ninety.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-one",
+                "meaning": "九十一",
+                "image": "num_091_ninety_one.webp",
+                "audio": "ninety_one.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-two",
+                "meaning": "九十二",
+                "image": "num_092_ninety_two.webp",
+                "audio": "ninety_two.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-three",
+                "meaning": "九十三",
+                "image": "num_093_ninety_three.webp",
+                "audio": "ninety_three.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-four",
+                "meaning": "九十四",
+                "image": "num_094_ninety_four.webp",
+                "audio": "ninety_four.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-five",
+                "meaning": "九十五",
+                "image": "num_095_ninety_five.webp",
+                "audio": "ninety_five.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-six",
+                "meaning": "九十六",
+                "image": "num_096_ninety_six.webp",
+                "audio": "ninety_six.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-seven",
+                "meaning": "九十七",
+                "image": "num_097_ninety_seven.webp",
+                "audio": "ninety_seven.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-eight",
+                "meaning": "九十八",
+                "image": "num_098_ninety_eight.webp",
+                "audio": "ninety_eight.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "ninety-nine",
+                "meaning": "九十九",
+                "image": "num_099_ninety_nine.webp",
+                "audio": "ninety_nine.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              },
+              {
+                "word": "one hundred",
+                "meaning": "一百",
+                "image": "num_100_one_hundred.webp",
+                "audio": "one_hundred.mp3",
+                "editions": [
+                  "Wonder",
+                  "Here"
+                ]
+              }
+            ],
+            "sentences": []
           }
         ]
       },
@@ -60557,7 +63495,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "first.webp",
                 "audio": "first.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "fest",
@@ -60581,7 +63520,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "second.webp",
                 "audio": "second.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "behind",
@@ -60600,7 +63540,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "third.webp",
                 "audio": "third.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "bird",
@@ -60624,7 +63565,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "fourth.webp",
                 "audio": "fourth.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "four",
@@ -60648,7 +63590,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "fifth.webp",
                 "audio": "fifth.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "fifty",
@@ -60672,7 +63615,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "sixth.webp",
                 "audio": "sixth.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "sixty",
@@ -60696,7 +63640,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "seventh.webp",
                 "audio": "seventh.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "seventy",
@@ -60720,7 +63665,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "eighth.webp",
                 "audio": "eighth.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "eight",
@@ -60744,7 +63690,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "ninth.webp",
                 "audio": "ninth.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "nine",
@@ -60768,7 +63715,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "tenth.webp",
                 "audio": "tenth.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarWords": [
                   "teeth",

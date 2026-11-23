@@ -311,6 +311,17 @@ function enterPlanetWorld(planetId, preferredSemester) {
   document.getElementById("galaxy-wrapper").style.display = "none";
   document.getElementById("main-app").style.display = "block";
 
+  if (planetId === "planet6" && currentEditionFilter === "Super") {
+    currentEditionFilter = "ALL";
+  }
+  ["world-ed-btn-Super", "ed-btn-Super"].forEach(id => {
+    const b = document.getElementById(id);
+    if (!b) return;
+    const isAdv = planetId === "planet6";
+    b.disabled = isAdv;
+    b.style.opacity = isAdv ? "0.35" : "";
+    b.title = isAdv ? "進階榮耀星僅收錄 Wonder / Here 版本" : "";
+  });
   updateHemisphereHUD();
   setGlobalEditionFilter(currentEditionFilter);
   if (typeof init3DWorld === "function") init3DWorld(currentBook, currentSemester);
