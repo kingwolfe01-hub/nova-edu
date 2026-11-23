@@ -188,6 +188,7 @@
           <button type="button" onclick="window._stepNovaCard(1)" class="px-4 py-2 rounded-xl bg-slate-800 text-white font-black text-xs">下一張 ▶</button>
         </div>
         <div class="mt-5 pt-4 border-t border-slate-100 flex flex-wrap justify-center gap-1.5">${thumbsHtml}</div>
+        ${(cardIdx === cardList.length - 1 && typeof window.renderNextPracticePromptHtml === "function") ? window.renderNextPracticePromptHtml("vocab_cards") : ""}
       </div>`;
     playItemAudio(item);
   }
@@ -216,7 +217,8 @@
         <div class="text-center py-6">
           <div class="text-4xl font-black text-emerald-600">${pct} 分</div>
           <div class="text-sm font-bold text-slate-600 mt-1">聽音辨圖完成｜答對 ${liScore} / ${liQueue.length} 題</div>
-          <div class="flex justify-center gap-2 mt-4"><button type="button" onclick="startListenToImageQuiz(currentVocabList)" class="px-5 py-2.5 rounded-xl bg-emerald-500 text-slate-950 font-black text-xs">🔄 再測一次</button><button type="button" onclick="backToActiveUnitModal()" class="px-5 py-2.5 rounded-xl bg-sky-500 text-slate-950 font-black text-xs">↩️ 回本單元選單</button></div>
+          ${typeof window.renderNextPracticePromptHtml === "function" ? window.renderNextPracticePromptHtml("listen_image") : ""}
+          <div class="flex justify-center gap-2 mt-4"><button type="button" onclick="backToActiveUnitModal()" class="px-5 py-2.5 rounded-xl bg-slate-200 text-slate-800 font-black text-xs">↩️ 回本單元選單</button></div>
         </div>`;
       return;
     }
@@ -276,7 +278,8 @@
         <div class="text-center py-6">
           <div class="text-4xl font-black text-amber-600">${pct} 分</div>
           <div class="text-sm font-bold text-slate-600 mt-1">聽音辨字完成｜答對 ${lwScore} / ${lwQueue.length} 題</div>
-          <div class="flex justify-center gap-2 mt-4"><button type="button" onclick="startListenToWordQuiz(currentVocabList)" class="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-black text-xs">🔄 再測一次</button><button type="button" onclick="backToActiveUnitModal()" class="px-5 py-2.5 rounded-xl bg-sky-500 text-slate-950 font-black text-xs">↩️ 回本單元選單</button></div>
+          ${typeof window.renderNextPracticePromptHtml === "function" ? window.renderNextPracticePromptHtml("listen_word") : ""}
+          <div class="flex justify-center gap-2 mt-4"><button type="button" onclick="backToActiveUnitModal()" class="px-5 py-2.5 rounded-xl bg-slate-200 text-slate-800 font-black text-xs">↩️ 回本單元選單</button></div>
         </div>`;
       return;
     }
@@ -342,6 +345,7 @@
           <button type="button" onclick="window._stepSentence(-1)" class="px-4 py-2 rounded-xl bg-slate-200 text-slate-800 font-black text-xs">◀ 上一句</button>
           <button type="button" onclick="window._stepSentence(1)" class="px-4 py-2 rounded-xl bg-slate-800 text-white font-black text-xs">下一句 ▶</button>
         </div>
+        ${(stIdx === stList.length - 1 && typeof window.renderNextPracticePromptHtml === "function") ? window.renderNextPracticePromptHtml("sentence_cards") : ""}
       </div>`;
     playItemAudio(item);
   }
@@ -369,7 +373,8 @@
         <div class="text-center py-6">
           <div class="text-4xl font-black text-violet-600">${pct} 分</div>
           <div class="text-sm font-bold text-slate-600 mt-1">聽音辨句完成｜答對 ${lsScore} / ${lsQueue.length} 題</div>
-          <div class="flex justify-center gap-2 mt-4"><button type="button" onclick="startListenToSentenceQuiz(currentSentenceList)" class="px-5 py-2.5 rounded-xl bg-violet-600 text-white font-black text-xs">🔄 再測一次</button><button type="button" onclick="backToActiveUnitModal()" class="px-5 py-2.5 rounded-xl bg-sky-500 text-slate-950 font-black text-xs">↩️ 回本單元選單</button></div>
+          ${typeof window.renderNextPracticePromptHtml === "function" ? window.renderNextPracticePromptHtml("listen_sentence") : ""}
+          <div class="flex justify-center gap-2 mt-4"><button type="button" onclick="backToActiveUnitModal()" class="px-5 py-2.5 rounded-xl bg-slate-200 text-slate-800 font-black text-xs">↩️ 回本單元選單</button></div>
         </div>`;
       return;
     }
@@ -427,7 +432,8 @@
         <div class="text-center py-6">
           <div class="text-4xl font-black text-emerald-600">${pct} 分</div>
           <div class="text-sm font-bold text-slate-600 mt-1">聽音選中字完成｜答對 ${lzScore} / ${lzQueue.length} 題</div>
-          <div class="flex justify-center gap-2 mt-4"><button type="button" onclick="startListenToChineseQuiz(currentSentenceList)" class="px-5 py-2.5 rounded-xl bg-emerald-500 text-slate-950 font-black text-xs">🔄 再測一次</button><button type="button" onclick="backToActiveUnitModal()" class="px-5 py-2.5 rounded-xl bg-sky-500 text-slate-950 font-black text-xs">↩️ 回本單元選單</button></div>
+          ${typeof window.renderNextPracticePromptHtml === "function" ? window.renderNextPracticePromptHtml("listen_zh") : ""}
+          <div class="flex justify-center gap-2 mt-4"><button type="button" onclick="backToActiveUnitModal()" class="px-5 py-2.5 rounded-xl bg-slate-200 text-slate-800 font-black text-xs">↩️ 回本單元選單</button></div>
         </div>`;
       return;
     }

@@ -1030,16 +1030,27 @@
 
     if (actBox) {
       if (isSentenceType) {
+        const isG3 = currentBook?.planetId === "planet2" && typeof Grade3QuizEngine !== "undefined";
         actBox.innerHTML = `
           <button type="button" onclick="launchStationActivity('sentence_cards')" class="p-4 rounded-2xl nova-btn-3d bg-sky-500 hover:bg-sky-400 text-slate-950 font-black text-sm shadow transition flex flex-col items-center gap-1">
             <span class="text-2xl">🃏</span><span>閃卡活動</span><span class="text-[11px] font-bold opacity-80">句型卡＋標準發音</span>
           </button>
           <button type="button" onclick="launchStationActivity('listen_sentence')" class="p-4 rounded-2xl nova-btn-3d bg-violet-600 hover:bg-violet-500 text-white font-black text-sm shadow transition flex flex-col items-center gap-1">
-            <span class="text-2xl">🎧</span><span>單元測驗：聽音辨句</span><span class="text-[11px] font-bold opacity-80">聽語音選英文句子</span>
+            <span class="text-2xl">🎧</span><span>隨堂：聽音辨句</span><span class="text-[11px] font-bold opacity-80">聽語音選英文句子</span>
           </button>
           <button type="button" onclick="launchStationActivity('listen_zh')" class="p-4 rounded-2xl nova-btn-3d bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-sm shadow transition flex flex-col items-center gap-1">
-            <span class="text-2xl">🀄</span><span>單元測驗：聽音選中字</span><span class="text-[11px] font-bold opacity-80">聽語音選中文翻譯</span>
-          </button>`;
+            <span class="text-2xl">🀄</span><span>隨堂：聽音選中字</span><span class="text-[11px] font-bold opacity-80">聽語音選中文翻譯</span>
+          </button>
+          ${isG3 ? `
+          <button type="button" onclick="launchStationActivity('g3_qa_listening')" class="p-4 rounded-2xl nova-btn-3d bg-indigo-600 hover:bg-indigo-500 text-white font-black text-sm shadow transition flex flex-col items-center gap-1">
+            <span class="text-2xl">🗣️</span><span>隨堂：問答聽力</span><span class="text-[11px] font-bold opacity-80">聽問句選正確答句</span>
+          </button>
+          <button type="button" onclick="launchStationActivity('g3_block_puzzle')" class="p-4 rounded-2xl nova-btn-3d bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm shadow transition flex flex-col items-center gap-1">
+            <span class="text-2xl">🧱</span><span>隨堂：積木重組</span><span class="text-[11px] font-bold opacity-80">點擊積木排正確語序</span>
+          </button>
+          <button type="button" onclick="launchStationActivity('g3_grammar_blank')" class="p-4 rounded-2xl nova-btn-3d bg-rose-500 hover:bg-rose-400 text-white font-black text-sm shadow transition flex flex-col items-center gap-1">
+            <span class="text-2xl">✏️</span><span>隨堂：文法挖空</span><span class="text-[11px] font-bold opacity-80">單格文法 3 選 1</span>
+          </button>` : ""}`;
       } else {
         actBox.innerHTML = `
           <button type="button" onclick="launchStationActivity('vocab_cards')" class="p-4 rounded-2xl nova-btn-3d bg-sky-500 hover:bg-sky-400 text-slate-950 font-black text-sm shadow transition flex flex-col items-center gap-1">
@@ -1055,10 +1066,45 @@
     }
   }
 
-  window.launchStationActivity = function(act) {
-    const curSub = activeStationObj?.subUnits?.[activeSubUnitIdx];
-    if (!curSub) return;
-    closeUnitStationModal();
+  const ACT_LABELS = {
+    vocab_cards: "🃏 閃卡活動",
+    listen_image: "🖼️ 聽音辨圖",
+    listen_word: "🔤 聽音辨字",
+    sentence_cards: "🃏 句型閃卡",
+    listen_sentence: "🎧 聽音辨句",
+    listen_zh: "🀄 聽音選中字",
+    g3_qa_listening: "🗣️ 問答聽力",
+    g3_block_puzzle: "🧱 積木重組",
+    g3_grammar_blank: "✏️ 文法挖空"
+  };
+
+  function getSubUnitActivitySequence(sub) {
+    if (!sub) return [];
+    const isSentenceType = sub.subType === "sentence" || (!(sub.words || []).length && (sub.sentences || []).length > 0);
+    if (!isSentenceType) {
+      return ["vocab_cards", "listen_image", "listen_word"];
+    }
+    const seq = ["sentence_cards", "listen_sentence", "listen_zh"];
+    if (currentBook?.planetId === "planet2" && typeof Grade3QuizEngine !== "undefined") {
+      seq.push("g3_qa_listening", "g3_block_puzzle", "g3_grammar_blank");
+    }
+    return seq;
+  }
+
+  function runSubUnitActivity(stationObj, subIdx, act) {
+    if (!stationObj || !stationObj.subUnits || !stationObj.subUnits[subIdx]) return;
+    window._lastActiveStationObj = stationObj;
+    activeStationObj = stationObj;
+    activeSubUnitIdx = subIdx;
+    const curSub = stationObj.subUnits[subIdx];
+    window._activePracticeCtx = {
+      stationObj,
+      subIdx,
+      subId: curSub.id,
+      subTitle: curSub.title,
+      act
+    };
+
     const fWords = (curSub.words || []).filter(it => typeof matchesGlobalEdition === "function" ? matchesGlobalEdition(it) : true);
     const fSents = (curSub.sentences || []).filter(it => typeof matchesGlobalEdition === "function" ? matchesGlobalEdition(it) : true);
     if (["vocab_cards", "listen_image", "listen_word"].includes(act) && !fWords.length) {
@@ -1087,6 +1133,98 @@
     } else if (act === "listen_zh") {
       currentSentenceList = fSents; currentUnitKey = curSub.title; showModule("sentence");
       if (typeof startListenToChineseQuiz === "function") startListenToChineseQuiz(currentSentenceList);
+    } else if (act.startsWith("g3_")) {
+      const g3Type = act.replace("g3_", "");
+      currentSentenceList = fSents;
+      currentUnitKey = curSub.title;
+      showModule("sentence");
+      if (typeof Grade3QuizEngine !== "undefined") {
+        Grade3QuizEngine.startGrade3Practice({ unitId: curSub.id, type: g3Type });
+      }
+    }
+  }
+
+  window.launchStationActivity = function(act) {
+    const curSub = activeStationObj?.subUnits?.[activeSubUnitIdx];
+    if (!curSub) return;
+    closeUnitStationModal();
+    runSubUnitActivity(activeStationObj, activeSubUnitIdx, act);
+  };
+
+  window.renderNextPracticePromptHtml = function(curActKey) {
+    const ctx = window._activePracticeCtx;
+    if (!ctx || !ctx.stationObj) return "";
+    const curSub = ctx.stationObj.subUnits?.[ctx.subIdx];
+    if (!curSub) return "";
+    const seq = getSubUnitActivitySequence(curSub);
+    const curPos = seq.indexOf(curActKey);
+
+    // 1. 本單元還有下一個練習
+    if (curPos >= 0 && curPos < seq.length - 1) {
+      const nextAct = seq[curPos + 1];
+      const nextLabel = ACT_LABELS[nextAct] || "下一個練習";
+      return `
+        <div class="mt-5 p-4 rounded-2xl bg-sky-50 border-2 border-sky-200 max-w-lg mx-auto text-center space-y-2.5">
+          <div class="text-xs sm:text-sm font-black text-sky-950">🎯 單元練習完成！是否進行本單元的下一個練習【${escapeHtml(nextLabel)}】？</div>
+          <div class="flex flex-wrap justify-center gap-2">
+            <button type="button" onclick="window.proceedNextPractice('next_act', '${nextAct}')" class="px-4 py-2 rounded-xl nova-btn-3d bg-sky-600 hover:bg-sky-500 text-white font-black text-xs shadow">✅ 同意（進入下個練習）</button>
+            <button type="button" onclick="window.proceedNextPractice('repeat', '${curActKey}')" class="px-4 py-2 rounded-xl bg-white border-2 border-slate-300 hover:border-amber-400 text-slate-800 font-black text-xs">🔄 不同意（繼續練習本單元）</button>
+          </div>
+        </div>`;
+    }
+
+    // 2. 本子單元所有練習已完成，尋找下一個子單元或下一個星球單元地標
+    const subs = ctx.stationObj.subUnits || [];
+    for (let sIdx = ctx.subIdx + 1; sIdx < subs.length; sIdx++) {
+      if (getSubUnitFilteredCounts(subs[sIdx]).total > 0) {
+        const nextSub = subs[sIdx];
+        const nextSeq = getSubUnitActivitySequence(nextSub);
+        return `
+          <div class="mt-5 p-4 rounded-2xl bg-emerald-50 border-2 border-emerald-200 max-w-lg mx-auto text-center space-y-2.5">
+            <div class="text-xs sm:text-sm font-black text-emerald-950">🎉 本單元全部完成！是否前往下一個學習單元【${escapeHtml(nextSub.title)}】？</div>
+            <div class="flex flex-wrap justify-center gap-2">
+              <button type="button" onclick="window.proceedNextPractice('next_sub', '${nextSeq[0]}', ${sIdx})" class="px-4 py-2 rounded-xl nova-btn-3d bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs shadow">🚀 同意（換下個單元）</button>
+              <button type="button" onclick="window.proceedNextPractice('repeat', '${curActKey}')" class="px-4 py-2 rounded-xl bg-white border-2 border-slate-300 hover:border-amber-400 text-slate-800 font-black text-xs">🔄 不同意（繼續練習本單元）</button>
+            </div>
+          </div>`;
+      }
+    }
+
+    // 3. 尋找同半球的下一個單元地標
+    const activeMarkers = stationMarkers.filter(m => m.isActive);
+    const curStPos = activeMarkers.findIndex(m => m.station.id === ctx.stationObj.id);
+    if (curStPos >= 0 && activeMarkers.length > 1) {
+      const nextMarker = activeMarkers[(curStPos + 1) % activeMarkers.length];
+      const nextSubIdx = (nextMarker.station.subUnits || []).findIndex(s => getSubUnitFilteredCounts(s).total > 0);
+      if (nextSubIdx >= 0) {
+        const nextSub = nextMarker.station.subUnits[nextSubIdx];
+        const nextSeq = getSubUnitActivitySequence(nextSub);
+        return `
+          <div class="mt-5 p-4 rounded-2xl bg-emerald-50 border-2 border-emerald-200 max-w-lg mx-auto text-center space-y-2.5">
+            <div class="text-xs sm:text-sm font-black text-emerald-950">🎉 【${escapeHtml(ctx.stationObj.title)}】全部練習完成！是否前往下一個單元【${escapeHtml(nextMarker.station.title)}】？</div>
+            <div class="flex flex-wrap justify-center gap-2">
+              <button type="button" onclick="window.proceedNextPractice('next_station', '${nextSeq[0]}', ${nextSubIdx}, '${nextMarker.station.id}')" class="px-4 py-2 rounded-xl nova-btn-3d bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs shadow">🚀 同意（換下個單元）</button>
+              <button type="button" onclick="window.proceedNextPractice('repeat', '${curActKey}')" class="px-4 py-2 rounded-xl bg-white border-2 border-slate-300 hover:border-amber-400 text-slate-800 font-black text-xs">🔄 不同意（繼續練習本單元）</button>
+            </div>
+          </div>`;
+      }
+    }
+    return "";
+  };
+
+  window.proceedNextPractice = function(actionType, targetAct, targetSubIdx, targetStationId) {
+    const ctx = window._activePracticeCtx;
+    if (!ctx) return;
+    if (actionType === "repeat" || actionType === "next_act") {
+      runSubUnitActivity(ctx.stationObj, ctx.subIdx, targetAct);
+    } else if (actionType === "next_sub") {
+      runSubUnitActivity(ctx.stationObj, Number(targetSubIdx || 0), targetAct);
+    } else if (actionType === "next_station") {
+      const mIdx = stationMarkers.findIndex(m => m.isActive && m.station.id === targetStationId);
+      if (mIdx >= 0) {
+        selectedStationIdx = mIdx;
+        runSubUnitActivity(stationMarkers[mIdx].station, Number(targetSubIdx || 0), targetAct);
+      }
     }
   };
 

@@ -1,4 +1,4 @@
-// data/nova-galaxy-data.js — NovaEdu 銀河英語探險 v2（6顆星球×南北半球×衛星專區×4大單元）
+// data/nova-galaxy-data.js — NovaEdu 銀河英語探險 v3.3（三版本完整句型庫＋斜線句型全拆分版）
 const NOVA_GALAXY_PLANETS = [
   {
     "planetId": "planet1",
@@ -4042,7 +4042,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_starter",
             "title": "句型｜Get Ready / Starter",
-            "subtitle": "期中考前範圍・2 筆",
+            "subtitle": "期中考前範圍・3 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -4075,13 +4075,13 @@ const NOVA_GALAXY_PLANETS = [
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "My name is Kevin. / I'm Amy.",
-                "meaning": "我的名字是Kevin。／我叫 Amy。",
+                "sentence": "My name is Kevin.",
+                "meaning": "我的名字是 Kevin。",
                 "sourceUnit": "3年級上學期句型",
                 "category": "sentence",
                 "examHalf": "midterm",
                 "image": "",
-                "audio": "my_name_is_kevin_im_amy.mp3",
+                "audio": "my_name_is_kevin.mp3",
                 "editions": [
                   "Wonder"
                 ],
@@ -4089,7 +4089,29 @@ const NOVA_GALAXY_PLANETS = [
                   "My name is Ken.",
                   "My favorite subject is English.",
                   "My hand hurts.",
-                  "I'm nine. / I'm nine years old.",
+                  "No, it isn't. It is cool.",
+                  "I'm going to the tea shop.",
+                  "No, I'm not. I'm sad.",
+                  "I'm in the bedroom."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I'm Amy.",
+                "meaning": "我叫 Amy。",
+                "sourceUnit": "3年級上學期句型",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "im_amy.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
+                  "My name is Ken.",
+                  "My favorite subject is English.",
+                  "My hand hurts.",
                   "No, it isn't. It is cool.",
                   "I'm going to the tea shop.",
                   "No, I'm not. I'm sad.",
@@ -4101,7 +4123,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u1",
             "title": "句型 Unit 1",
-            "subtitle": "期中考前範圍・5 筆",
+            "subtitle": "期中考前範圍・8 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -4118,7 +4140,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "whats_your_name.mp3",
                 "editions": [
-                  "Super"
+                  "Super",
+                  "Here"
                 ],
                 "similarSentences": [
                   "What's your favorite subject?",
@@ -4145,11 +4168,9 @@ const NOVA_GALAXY_PLANETS = [
                   "Super"
                 ],
                 "similarSentences": [
-                  "My name is Kevin. / I'm Amy.",
                   "My favorite subject is English.",
                   "My hand hurts.",
                   "This is for you.",
-                  "Yes, he/she is.",
                   "I'm Ken.",
                   "He's my father.",
                   "It's my soda."
@@ -4206,13 +4227,13 @@ const NOVA_GALAXY_PLANETS = [
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "I'm nine. / I'm nine years old.",
+                "sentence": "I'm nine.",
                 "meaning": "我九歲。",
                 "sourceUnit": "3年級上學期句型",
                 "category": "sentence",
                 "examHalf": "midterm",
                 "image": "",
-                "audio": "im_nine_im_nine_years_old.mp3",
+                "audio": "im_nine.mp3",
                 "editions": [
                   "Wonder"
                 ],
@@ -4226,13 +4247,83 @@ const NOVA_GALAXY_PLANETS = [
                   "I'm Ken.",
                   "I'm OK."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I'm nine years old.",
+                "meaning": "我九歲。",
+                "sourceUnit": "3年級上學期句型",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "im_nine_years_old.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
+                  "I'm ten years old.",
+                  "I'm going to the tea shop.",
+                  "I'm in the bedroom.",
+                  "I'm going to the park.",
+                  "I'm in the living room.",
+                  "I'm going to have a picnic tomorrow.",
+                  "I'm Ken.",
+                  "I'm OK."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "My name is Toby.",
+                "meaning": "我的名字是 Toby。",
+                "sourceUnit": "3年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "my_name_is_toby.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "My name is Ken.",
+                  "My favorite subject is English.",
+                  "My favorite season is fall.",
+                  "My birthday is in October.",
+                  "My hand hurts.",
+                  "My arm hurts.",
+                  "Yes, it is."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I'm Lulu.",
+                "meaning": "我是 Lulu。",
+                "sourceUnit": "3年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "im_lulu.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I'm Ken.",
+                  "I'm ten years old.",
+                  "I'm ten.",
+                  "I'm short.",
+                  "I'm fine.",
+                  "I'm OK.",
+                  "I'm sorry."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・6 筆",
+            "subtitle": "期中考前範圍・7 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -4249,7 +4340,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "how_old_are_you.mp3",
                 "editions": [
-                  "Super"
+                  "Super",
+                  "Here"
                 ],
                 "similarSentences": [
                   "How are you?",
@@ -4277,7 +4369,6 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "I'm ten.",
-                  "I'm nine. / I'm nine years old.",
                   "I'm in the bedroom.",
                   "I'm Ken.",
                   "I'm OK.",
@@ -4297,7 +4388,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "im_ten.mp3",
                 "editions": [
-                  "Super"
+                  "Super",
+                  "Here"
                 ],
                 "similarSentences": [
                   "I'm ten years old.",
@@ -4381,13 +4473,36 @@ const NOVA_GALAXY_PLANETS = [
                   "No!",
                   "No, I can't."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I'm nine years old.",
+                "meaning": "我九歲。",
+                "sourceUnit": "3年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "im_nine_years_old.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I'm ten years old.",
+                  "I'm Ken.",
+                  "I'm ten.",
+                  "I'm short.",
+                  "I'm fine.",
+                  "I'm OK.",
+                  "I'm sorry."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u3",
             "title": "句型 Unit 3",
-            "subtitle": "期末考範圍・8 筆",
+            "subtitle": "期末考範圍・10 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -4500,7 +4615,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "whats_this.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "What's that?",
@@ -4548,7 +4664,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "whats_that.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "What's this?",
@@ -4584,13 +4701,61 @@ const NOVA_GALAXY_PLANETS = [
                   "It's fifty dollars.",
                   "It's my soda."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's a book.",
+                "meaning": "它是一本書。",
+                "sourceUnit": "3年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "its_a_book.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's a pen.",
+                  "It's a monkey.",
+                  "It's red.",
+                  "It's OK.",
+                  "It's an eraser.",
+                  "It's sunny."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's an eraser.",
+                "meaning": "它是一塊橡皮擦。",
+                "sourceUnit": "3年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "its_an_eraser.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red.",
+                  "It's OK.",
+                  "It's a pen.",
+                  "It's a monkey.",
+                  "It's sunny.",
+                  "It's twelve o'clock."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u4",
             "title": "句型 Unit 4",
-            "subtitle": "期末考範圍・5 筆",
+            "subtitle": "期末考範圍・7 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -4679,7 +4844,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "what_color_is_it.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "What time is it?",
@@ -4714,6 +4880,54 @@ const NOVA_GALAXY_PLANETS = [
                   "It's Alan's watch.",
                   "It's Kevin's jacket.",
                   "It's a kite."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's blue.",
+                "meaning": "它是藍色的。",
+                "sourceUnit": "3年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "its_blue.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red.",
+                  "It's OK.",
+                  "It's a pen.",
+                  "It's an eraser.",
+                  "It's a monkey.",
+                  "It's sunny."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's yellow.",
+                "meaning": "它是黃色的。",
+                "sourceUnit": "3年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "its_yellow.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red.",
+                  "It's OK.",
+                  "It's a pen.",
+                  "It's an eraser.",
+                  "It's a monkey.",
+                  "It's sunny."
                 ]
               }
             ]
@@ -7237,8 +7451,6 @@ const NOVA_GALAXY_PLANETS = [
                   "We can get there by car.",
                   "We should use fewer plastic bags.",
                   "No, I'm not. I'm going to stay at home next weekend.",
-                  "No, he / she wasn't. He / She was at the coffee shop.",
-                  "No, he/she doesn't. He/She has a cough.",
                   "No, I don't. I want to be a basketball player.",
                   "No, we can't. We can get there by bus."
                 ]
@@ -9666,7 +9878,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u1",
             "title": "句型 Unit 1",
-            "subtitle": "期中考前範圍・7 筆",
+            "subtitle": "期中考前範圍・9 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -9803,12 +10015,12 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "yes_it_is.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "Yes, he is.",
                   "Yes, she is.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am.",
                   "Yes, I can.",
@@ -9839,13 +10051,61 @@ const NOVA_GALAXY_PLANETS = [
                   "No, it isn't. It's Tuesday.",
                   "No, it isn't. It's spicy."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Is that a dog?",
+                "meaning": "那是一隻狗嗎？",
+                "sourceUnit": "3年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "is_that_a_dog.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Is it a cat?",
+                  "Is it a bear?",
+                  "Is he a teacher?",
+                  "Is she a nurse?",
+                  "Is he a doctor?",
+                  "Is this your pencil?",
+                  "Is today Friday?",
+                  "Is it hot?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, it isn't. It's a cat.",
+                "meaning": "不，牠不是。牠是一隻貓。",
+                "sourceUnit": "3年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "no_it_isnt_its_a_cat.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, it isn't. It's Saturday.",
+                  "No, it isn't. It's Tuesday.",
+                  "No, it isn't. It's spicy.",
+                  "No, it isn't. It's Thursday.",
+                  "No, it isn't. It's in August.",
+                  "No, it's not. It's a dog.",
+                  "No, it isn't.",
+                  "No, she isn't. She's a teacher."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・5 筆",
+            "subtitle": "期中考前範圍・6 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -9934,7 +10194,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "yes_i_can.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "Yes, I am.",
@@ -9958,7 +10219,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "no_i_cant.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "No, I don't.",
@@ -9970,13 +10232,37 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I don't. I like soy milk.",
                   "No!"
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Can you swim?",
+                "meaning": "你會游泳嗎？",
+                "sourceUnit": "3年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "can_you_swim.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Can you dance?",
+                  "Can you sing?",
+                  "Can we get to the park by bike?",
+                  "Can we get to the bookstore on foot?",
+                  "How old are you?",
+                  "Are you hungry?",
+                  "Are you tired?",
+                  "How are you?"
+                ]
               }
             ]
           },
           {
             "id": "sentence_u3",
             "title": "句型 Unit 3",
-            "subtitle": "期末考範圍・8 筆",
+            "subtitle": "期末考範圍・10 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -10022,7 +10308,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, he is.",
                   "Yes, she is.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am.",
                   "Yes, I can.",
@@ -10089,7 +10374,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "whos_he.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "Who's she?",
@@ -10137,7 +10423,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "whos_she.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "Who's he?",
@@ -10173,13 +10460,60 @@ const NOVA_GALAXY_PLANETS = [
                   "It's my soda.",
                   "It's my watch."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "She's my sister.",
+                "meaning": "她是我的姐姐／妹妹。",
+                "sourceUnit": "3年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "shes_my_sister.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "She's my mother.",
+                  "She's thin.",
+                  "She's in the bathroom.",
+                  "She's in the living room.",
+                  "She's eating.",
+                  "She's running.",
+                  "She's swimming.",
+                  "She's going to the post office."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "He's my brother.",
+                "meaning": "他是我的哥哥／弟弟。",
+                "sourceUnit": "3年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "hes_my_brother.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "He's my father.",
+                  "He's strong.",
+                  "He's in the kitchen.",
+                  "He's in the dining room.",
+                  "He's sleeping.",
+                  "He's dancing.",
+                  "My name is Ken."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u4",
             "title": "句型 Unit 4",
-            "subtitle": "期末考範圍・9 筆",
+            "subtitle": "期末考範圍・10 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -10268,12 +10602,12 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "is_he_a_teacher.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "Is he a doctor?",
                   "Is he from the USA?",
-                  "Is he/she from the USA?",
                   "Is it a bear?",
                   "Is it a cat?",
                   "Is she a nurse?",
@@ -10292,13 +10626,11 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "yes_he_is.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
-                  "Yes, he/she is.",
                   "Yes, he does.",
-                  "Yes, he / she was.",
-                  "Yes, he/she does.",
                   "Yes, it is.",
                   "Yes, she is.",
                   "Yes!",
@@ -10322,7 +10654,6 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I'm not.",
                   "No, it's not.",
                   "No, she's not.",
-                  "No, he's/she's not. He's/She's from the UK.",
                   "No, I'm not. I'm sad.",
                   "No!",
                   "No, I can't.",
@@ -10349,7 +10680,6 @@ const NOVA_GALAXY_PLANETS = [
                   "Is he a teacher?",
                   "Is it a bear?",
                   "Is it a cat?",
-                  "Is he/she from the USA?",
                   "Is it Monday today?"
                 ]
               },
@@ -10369,11 +10699,8 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, she does.",
                   "Yes, she was.",
-                  "Yes, he/she is.",
                   "Yes, he is.",
                   "Yes, it is.",
-                  "Yes, he / she was.",
-                  "Yes, he/she does.",
                   "Yes!"
                 ]
               },
@@ -10399,6 +10726,30 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I can't.",
                   "No, I don't.",
                   "No, I wasn't."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, he isn't. He's a doctor.",
+                "meaning": "不，他不是。他是醫生。",
+                "sourceUnit": "3年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "no_he_isnt_hes_a_doctor.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, she isn't. She's a teacher.",
+                  "No, it isn't. It's a cat.",
+                  "No, it's not. It's a dog.",
+                  "No, it isn't.",
+                  "No, he's not.",
+                  "No, I don't. I have a dog.",
+                  "No, it isn't. It's Saturday.",
+                  "No, he doesn't. He likes coffee."
                 ]
               }
             ]
@@ -15041,7 +15392,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u1",
             "title": "句型 Unit 1",
-            "subtitle": "期中考前範圍・6 筆",
+            "subtitle": "期中考前範圍・8 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -15154,7 +15505,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "hows_the_weather.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "Where's the eraser?",
@@ -15190,13 +15542,61 @@ const NOVA_GALAXY_PLANETS = [
                   "It's Kevin's jacket.",
                   "It's a kite."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's sunny and warm.",
+                "meaning": "天氣晴朗又溫暖。",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "its_sunny_and_warm.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's sunny.",
+                  "It's between the science museum and the park.",
+                  "It's rainy and cool.",
+                  "It's cool and dry in fall.",
+                  "It's between the bakery and the clinic.",
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's rainy and cool.",
+                "meaning": "天氣下雨又涼爽。",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "its_rainy_and_cool.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's cool and dry in fall.",
+                  "It's between the science museum and the park.",
+                  "It's sunny and warm.",
+                  "It's between the bakery and the clinic.",
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red.",
+                  "It's OK."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・7 筆",
+            "subtitle": "期中考前範圍・10 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -15218,7 +15618,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Is he a teacher?",
                   "Is he from the USA?",
-                  "Is he/she from the USA?",
                   "Is it a bear?",
                   "Is it a cat?",
                   "Is she a nurse?",
@@ -15240,10 +15639,7 @@ const NOVA_GALAXY_PLANETS = [
                   "Super"
                 ],
                 "similarSentences": [
-                  "Yes, he/she is.",
                   "Yes, he does.",
-                  "Yes, he / she was.",
-                  "Yes, he/she does.",
                   "Yes, it is.",
                   "Yes, she is.",
                   "Yes!",
@@ -15270,7 +15666,6 @@ const NOVA_GALAXY_PLANETS = [
                   "Is he a teacher?",
                   "Is it a bear?",
                   "Is it a cat?",
-                  "Is he/she from the USA?",
                   "Is it Monday today?"
                 ]
               },
@@ -15369,13 +15764,85 @@ const NOVA_GALAXY_PLANETS = [
                   "It's a pen.",
                   "It's a robot."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Are you thirsty?",
+                "meaning": "你口渴嗎？",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "are_you_thirsty.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Are you hungry?",
+                  "Are you tired?",
+                  "Are you OK?",
+                  "Are you ready?",
+                  "Are you going to the bakery?",
+                  "Are you going to have a picnic next weekend?",
+                  "How old are you?",
+                  "How are you?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, I am.",
+                "meaning": "是的，我是。",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "yes_i_am.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Yes, I can.",
+                  "Yes, I do.",
+                  "Yes, I was.",
+                  "Yes, I did.",
+                  "Yes, I did. I rode a bike there.",
+                  "Yes, it is.",
+                  "Yes, he is.",
+                  "Yes, she is."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, I'm not. I'm hungry.",
+                "meaning": "不，我不是。我肚子餓。",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "no_im_not_im_hungry.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, I'm not.",
+                  "No, I'm not. I'm sad.",
+                  "No, I'm not. I'm going to the bookstore.",
+                  "No, I'm not. I'm going to stay at home next weekend.",
+                  "No, it's not. It's a dog.",
+                  "No, he's not.",
+                  "No, she's not.",
+                  "No, it's not."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u3",
             "title": "句型 Unit 3",
-            "subtitle": "期末考範圍・9 筆",
+            "subtitle": "期末考範圍・13 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -15425,7 +15892,6 @@ const NOVA_GALAXY_PLANETS = [
                   "I'm going to the tea shop.",
                   "I'm from Japan.",
                   "I'm from Taiwan.",
-                  "I'm nine. / I'm nine years old.",
                   "I'm ten years old."
                 ]
               },
@@ -15565,7 +16031,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, he is.",
                   "Yes, she is.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am.",
                   "Yes, I can.",
@@ -15596,13 +16061,109 @@ const NOVA_GALAXY_PLANETS = [
                   "No!",
                   "No, it isn't. It's Saturday."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What are these?",
+                "meaning": "這些是什麼？",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "what_are_these.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What are those?",
+                  "What are you doing?",
+                  "What are you going to do tomorrow?",
+                  "What color is it?",
+                  "What time is it?",
+                  "What happened?",
+                  "What do you want for lunch?",
+                  "What day is today?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "They're bananas.",
+                "meaning": "它們是香蕉。",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "theyre_bananas.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "They're robots.",
+                  "They're yo-yos.",
+                  "They're on the chair.",
+                  "They're four hundred and fifty dollars.",
+                  "They're my glasses.",
+                  "They're one hundred dollars.",
+                  "They're my shoes.",
+                  "They're hamburgers."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What are those?",
+                "meaning": "那些是什麼？",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "what_are_those.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What are these?",
+                  "What are you doing?",
+                  "What are you going to do tomorrow?",
+                  "What color is it?",
+                  "What time is it?",
+                  "What happened?",
+                  "What do you want for lunch?",
+                  "What day is today?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "They're hamburgers.",
+                "meaning": "它們是漢堡。",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "theyre_hamburgers.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "They're robots.",
+                  "They're yo-yos.",
+                  "They're on the chair.",
+                  "They're four hundred and fifty dollars.",
+                  "They're my glasses.",
+                  "They're one hundred dollars.",
+                  "They're my shoes.",
+                  "They're bananas."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u4",
             "title": "句型 Unit 4",
-            "subtitle": "期末考範圍・5 筆",
+            "subtitle": "期末考範圍・8 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -15726,6 +16287,78 @@ const NOVA_GALAXY_PLANETS = [
                   "It's time for class.",
                   "It's time for lunch.",
                   "It's Friday."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Do you want some pizza?",
+                "meaning": "你想要一些披薩嗎？",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "do_you_want_some_pizza.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Do you want to be a writer?",
+                  "Do you have a turtle?",
+                  "Do you like milk?",
+                  "Do you like bears?",
+                  "Do you need help?",
+                  "Do you like cola?",
+                  "Do you have PE class on Monday?",
+                  "Do you have lunch at twelve?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, please.",
+                "meaning": "好的，麻煩你。",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "yes_please.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Yes, I am.",
+                  "Yes, it is.",
+                  "Yes, I can.",
+                  "Yes, he is.",
+                  "Yes, she is.",
+                  "Yes!",
+                  "Yes, I do.",
+                  "Yes, he does."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, thank you. I want some juice.",
+                "meaning": "不用了，謝謝。我想要一些果汁。",
+                "sourceUnit": "4年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "no_thank_you_i_want_some_juice.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, thank you.",
+                  "No, I don't. I want to be a basketball player.",
+                  "I want some juice.",
+                  "No, I can't.",
+                  "No, I don't. I have a dog.",
+                  "No, I don't.",
+                  "No, I don't. I like tigers.",
+                  "No, I don't. I like soy milk."
                 ]
               }
             ]
@@ -21667,7 +22300,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u1",
             "title": "句型 Unit 1",
-            "subtitle": "期中考前範圍・10 筆",
+            "subtitle": "期中考前範圍・13 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -21912,13 +22545,85 @@ const NOVA_GALAXY_PLANETS = [
                   "She's thin.",
                   "I cleaned the room yesterday."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What time is it?",
+                "meaning": "現在幾點？",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "what_time_is_it.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What color is it?",
+                  "What day is today?",
+                  "What time do you get up?",
+                  "What time does he go to school?",
+                  "What do you like to do in your free time?",
+                  "What does he like to do in his free time?",
+                  "What do you do in your free time?",
+                  "What does she do in her free time?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's ten twenty-five.",
+                "meaning": "現在十點二十五分。",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "its_ten_twentyfive.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red.",
+                  "It's OK.",
+                  "It's a pen.",
+                  "It's an eraser.",
+                  "It's a monkey.",
+                  "It's sunny."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's four thirty.",
+                "meaning": "現在四點三十分。",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "its_four_thirty.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's twelve thirty.",
+                  "It's seven thirty.",
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red.",
+                  "It's OK.",
+                  "It's a pen.",
+                  "It's an eraser."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・10 筆",
+            "subtitle": "期中考前範圍・11 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -21991,7 +22696,6 @@ const NOVA_GALAXY_PLANETS = [
                   "Where are you?",
                   "Where is the tea shop?",
                   "Where were you yesterday?",
-                  "Where was he / she yesterday?",
                   "Where was he last Sunday?",
                   "Where were you last night?"
                 ]
@@ -22031,7 +22735,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "what_are_you_doing.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "What are these?",
@@ -22055,7 +22760,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "im_reading.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "I'm Ken.",
@@ -22127,7 +22833,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "whats_she_doing.mp3",
                 "editions": [
-                  "Wonder"
+                  "Wonder",
+                  "Here"
                 ],
                 "similarSentences": [
                   "What's he doing?",
@@ -22163,13 +22870,37 @@ const NOVA_GALAXY_PLANETS = [
                   "Be careful.",
                   "Be quiet."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "She's swimming.",
+                "meaning": "她正在游泳。",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "shes_swimming.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "She's thin.",
+                  "She's my mother.",
+                  "She's in the bathroom.",
+                  "She's in the living room.",
+                  "She's eating.",
+                  "She's running.",
+                  "She's my sister.",
+                  "She's going to the post office."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u3",
             "title": "句型 Unit 3",
-            "subtitle": "期末考範圍・7 筆",
+            "subtitle": "期末考範圍・11 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -22342,13 +23073,107 @@ const NOVA_GALAXY_PLANETS = [
                   "I have a headache.",
                   "I have an idea."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Where are you?",
+                "meaning": "你在哪裡？",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "where_are_you.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Where are you going?",
+                  "Where are you from?",
+                  "Where are the dolls?",
+                  "Where were you yesterday?",
+                  "Where were you last night?",
+                  "Where did you go last weekend?",
+                  "Where was he last Sunday?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I'm in the bedroom.",
+                "meaning": "我在臥室裡。",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "im_in_the_bedroom.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I'm in the living room.",
+                  "I'm going to the park.",
+                  "I'm going to the tea shop.",
+                  "I'm going to the library.",
+                  "I'm Ken.",
+                  "I'm ten years old.",
+                  "I'm ten."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Where's Dad?",
+                "meaning": "爸爸在哪裡？",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "wheres_dad.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Where's Ken?",
+                  "Where's your mom?",
+                  "Where's the eraser?",
+                  "Where's Kevin?",
+                  "Where's Mom?",
+                  "Where's the kite?",
+                  "Where's the library?",
+                  "Where's my hat?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "He's in the kitchen.",
+                "meaning": "他在廚房裡。",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "hes_in_the_kitchen.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "He's in the dining room.",
+                  "He's strong.",
+                  "He's my father.",
+                  "He's sleeping.",
+                  "He's dancing.",
+                  "He's my brother.",
+                  "I'm in the living room.",
+                  "She's in the bathroom."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u4",
             "title": "句型 Unit 4",
-            "subtitle": "期末考範圍・5 筆",
+            "subtitle": "期末考範圍・8 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -22473,6 +23298,78 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I didn't. I went shopping yesterday.",
                   "No, I didn't. I listened to music yesterday.",
                   "No, I wasn't. I was at the park."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Where's my hat?",
+                "meaning": "我的帽子在哪裡？",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "wheres_my_hat.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Where's Ken?",
+                  "Where's your mom?",
+                  "Where's the eraser?",
+                  "Where's Kevin?",
+                  "Where's Mom?",
+                  "Where's the kite?",
+                  "Where's the library?",
+                  "Where's Dad?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's on the desk.",
+                "meaning": "它在書桌上。",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "its_on_the_desk.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's under the chair.",
+                  "It's in the box.",
+                  "It's on Park Road.",
+                  "It's next to the zoo.",
+                  "It's on Park Street.",
+                  "It's between the science museum and the park.",
+                  "It's across from the police station.",
+                  "It's between the bakery and the clinic."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's under the chair.",
+                "meaning": "它在椅子下。",
+                "sourceUnit": "4年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "its_under_the_chair.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's in the box.",
+                  "It's next to the zoo.",
+                  "It's between the science museum and the park.",
+                  "It's on the desk.",
+                  "It's across from the police station.",
+                  "It's between the bakery and the clinic.",
+                  "It's a kite.",
+                  "It's a robot."
                 ]
               }
             ]
@@ -25962,8 +26859,7 @@ const NOVA_GALAXY_PLANETS = [
                   "How can I get to the zoo?",
                   "Did you clean the room yesterday?",
                   "Do you like to play baseball?",
-                  "How much is the hot dog?",
-                  "Is he/she from the USA?"
+                  "How much is the hot dog?"
                 ]
               },
               {
@@ -26213,7 +27109,6 @@ const NOVA_GALAXY_PLANETS = [
                   "Let me help you.",
                   "My name is Ken.",
                   "Nice to meet you.",
-                  "Yes, he/she is.",
                   "See you.",
                   "Thank you."
                 ]
@@ -28812,7 +29707,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u1",
             "title": "句型 Unit 1",
-            "subtitle": "期中考前範圍・14 筆",
+            "subtitle": "期中考前範圍・16 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -28829,7 +29724,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "what_day_is_today.mp3",
                 "editions": [
-                  "Super"
+                  "Super",
+                  "Here"
                 ],
                 "similarSentences": [
                   "What color is it?",
@@ -28877,7 +29773,8 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "is_today_friday.mp3",
                 "editions": [
-                  "Super"
+                  "Super",
+                  "Here"
                 ],
                 "similarSentences": [
                   "Is it Monday today?",
@@ -28906,7 +29803,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, he is.",
                   "Yes, she is.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am.",
                   "Yes, I can.",
@@ -29025,7 +29921,6 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "Does she like tea?",
-                  "Does he/she have a fever?",
                   "Does he go to school by bus?",
                   "Does she want to be a singer?",
                   "How many oranges does he need?",
@@ -29048,10 +29943,7 @@ const NOVA_GALAXY_PLANETS = [
                   "Wonder"
                 ],
                 "similarSentences": [
-                  "Yes, he/she does.",
                   "Yes, he is.",
-                  "Yes, he / she was.",
-                  "Yes, he/she is.",
                   "Yes, she does.",
                   "Yes!",
                   "Yes, I am.",
@@ -29073,9 +29965,7 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "No, she doesn't. She likes coffee.",
-                  "No, he/she doesn't. He/She has a cough.",
                   "No, he doesn't. He goes to school on foot.",
-                  "No, he / she wasn't. He / She was at the coffee shop.",
                   "No, I don't. I like tigers.",
                   "No, it isn't. It is cool.",
                   "No, it's not. It's a dog.",
@@ -29098,7 +29988,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Does he like tea?",
                   "Does she want to be a singer?",
-                  "Does he/she have a fever?",
                   "Does he go to school by bus?",
                   "How many oranges does she need?",
                   "Do you like bears?",
@@ -29122,10 +30011,7 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, she is.",
                   "Yes, she was.",
-                  "Yes, he/she does.",
                   "Yes, he does.",
-                  "Yes, he / she was.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am."
                 ]
@@ -29153,13 +30039,61 @@ const NOVA_GALAXY_PLANETS = [
                   "No, it isn't. It is cool.",
                   "No, it's not. It's a dog."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's Wednesday.",
+                "meaning": "今天是星期三。",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "its_wednesday.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red.",
+                  "It's OK.",
+                  "It's a pen.",
+                  "It's an eraser.",
+                  "It's a monkey.",
+                  "It's sunny."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, it isn't. It's Thursday.",
+                "meaning": "不，不是。今天是星期四。",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "no_it_isnt_its_thursday.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, it isn't. It's Saturday.",
+                  "No, it isn't. It's Tuesday.",
+                  "No, it isn't. It's spicy.",
+                  "No, it isn't. It's a cat.",
+                  "No, it isn't. It's in August.",
+                  "No, it isn't.",
+                  "No, it isn't. It is cool.",
+                  "No, it's not. It's a dog."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・10 筆",
+            "subtitle": "期中考前範圍・14 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -29252,7 +30186,6 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "He likes to go camping.",
-                  "He / She was at the library.",
                   "He does his homework at five.",
                   "He was at the restaurant last Sunday.",
                   "He has a headache.",
@@ -29351,10 +30284,8 @@ const NOVA_GALAXY_PLANETS = [
                   "He has a headache.",
                   "He goes to school at 7:00.",
                   "He likes to go camping.",
-                  "He / She was at the library.",
                   "He does his homework at five.",
-                  "He was at the restaurant last Sunday.",
-                  "Yes, he / she was."
+                  "He was at the restaurant last Sunday."
                 ]
               },
               {
@@ -29399,10 +30330,100 @@ const NOVA_GALAXY_PLANETS = [
                   "She has a fever.",
                   "She was at home yesterday.",
                   "She wants to be a scientist.",
-                  "She watches TV in her free time.",
-                  "Yes, he / she was.",
-                  "Yes, he/she does.",
-                  "Yes, he/she is."
+                  "She watches TV in her free time."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Do you have PE class on Monday?",
+                "meaning": "你星期一有體育課嗎？",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "do_you_have_pe_class_on_monday.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Do you have a turtle?",
+                  "Do you have lunch at twelve?",
+                  "Do you have a headache?",
+                  "Do you like milk?",
+                  "Do you like bears?",
+                  "Do you need help?",
+                  "Do you like cola?",
+                  "Do you like to go camping in your free time?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, I do.",
+                "meaning": "是的，我有。",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "yes_i_do.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Yes, I am.",
+                  "Yes, I can.",
+                  "Yes, I was.",
+                  "Yes, I did.",
+                  "Yes, I did. I rode a bike there.",
+                  "Yes, it is.",
+                  "Yes, he is.",
+                  "Yes, she is."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Does he have music class on Tuesday?",
+                "meaning": "他星期二有音樂課嗎？",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "does_he_have_music_class_on_tuesday.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Does he like tea?",
+                  "Does he go to school by bus?",
+                  "Does she have a toothache?",
+                  "Do you have PE class on Monday?",
+                  "Does she like tea?",
+                  "I have PE class on Tuesday.",
+                  "Does she want to be a singer?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, he doesn't. He has science class.",
+                "meaning": "不，他沒有。他有自然課。",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "no_he_doesnt_he_has_science_class.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, he doesn't. He likes coffee.",
+                  "No, he doesn't. He goes to school on foot.",
+                  "No, she doesn't. She has a stomachache.",
+                  "No, she doesn't. She likes coffee.",
+                  "No, she doesn't.",
+                  "No, he isn't. He's a doctor."
                 ]
               }
             ]
@@ -29410,7 +30431,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u3",
             "title": "句型 Unit 3",
-            "subtitle": "期末考範圍・9 筆",
+            "subtitle": "期末考範圍・13 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -29505,7 +30526,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, he is.",
                   "Yes, she is.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am.",
                   "Yes, I can.",
@@ -29632,13 +30652,108 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I'm not. I'm sad.",
                   "No, she isn't. She's a teacher."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Where are you going?",
+                "meaning": "你要去哪裡？",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "where_are_you_going.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Where are you?",
+                  "Where are you from?",
+                  "Where are the dolls?",
+                  "Where were you yesterday?",
+                  "Where were you last night?",
+                  "Where did you go last weekend?",
+                  "Where is she going?",
+                  "Are you going to the bakery?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I'm going to the library.",
+                "meaning": "我要去圖書館。",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "im_going_to_the_library.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I'm going to the park.",
+                  "I'm going to the tea shop.",
+                  "I'm going to have a picnic tomorrow.",
+                  "No, I'm not. I'm going to the bookstore.",
+                  "I'm in the living room.",
+                  "I'm in the bedroom.",
+                  "No, I'm not. I'm going to stay at home next weekend.",
+                  "She's going to the post office."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Where is she going?",
+                "meaning": "她要去哪裡？",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "where_is_she_going.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Where are you going?",
+                  "Where is the tea shop?",
+                  "Where are you?",
+                  "Where are the dolls?",
+                  "Where are you from?",
+                  "Where were you yesterday?",
+                  "Where was he last Sunday?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "She's going to the post office.",
+                "meaning": "她要去郵局。",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "shes_going_to_the_post_office.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "She's in the bathroom.",
+                  "She's in the living room.",
+                  "I'm going to the park.",
+                  "No, I'm not. I'm going to the bookstore.",
+                  "I'm going to the tea shop.",
+                  "I'm going to the library.",
+                  "She's thin.",
+                  "She's my mother."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u4",
             "title": "句型 Unit 4",
-            "subtitle": "期末考範圍・12 筆",
+            "subtitle": "期末考範圍・16 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -29827,7 +30942,6 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "My name is Ken.",
-                  "My name is Kevin. / I'm Amy.",
                   "My hand hurts.",
                   "Her favorite subject is science.",
                   "His favorite subject is science.",
@@ -29930,6 +31044,101 @@ const NOVA_GALAXY_PLANETS = [
                   "Yes, she is.",
                   "My name is Ken.",
                   "This is for you."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "How many koalas are there?",
+                "meaning": "那裡有幾隻無尾熊？",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "how_many_koalas_are_there.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "How many zebras are there?",
+                  "How old are you?",
+                  "How are you?",
+                  "How many apples do you need?",
+                  "How many oranges does he need?",
+                  "How many oranges does she need?",
+                  "How much are the pants?",
+                  "How many eggs do you need?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "There is one koala.",
+                "meaning": "有一隻無尾熊。",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "there_is_one_koala.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "There are five zebras.",
+                  "My name is Ken.",
+                  "Yes, it is.",
+                  "Yes, he is.",
+                  "Yes, she is.",
+                  "This is for you.",
+                  "No, it isn't. It is cool."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "How many zebras are there?",
+                "meaning": "那裡有幾隻斑馬？",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "how_many_zebras_are_there.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "How many koalas are there?",
+                  "How old are you?",
+                  "How are you?",
+                  "How many apples do you need?",
+                  "How many oranges does he need?",
+                  "How many oranges does she need?",
+                  "How much are the pants?",
+                  "How many eggs do you need?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "There are five zebras.",
+                "meaning": "有五隻斑馬。",
+                "sourceUnit": "5年級上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "there_are_five_zebras.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "There is one koala.",
+                  "How many zebras are there?",
+                  "Here you are.",
+                  "We can get there by bike.",
+                  "No, we can't. We can get there by bus.",
+                  "You can get there by bus.",
+                  "We can get there by car.",
+                  "He does his homework at five."
                 ]
               }
             ]
@@ -35072,7 +36281,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u1",
             "title": "句型 Unit 1",
-            "subtitle": "期中考前範圍・11 筆",
+            "subtitle": "期中考前範圍・14 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -35242,8 +36451,7 @@ const NOVA_GALAXY_PLANETS = [
                   "Where were you yesterday?",
                   "Where were you last night?",
                   "Where did you go last weekend?",
-                  "Where is the tea shop?",
-                  "Where was he / she yesterday?"
+                  "Where is the tea shop?"
                 ]
               },
               {
@@ -35266,7 +36474,6 @@ const NOVA_GALAXY_PLANETS = [
                   "I'm in the bedroom.",
                   "I'm from Japan.",
                   "I'm from Taiwan.",
-                  "I'm nine. / I'm nine years old.",
                   "I'm ten years old."
                 ]
               },
@@ -35335,11 +36542,79 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I'm not. I'm going to stay at home next weekend.",
                   "No, I'm not. I'm sad.",
                   "No, I'm not.",
-                  "No, he's/she's not. He's/She's from the UK.",
                   "No, I didn't. I listened to music yesterday.",
                   "No, I don't. I like to go hiking.",
                   "No, I don't. I like to play volleyball.",
                   "No, I wasn't. I was at the park."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What's wrong?",
+                "meaning": "怎麼了？",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "whats_wrong.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What's your name?",
+                  "What's this?",
+                  "What's that?",
+                  "What's he doing?",
+                  "What's she doing?",
+                  "What's your favorite subject?",
+                  "What's his favorite subject?",
+                  "What's her favorite subject?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "My arm hurts.",
+                "meaning": "我的手臂痛。",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "my_arm_hurts.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "My hand hurts.",
+                  "My name is Ken.",
+                  "My favorite subject is English.",
+                  "My name is Toby.",
+                  "My favorite season is fall.",
+                  "My birthday is in October.",
+                  "He's my father."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "His legs hurt.",
+                "meaning": "他的雙腿痛。",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "his_legs_hurt.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "His favorite subject is science.",
+                  "His foot hurts.",
+                  "Her feet hurt.",
+                  "He does his homework at five.",
+                  "My name is Ken.",
+                  "I'm Ken."
                 ]
               }
             ]
@@ -35347,7 +36622,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・12 筆",
+            "subtitle": "期中考前範圍・16 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -35418,7 +36693,6 @@ const NOVA_GALAXY_PLANETS = [
                   "He needs seven oranges.",
                   "He goes to school at 7:00.",
                   "He likes to go camping.",
-                  "He / She was at the library.",
                   "He does his homework at five.",
                   "I have a headache.",
                   "She has a fever.",
@@ -35465,7 +36739,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "My name is Ken.",
                   "My favorite subject is English.",
-                  "My name is Kevin. / I'm Amy.",
                   "He's my father.",
                   "His foot hurts.",
                   "It's my soda.",
@@ -35632,13 +36905,105 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "No, we can't.",
-                  "No, he's/she's not. He's/She's from the UK.",
-                  "No, he/she doesn't. He/She has a cough.",
                   "No, I don't. I have lunch at twelve thirty.",
                   "No, he doesn't. He goes to school on foot.",
                   "No, it's not. It's across from the tea shop.",
                   "No, I didn't. I listened to music yesterday.",
                   "No, I don't. I like to go hiking."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Do you have a headache?",
+                "meaning": "你頭痛嗎？",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "do_you_have_a_headache.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Do you have a turtle?",
+                  "Do you have PE class on Monday?",
+                  "Do you have lunch at twelve?",
+                  "Do you want to be a writer?",
+                  "Do you like milk?",
+                  "Do you like bears?",
+                  "Do you need help?",
+                  "Do you like cola?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, I do.",
+                "meaning": "是的，我頭痛。",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "yes_i_do.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Yes, I am.",
+                  "Yes, I can.",
+                  "Yes, I was.",
+                  "Yes, I did.",
+                  "Yes, I did. I rode a bike there.",
+                  "Yes, it is.",
+                  "Yes, he is.",
+                  "Yes, she is."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Does she have a toothache?",
+                "meaning": "她牙痛嗎？",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "does_she_have_a_toothache.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Does she want to be a singer?",
+                  "Does she like tea?",
+                  "Does he have music class on Tuesday?",
+                  "Does he like tea?",
+                  "Does he go to school by bus?",
+                  "Is she a nurse?",
+                  "Do you have a turtle?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, she doesn't. She has a stomachache.",
+                "meaning": "不，她沒有。她肚子痛。",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "no_she_doesnt_she_has_a_stomachache.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, she isn't. She's a teacher.",
+                  "No, she doesn't. She likes coffee.",
+                  "No, she doesn't.",
+                  "No, he doesn't. He has science class.",
+                  "No, she didn't. She drew a picture.",
+                  "No, it's not. It's a dog.",
+                  "No, I don't. I have a dog."
                 ]
               }
             ]
@@ -35646,7 +37011,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u3",
             "title": "句型 Unit 3",
-            "subtitle": "期末考範圍・9 筆",
+            "subtitle": "期末考範圍・13 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -35672,8 +37037,7 @@ const NOVA_GALAXY_PLANETS = [
                   "Where were you yesterday?",
                   "Where were you last night?",
                   "Where did you go last weekend?",
-                  "Where is the tea shop?",
-                  "Where was he / she yesterday?"
+                  "Where is the tea shop?"
                 ]
               },
               {
@@ -35694,7 +37058,6 @@ const NOVA_GALAXY_PLANETS = [
                   "I'm going to have a picnic tomorrow.",
                   "I'm in the bedroom.",
                   "I'm in the living room.",
-                  "I'm nine. / I'm nine years old.",
                   "I'm ten years old.",
                   "No, I'm not. I'm going to the bookstore.",
                   "I'm Ken."
@@ -35867,13 +37230,109 @@ const NOVA_GALAXY_PLANETS = [
                   "It's nine hundred dollars.",
                   "It's fifty dollars."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What would you like for dinner?",
+                "meaning": "你晚餐想吃什麼？",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "what_would_you_like_for_dinner.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What would you like for breakfast?",
+                  "What would you like to eat?",
+                  "What would he like for lunch?",
+                  "What do you want for lunch?",
+                  "What subject do you like?",
+                  "What do you like to do in your free time?",
+                  "What sports do you like to play?",
+                  "Would you like some rice for lunch?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I would like some noodles and soup.",
+                "meaning": "我想吃一些麵和湯。",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "i_would_like_some_noodles_and_soup.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I would like some bread.",
+                  "He would like some chicken and rice.",
+                  "I want some juice.",
+                  "I like art.",
+                  "I like to ride a bike.",
+                  "I like to go hiking.",
+                  "I like to play baseball.",
+                  "I will go camping and take pictures."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What would he like for lunch?",
+                "meaning": "他午餐想吃什麼？",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "what_would_he_like_for_lunch.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What would you like for breakfast?",
+                  "What would you like for dinner?",
+                  "What do you want for lunch?",
+                  "What does he like to do in his free time?",
+                  "What would you like to eat?",
+                  "Would you like some rice for lunch?",
+                  "What time does he go to school?",
+                  "What subject do you like?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "He would like some chicken and rice.",
+                "meaning": "他想吃一些雞肉和飯。",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "he_would_like_some_chicken_and_rice.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I would like some noodles and soup.",
+                  "I would like some bread.",
+                  "He goes to school at 7:00.",
+                  "He needs seven oranges.",
+                  "He has a headache.",
+                  "He likes to go camping.",
+                  "Would you like some rice for lunch?",
+                  "He does his homework at five."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u4",
             "title": "句型 Unit 4",
-            "subtitle": "期末考範圍・10 筆",
+            "subtitle": "期末考範圍・14 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -36117,6 +37576,102 @@ const NOVA_GALAXY_PLANETS = [
                   "They're four hundred and fifty dollars.",
                   "He's my father.",
                   "It's my soda."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Whose backpack is that?",
+                "meaning": "那是誰的背包？",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "whose_backpack_is_that.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Whose soda is that on the chair?",
+                  "Whose jacket is it?",
+                  "Whose watch is this?",
+                  "Whose glasses are they?",
+                  "Whose shoes are these?",
+                  "Whose glasses are those?",
+                  "Is that a dog?",
+                  "What's that?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's my backpack.",
+                "meaning": "它是我的背包。",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "its_my_backpack.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's my soda.",
+                  "It's my watch.",
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red.",
+                  "It's OK.",
+                  "It's a pen.",
+                  "It's an eraser."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Whose glasses are those?",
+                "meaning": "那些是誰的眼鏡？",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "whose_glasses_are_those.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Whose glasses are they?",
+                  "Whose shoes are these?",
+                  "Whose jacket is it?",
+                  "Whose soda is that on the chair?",
+                  "Whose watch is this?",
+                  "Whose backpack is that?",
+                  "What are those?",
+                  "How old are you?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "They're Toby's glasses.",
+                "meaning": "它們是 Toby 的眼鏡。",
+                "sourceUnit": "5年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "theyre_tobys_glasses.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "They're my glasses.",
+                  "They're robots.",
+                  "They're yo-yos.",
+                  "They're on the chair.",
+                  "They're four hundred and fifty dollars.",
+                  "They're one hundred dollars.",
+                  "They're my shoes.",
+                  "They're bananas."
                 ]
               }
             ]
@@ -39079,7 +40634,6 @@ const NOVA_GALAXY_PLANETS = [
                   "We can get there by bike.",
                   "We can get there by car.",
                   "We wish you a merry Christmas and a Happy New Year.",
-                  "He / She was at the library.",
                   "He does his homework at five.",
                   "I get up at six thirty.",
                   "I go to school by bike.",
@@ -41238,8 +42792,7 @@ const NOVA_GALAXY_PLANETS = [
                   "Where were you yesterday?",
                   "Where were you last night?",
                   "Where did you go last weekend?",
-                  "Where is the tea shop?",
-                  "Where was he / she yesterday?"
+                  "Where is the tea shop?"
                 ]
               },
               {
@@ -41278,10 +42831,10 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "is_he_from_the_usa.mp3",
                 "editions": [
-                  "Super"
+                  "Super",
+                  "Wonder"
                 ],
                 "similarSentences": [
-                  "Is he/she from the USA?",
                   "Is he a doctor?",
                   "Is he a teacher?",
                   "Is she from France?",
@@ -41302,13 +42855,11 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "yes_he_is.mp3",
                 "editions": [
-                  "Super"
+                  "Super",
+                  "Wonder"
                 ],
                 "similarSentences": [
-                  "Yes, he/she is.",
                   "Yes, he does.",
-                  "Yes, he / she was.",
-                  "Yes, he/she does.",
                   "Yes, it is.",
                   "Yes, she is.",
                   "Yes!",
@@ -41331,7 +42882,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Is she from India?",
                   "Is she a nurse?",
-                  "Is he/she from the USA?",
                   "Is he from the USA?",
                   "Is he a doctor?",
                   "Is he a teacher?",
@@ -41356,7 +42906,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "No, she isn't. She's a teacher.",
                   "No, she doesn't. She likes coffee.",
-                  "No, he's/she's not. He's/She's from the UK.",
                   "No, she doesn't.",
                   "No, she wasn't.",
                   "No, it's not. It's across from the tea shop.",
@@ -41391,13 +42940,13 @@ const NOVA_GALAXY_PLANETS = [
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "Is he/she from the USA?",
-                "meaning": "他∕她來自美國嗎？",
+                "sentence": "Is she from the USA?",
+                "meaning": "她來自美國嗎？",
                 "sourceUnit": "6年級上學期句型",
                 "category": "sentence",
                 "examHalf": "midterm",
                 "image": "",
-                "audio": "is_he_she_from_the_usa.mp3",
+                "audio": "is_she_from_the_usa.mp3",
                 "editions": [
                   "Wonder"
                 ],
@@ -41415,37 +42964,13 @@ const NOVA_GALAXY_PLANETS = [
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "Yes, he/she is.",
-                "meaning": "是的，他∕她是。",
+                "sentence": "No, he's not. He's from the UK.",
+                "meaning": "不，他不是。他來自英國。",
                 "sourceUnit": "6年級上學期句型",
                 "category": "sentence",
                 "examHalf": "midterm",
                 "image": "",
-                "audio": "yes_he_she_is.mp3",
-                "editions": [
-                  "Wonder"
-                ],
-                "similarSentences": [
-                  "Yes, he is.",
-                  "Yes, he / she was.",
-                  "Yes, he/she does.",
-                  "Yes, he does.",
-                  "Yes, she is.",
-                  "Yes, it is.",
-                  "Yes, she does.",
-                  "Yes, she was."
-                ]
-              },
-              {
-                "kind": "sentence",
-                "word": "",
-                "sentence": "No, he's/she's not. He's/She's from the UK.",
-                "meaning": "不，他∕她不是。 他∕她來自英國。",
-                "sourceUnit": "6年級上學期句型",
-                "category": "sentence",
-                "examHalf": "midterm",
-                "image": "",
-                "audio": "no_hes_shes_not_hes_shes_from_the_uk.mp3",
+                "audio": "no_hes_not_hes_from_the_uk.mp3",
                 "editions": [
                   "Wonder"
                 ],
@@ -41456,7 +42981,29 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I'm not. I'm going to the bookstore.",
                   "No, I don't. I have lunch at twelve thirty.",
                   "No, he doesn't. He goes to school on foot.",
-                  "No, he/she doesn't. He/She has a cough.",
+                  "No, we can't. We can get there by bus."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, she's not. She's from the UK.",
+                "meaning": "不，她不是。她來自英國。",
+                "sourceUnit": "6年級上學期句型",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "no_shes_not_shes_from_the_uk.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
+                  "No, she isn't. She's from the UK.",
+                  "No, he's not.",
+                  "No, it's not. It's across from the tea shop.",
+                  "No, I'm not. I'm going to the bookstore.",
+                  "No, I don't. I have lunch at twelve thirty.",
+                  "No, he doesn't. He goes to school on foot.",
                   "No, we can't. We can get there by bus."
                 ]
               },
@@ -41476,7 +43023,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Is she from France?",
                   "Is she a nurse?",
-                  "Is he/she from the USA?",
                   "Is he from the USA?",
                   "Is he a doctor?",
                   "Is he a teacher?",
@@ -41495,16 +43041,14 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "yes_she_is.mp3",
                 "editions": [
-                  "Here"
+                  "Here",
+                  "Wonder"
                 ],
                 "similarSentences": [
                   "Yes, she does.",
                   "Yes, she was.",
-                  "Yes, he/she is.",
                   "Yes, he is.",
                   "Yes, it is.",
-                  "Yes, he / she was.",
-                  "Yes, he/she does.",
                   "Yes!"
                 ]
               }
@@ -41513,7 +43057,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・14 筆",
+            "subtitle": "期中考前範圍・16 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -41608,7 +43152,6 @@ const NOVA_GALAXY_PLANETS = [
                   "He goes to school at 7:00.",
                   "He has a headache.",
                   "He needs seven oranges.",
-                  "He / She was at the library.",
                   "He does his homework at five.",
                   "He was at the restaurant last Sunday.",
                   "Go back to your seat.",
@@ -41666,13 +43209,13 @@ const NOVA_GALAXY_PLANETS = [
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "Does he/she have a fever?",
-                "meaning": "他∕她發燒嗎？",
+                "sentence": "Does he have a fever?",
+                "meaning": "他發燒嗎？",
                 "sourceUnit": "6年級上學期句型",
                 "category": "sentence",
                 "examHalf": "midterm",
                 "image": "",
-                "audio": "does_he_she_have_a_fever.mp3",
+                "audio": "does_he_have_a_fever.mp3",
                 "editions": [
                   "Wonder"
                 ],
@@ -41683,29 +43226,48 @@ const NOVA_GALAXY_PLANETS = [
                   "Does she like tea?",
                   "How many oranges does he need?",
                   "How many oranges does she need?",
-                  "Is he/she from the USA?",
                   "Is he a doctor?"
                 ]
               },
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "Yes, he/she does.",
-                "meaning": "是的。",
+                "sentence": "Does she have a fever?",
+                "meaning": "她發燒嗎？",
                 "sourceUnit": "6年級上學期句型",
                 "category": "sentence",
                 "examHalf": "midterm",
                 "image": "",
-                "audio": "yes_he_she_does.mp3",
+                "audio": "does_she_have_a_fever.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
+                  "Does he like tea?",
+                  "Does he go to school by bus?",
+                  "Does she want to be a singer?",
+                  "Does she like tea?",
+                  "How many oranges does he need?",
+                  "How many oranges does she need?",
+                  "Is he a doctor?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, she does.",
+                "meaning": "是的，她有。",
+                "sourceUnit": "6年級上學期句型",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "yes_she_does.mp3",
                 "editions": [
                   "Wonder"
                 ],
                 "similarSentences": [
                   "Yes, he does.",
-                  "Yes, he / she was.",
-                  "Yes, he/she is.",
                   "Yes, he is.",
-                  "Yes, she does.",
                   "Yes, she is.",
                   "Yes, she was.",
                   "Yes, please."
@@ -41714,24 +43276,44 @@ const NOVA_GALAXY_PLANETS = [
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "No, he/she doesn't. He/She has a cough.",
-                "meaning": "不，他∕她咳嗽。",
+                "sentence": "No, he doesn't. He has a cough.",
+                "meaning": "不，他沒有。他咳嗽。",
                 "sourceUnit": "6年級上學期句型",
                 "category": "sentence",
                 "examHalf": "midterm",
                 "image": "",
-                "audio": "no_he_she_doesnt_he_she_has_a_cough.mp3",
+                "audio": "no_he_doesnt_he_has_a_cough.mp3",
                 "editions": [
                   "Wonder"
                 ],
                 "similarSentences": [
                   "No, he doesn't. He goes to school on foot.",
-                  "No, he / she wasn't. He / She was at the coffee shop.",
                   "No, he doesn't. He likes coffee.",
                   "No, I don't. I have a dog.",
                   "No, she doesn't. She likes coffee.",
                   "No, I don't. I have lunch at twelve thirty.",
-                  "No, he's/she's not. He's/She's from the UK.",
+                  "No, it's not. It's across from the tea shop."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, she doesn't. She has a cough.",
+                "meaning": "不，她沒有。她咳嗽。",
+                "sourceUnit": "6年級上學期句型",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "no_she_doesnt_she_has_a_cough.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
+                  "No, he doesn't. He goes to school on foot.",
+                  "No, he doesn't. He likes coffee.",
+                  "No, I don't. I have a dog.",
+                  "No, she doesn't. She likes coffee.",
+                  "No, I don't. I have lunch at twelve thirty.",
                   "No, it's not. It's across from the tea shop."
                 ]
               },
@@ -41797,7 +43379,6 @@ const NOVA_GALAXY_PLANETS = [
                   "Here"
                 ],
                 "similarSentences": [
-                  "Does he/she have a fever?",
                   "Does he like tea?",
                   "Does she want to be a singer?",
                   "What time does he go to school?",
@@ -41818,13 +43399,11 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "yes_he_does.mp3",
                 "editions": [
-                  "Here"
+                  "Here",
+                  "Wonder"
                 ],
                 "similarSentences": [
-                  "Yes, he/she does.",
                   "Yes, he is.",
-                  "Yes, he / she was.",
-                  "Yes, he/she is.",
                   "Yes, she does.",
                   "Yes!",
                   "Yes, I am.",
@@ -41845,10 +43424,7 @@ const NOVA_GALAXY_PLANETS = [
                   "Here"
                 ],
                 "similarSentences": [
-                  "No, he/she doesn't. He/She has a cough.",
                   "No, he doesn't. He likes coffee.",
-                  "No, he / she wasn't. He / She was at the coffee shop.",
-                  "No, he's/she's not. He's/She's from the UK.",
                   "No, I don't. I have lunch at twelve thirty.",
                   "No, it's not. It's across from the tea shop.",
                   "No, we can't. We can get there by bus.",
@@ -42517,13 +44093,11 @@ const NOVA_GALAXY_PLANETS = [
                   "Here"
                 ],
                 "similarSentences": [
-                  "He / She was at the library.",
                   "He goes to school at 7:00.",
                   "He was at the restaurant last Sunday.",
                   "He has a headache.",
                   "He needs seven oranges.",
                   "He likes to go camping.",
-                  "Yes, he/she does.",
                   "No, he doesn't. He likes coffee."
                 ]
               }
@@ -47057,7 +48631,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u1",
             "title": "句型 Unit 1",
-            "subtitle": "期中考前範圍・11 筆",
+            "subtitle": "期中考前範圍・14 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -47074,14 +48648,14 @@ const NOVA_GALAXY_PLANETS = [
                 "image": "",
                 "audio": "where_were_you_yesterday.mp3",
                 "editions": [
-                  "Super"
+                  "Super",
+                  "Here"
                 ],
                 "similarSentences": [
                   "Where were you last night?",
                   "Where are you from?",
                   "Where are you going?",
                   "Where are you?",
-                  "Where was he / she yesterday?",
                   "Where did you go last weekend?",
                   "Where are the dolls?",
                   "Where is the tea shop?"
@@ -47126,7 +48700,6 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "Were you at the bakery an hour ago?",
-                  "Was he / she at the museum two days ago?",
                   "What do you do in your free time?",
                   "Can we get to the bookstore on foot?",
                   "Can we get to the park by bike?",
@@ -47154,7 +48727,6 @@ const NOVA_GALAXY_PLANETS = [
                   "Yes, I did.",
                   "Yes, I do.",
                   "Yes, she was.",
-                  "Yes, he / she was.",
                   "Yes!",
                   "Yes, he does."
                 ]
@@ -47326,13 +48898,84 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I wasn't. I was at the park.",
                   "No, I don't. I have lunch at twelve thirty."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I was at the movie theater.",
+                "meaning": "我在電影院。",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "i_was_at_the_movie_theater.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I was at the park yesterday.",
+                  "I was at the zoo this morning.",
+                  "I was at the supermarket.",
+                  "No, I wasn't. I was at the park.",
+                  "I get up at 6:50.",
+                  "I get up at six thirty.",
+                  "I cleaned the room yesterday.",
+                  "I had breakfast at seven o'clock."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Were you at the mall yesterday?",
+                "meaning": "你昨天在購物中心嗎？",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "were_you_at_the_mall_yesterday.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Were you at the zoo an hour ago?",
+                  "Were you at the bakery an hour ago?",
+                  "Where were you yesterday?",
+                  "Was she at the museum yesterday?",
+                  "Did you clean the room yesterday?",
+                  "Are you going to the bakery?",
+                  "Do you have lunch at twelve?",
+                  "Where were you last night?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, I wasn't. I was at home.",
+                "meaning": "不，我不在。我在家。",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "no_i_wasnt_i_was_at_home.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, I wasn't. I was at the park.",
+                  "No, I don't. I have lunch at twelve thirty.",
+                  "No, I wasn't.",
+                  "No, I'm not. I'm going to stay at home next weekend.",
+                  "No, I can't.",
+                  "No, I don't. I have a dog.",
+                  "No, I don't."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・11 筆",
+            "subtitle": "期中考前範圍・15 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -47352,7 +48995,6 @@ const NOVA_GALAXY_PLANETS = [
                   "Super"
                 ],
                 "similarSentences": [
-                  "Where was he / she yesterday?",
                   "Where were you last night?",
                   "Where did you go last weekend?",
                   "Where is the tea shop?",
@@ -47376,7 +49018,6 @@ const NOVA_GALAXY_PLANETS = [
                   "Super"
                 ],
                 "similarSentences": [
-                  "He / She was at the library.",
                   "He goes to school at 7:00.",
                   "He does his homework at five.",
                   "He likes to go camping.",
@@ -47400,13 +49041,9 @@ const NOVA_GALAXY_PLANETS = [
                   "Super"
                 ],
                 "similarSentences": [
-                  "Was he / she at the museum two days ago?",
-                  "Where was he / she yesterday?",
                   "Did you clean the room yesterday?",
-                  "Is he/she from the USA?",
                   "Are you going to the bakery?",
                   "Do you have lunch at twelve?",
-                  "Does he/she have a fever?",
                   "How many oranges does she need?"
                 ]
               },
@@ -47426,10 +49063,7 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, she does.",
                   "Yes, she is.",
-                  "Yes, he / she was.",
                   "Yes, I was.",
-                  "Yes, he/she does.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am."
                 ]
@@ -47476,7 +49110,6 @@ const NOVA_GALAXY_PLANETS = [
                   "She needs seven oranges.",
                   "She wants to be a scientist.",
                   "She watches TV in her free time.",
-                  "He / She was at the library.",
                   "I was at the park yesterday.",
                   "I was at the supermarket.",
                   "Yes, she was."
@@ -47601,13 +49234,108 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I wasn't. I was at the park.",
                   "No, I don't. I like tigers."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What did you do last night?",
+                "meaning": "你昨晚做了什麼？",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "what_did_you_do_last_night.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What did you do yesterday?",
+                  "What do you want for lunch?",
+                  "What time do you get up?",
+                  "What subject do you like?",
+                  "What do you like to do in your free time?",
+                  "What do you do in your free time?",
+                  "What do you want to be?",
+                  "What time did you have breakfast?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I walked the dog.",
+                "meaning": "我遛了狗。",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "i_walked_the_dog.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I want a hot dog.",
+                  "I was at the park yesterday.",
+                  "I was at the zoo this morning.",
+                  "I was at the supermarket.",
+                  "I cleaned the room yesterday.",
+                  "I went to the lake last weekend.",
+                  "I was at the movie theater.",
+                  "I went to the night market."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Did she watch videos last night?",
+                "meaning": "她昨晚看了影片嗎？",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "did_she_watch_videos_last_night.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Did you go to Sun Moon Lake last Friday?",
+                  "Did she write a letter yesterday?",
+                  "What did you do last night?",
+                  "Did you clean the room yesterday?",
+                  "Did you go swimming yesterday?",
+                  "Did you go to the amusement park?",
+                  "Where were you last night?",
+                  "Where did you go last weekend?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, she did.",
+                "meaning": "是的，她有看。",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "yes_she_did.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Yes, she is.",
+                  "Yes, she does.",
+                  "Yes, she was.",
+                  "Yes, I did.",
+                  "Yes, I did. I rode a bike there.",
+                  "Yes, she will.",
+                  "Yes, I am."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u3",
             "title": "句型 Unit 3",
-            "subtitle": "期末考範圍・11 筆",
+            "subtitle": "期末考範圍・15 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -47676,7 +49404,6 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "Does she like tea?",
-                  "Does he/she have a fever?",
                   "Does he go to school by bus?",
                   "Do you want to be a writer?",
                   "Does he like tea?",
@@ -47701,10 +49428,7 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, she is.",
                   "Yes, she was.",
-                  "Yes, he/she does.",
                   "Yes, he does.",
-                  "Yes, he / she was.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am."
                 ]
@@ -47777,8 +49501,7 @@ const NOVA_GALAXY_PLANETS = [
                   "Where are you?",
                   "Where are you from?",
                   "Where are you going?",
-                  "Where is the tea shop?",
-                  "Where was he / she yesterday?"
+                  "Where is the tea shop?"
                 ]
               },
               {
@@ -47821,7 +49544,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Were you at the zoo an hour ago?",
                   "Are you going to the bakery?",
-                  "Was he / she at the museum two days ago?",
                   "What do you do in your free time?",
                   "Can we get to the bookstore on foot?",
                   "Can we get to the park by bike?",
@@ -47848,7 +49570,6 @@ const NOVA_GALAXY_PLANETS = [
                   "Yes, I did.",
                   "Yes, I do.",
                   "Yes, she was.",
-                  "Yes, he / she was.",
                   "Yes!",
                   "Yes, he does."
                 ]
@@ -47876,13 +49597,109 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I don't. I have a dog.",
                   "No, I don't. I like soy milk."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "How much is the T-shirt?",
+                "meaning": "這件 T 恤多少錢？",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "how_much_is_the_tshirt.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "How much is the dress?",
+                  "How much is the hot dog?",
+                  "How much are the pants?",
+                  "How much are the cookies?",
+                  "How is the bibimbap?",
+                  "How much are the jeans?",
+                  "How can we get to the park?",
+                  "How can I get to the zoo?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's three hundred dollars.",
+                "meaning": "它三百元。",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "its_three_hundred_dollars.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's nine hundred dollars.",
+                  "It's fifty dollars.",
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red.",
+                  "It's OK.",
+                  "It's a pen.",
+                  "It's an eraser."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "How much are the jeans?",
+                "meaning": "這件牛仔褲多少錢？",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "how_much_are_the_jeans.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "How much are the pants?",
+                  "How much are the cookies?",
+                  "How much is the dress?",
+                  "How much is the hot dog?",
+                  "How much is the T-shirt?",
+                  "How old are you?",
+                  "How are you?",
+                  "How can we get to the park?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "They're eight hundred and fifty dollars.",
+                "meaning": "它們八百五十元。",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "theyre_eight_hundred_and_fifty_dollars.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "They're four hundred and fifty dollars.",
+                  "They're one hundred dollars.",
+                  "They're robots.",
+                  "They're yo-yos.",
+                  "They're on the chair.",
+                  "They're my glasses.",
+                  "They're my shoes.",
+                  "They're bananas."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u4",
             "title": "句型 Unit 4",
-            "subtitle": "期末考範圍・10 筆",
+            "subtitle": "期末考範圍・18 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -48011,13 +49828,13 @@ const NOVA_GALAXY_PLANETS = [
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "Where was he / she yesterday?",
-                "meaning": "他／她昨天在哪裡呢？",
+                "sentence": "Where was he yesterday?",
+                "meaning": "他昨天在哪裡呢？",
                 "sourceUnit": "6年級下學期句型",
                 "category": "sentence",
                 "examHalf": "final",
                 "image": "",
-                "audio": "where_was_he_she_yesterday.mp3",
+                "audio": "where_was_he_yesterday.mp3",
                 "editions": [
                   "Wonder"
                 ],
@@ -48035,13 +49852,37 @@ const NOVA_GALAXY_PLANETS = [
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "He / She was at the library.",
-                "meaning": "他／她在圖書館。",
+                "sentence": "Where was she yesterday?",
+                "meaning": "她昨天在哪裡呢？",
                 "sourceUnit": "6年級下學期句型",
                 "category": "sentence",
                 "examHalf": "final",
                 "image": "",
-                "audio": "he_she_was_at_the_library.mp3",
+                "audio": "where_was_she_yesterday.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
+                  "Where was he last Sunday?",
+                  "Where were you yesterday?",
+                  "Where is the tea shop?",
+                  "Where were you last night?",
+                  "Where are you?",
+                  "Where are the dolls?",
+                  "Where are you from?",
+                  "Where are you going?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "He was at the library.",
+                "meaning": "他在圖書館。",
+                "sourceUnit": "6年級下學期句型",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "he_was_at_the_library.mp3",
                 "editions": [
                   "Wonder"
                 ],
@@ -48052,20 +49893,42 @@ const NOVA_GALAXY_PLANETS = [
                   "He has a headache.",
                   "He needs seven oranges.",
                   "He likes to go camping.",
-                  "I was at the park yesterday.",
-                  "Yes, he / she was."
+                  "I was at the park yesterday."
                 ]
               },
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "Was he / she at the museum two days ago?",
-                "meaning": "他／她兩天前在博物館嗎？",
+                "sentence": "She was at the library.",
+                "meaning": "她在圖書館。",
                 "sourceUnit": "6年級下學期句型",
                 "category": "sentence",
                 "examHalf": "final",
                 "image": "",
-                "audio": "was_he_she_at_the_museum_two_days_ago.mp3",
+                "audio": "she_was_at_the_library.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
+                  "He was at the restaurant last Sunday.",
+                  "He does his homework at five.",
+                  "He goes to school at 7:00.",
+                  "He has a headache.",
+                  "He needs seven oranges.",
+                  "He likes to go camping.",
+                  "I was at the park yesterday."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Was he at the museum two days ago?",
+                "meaning": "他兩天前在博物館嗎？",
+                "sourceUnit": "6年級下學期句型",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "was_he_at_the_museum_two_days_ago.mp3",
                 "editions": [
                   "Wonder"
                 ],
@@ -48074,28 +49937,46 @@ const NOVA_GALAXY_PLANETS = [
                   "Were you at the bakery an hour ago?",
                   "Were you at the zoo an hour ago?",
                   "Is the MRT station next to the tea shop?",
-                  "Where was he / she yesterday?",
                   "Are you going to have a picnic next weekend?",
-                  "Did you go to Sun Moon Lake last Friday?",
-                  "Is he/she from the USA?"
+                  "Did you go to Sun Moon Lake last Friday?"
                 ]
               },
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "Yes, he / she was.",
-                "meaning": "是的，他／她在。",
+                "sentence": "Was she at the museum two days ago?",
+                "meaning": "她兩天前在博物館嗎？",
                 "sourceUnit": "6年級下學期句型",
                 "category": "sentence",
                 "examHalf": "final",
                 "image": "",
-                "audio": "yes_he_she_was.mp3",
+                "audio": "was_she_at_the_museum_two_days_ago.mp3",
                 "editions": [
                   "Wonder"
                 ],
                 "similarSentences": [
-                  "Yes, he/she does.",
-                  "Yes, he/she is.",
+                  "Was she at the museum yesterday?",
+                  "Were you at the bakery an hour ago?",
+                  "Were you at the zoo an hour ago?",
+                  "Is the MRT station next to the tea shop?",
+                  "Are you going to have a picnic next weekend?",
+                  "Did you go to Sun Moon Lake last Friday?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, he was.",
+                "meaning": "是的，他在。",
+                "sourceUnit": "6年級下學期句型",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "yes_he_was.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
                   "Yes, he does.",
                   "Yes, he is.",
                   "Yes, she was.",
@@ -48107,25 +49988,137 @@ const NOVA_GALAXY_PLANETS = [
               {
                 "kind": "sentence",
                 "word": "",
-                "sentence": "No, he / she wasn't. He / She was at the coffee shop.",
-                "meaning": "不，他／她不在。 他／她在咖啡店。",
+                "sentence": "Yes, she was.",
+                "meaning": "是的，她在。",
                 "sourceUnit": "6年級下學期句型",
                 "category": "sentence",
                 "examHalf": "final",
                 "image": "",
-                "audio": "no_he_she_wasnt_he_she_was_at_the_coffee_shop.mp3",
+                "audio": "yes_she_was.mp3",
                 "editions": [
                   "Wonder"
                 ],
                 "similarSentences": [
-                  "No, he/she doesn't. He/She has a cough.",
+                  "Yes, he does.",
+                  "Yes, he is.",
+                  "Yes, I was.",
+                  "Yes, she does.",
+                  "Yes, she is."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, he wasn't. He was at the coffee shop.",
+                "meaning": "不，他不在。他在咖啡店。",
+                "sourceUnit": "6年級下學期句型",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "no_he_wasnt_he_was_at_the_coffee_shop.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
                   "No, he doesn't. He goes to school on foot.",
                   "No, he doesn't. He likes coffee.",
                   "No, I wasn't. I was at the park.",
                   "No, I'm not. I'm going to stay at home next weekend.",
                   "No, it's not. It's across from the tea shop.",
-                  "No, he's/she's not. He's/She's from the UK.",
                   "No, I don't. I have lunch at twelve thirty."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, she wasn't. She was at the coffee shop.",
+                "meaning": "不，她不在。她在咖啡店。",
+                "sourceUnit": "6年級下學期句型",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "no_she_wasnt_she_was_at_the_coffee_shop.mp3",
+                "editions": [
+                  "Wonder"
+                ],
+                "similarSentences": [
+                  "No, he doesn't. He goes to school on foot.",
+                  "No, he doesn't. He likes coffee.",
+                  "No, I wasn't. I was at the park.",
+                  "No, I'm not. I'm going to stay at home next weekend.",
+                  "No, it's not. It's across from the tea shop.",
+                  "No, I don't. I have lunch at twelve thirty."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What's your favorite season?",
+                "meaning": "你最喜歡的季節是什麼？",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "whats_your_favorite_season.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What's your favorite subject?",
+                  "What's your name?",
+                  "What's his favorite subject?",
+                  "What's her favorite subject?",
+                  "What's this?",
+                  "What's that?",
+                  "What's he doing?",
+                  "What's she doing?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "My favorite season is fall.",
+                "meaning": "我最喜歡的季節是秋天。",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "my_favorite_season_is_fall.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "My favorite subject is English.",
+                  "My name is Ken.",
+                  "My name is Toby.",
+                  "My birthday is in October.",
+                  "My hand hurts.",
+                  "My arm hurts.",
+                  "His favorite subject is science."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's cool and dry in fall.",
+                "meaning": "秋天涼爽又乾燥。",
+                "sourceUnit": "6年級下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "its_cool_and_dry_in_fall.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's rainy and cool.",
+                  "It's in the box.",
+                  "It's between the science museum and the park.",
+                  "It's sunny and warm.",
+                  "It's between the bakery and the clinic.",
+                  "It's a kite.",
+                  "It's a robot.",
+                  "It's red."
                 ]
               }
             ]
@@ -50787,7 +52780,6 @@ const NOVA_GALAXY_PLANETS = [
                   "It's time for class.",
                   "It's time for lunch.",
                   "This is for you.",
-                  "He / She was at the library.",
                   "He does his homework at five.",
                   "I get up at six thirty.",
                   "I go to school by bike.",
@@ -52359,7 +54351,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u1",
             "title": "句型 Unit 1",
-            "subtitle": "期中考前範圍・5 筆",
+            "subtitle": "期中考前範圍・9 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -52484,13 +54476,109 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I don't. I like tigers.",
                   "No, I don't. I have a dog."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Where did you go last weekend?",
+                "meaning": "你上週末去了哪裡？",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "where_did_you_go_last_weekend.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Where were you last night?",
+                  "Did you go to Sun Moon Lake last Friday?",
+                  "Where are you?",
+                  "Where are you going?",
+                  "Where are you from?",
+                  "Where were you yesterday?",
+                  "Where was he last Sunday?",
+                  "Did you go swimming yesterday?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I went to the night market.",
+                "meaning": "我去了夜市。",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "i_went_to_the_night_market.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I went to the lake last weekend.",
+                  "I went to Sun Moon Lake last weekend.",
+                  "I like to ride a bike.",
+                  "I go to school by bike.",
+                  "I was at the park yesterday.",
+                  "I was at the zoo this morning.",
+                  "I like to go hiking.",
+                  "I want to be a police officer."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Did you go to the amusement park?",
+                "meaning": "你有去遊樂園嗎？",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "did_you_go_to_the_amusement_park.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Did you go to Sun Moon Lake last Friday?",
+                  "Did you clean the room yesterday?",
+                  "Did you go swimming yesterday?",
+                  "May I go to the restroom?",
+                  "Are you going to the bakery?",
+                  "How can we get to the park?",
+                  "Can we get to the park by bike?",
+                  "How do you go to school?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, I did. I rode a bike there.",
+                "meaning": "是的，我有去。我在那裡騎了腳踏車。",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "yes_i_did_i_rode_a_bike_there.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Yes, I did.",
+                  "Yes, I am.",
+                  "Yes, I can.",
+                  "Yes, I do.",
+                  "Yes, I was.",
+                  "Yes, she did.",
+                  "I like to ride a bike.",
+                  "Yes, it is."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・5 筆",
+            "subtitle": "期中考前範圍・9 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -52615,13 +54703,107 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I don't. I like to play volleyball.",
                   "No, I wasn't. I was at the park."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What did he do yesterday?",
+                "meaning": "他昨天做了什麼？",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "what_did_he_do_yesterday.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What did you do yesterday?",
+                  "What does he like to do in his free time?",
+                  "What time does he do his homework?",
+                  "What did you do last night?",
+                  "What do you want for lunch?",
+                  "What time do you get up?",
+                  "What time does he go to school?",
+                  "What subject do you like?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "He had a picnic.",
+                "meaning": "他去野餐了。",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "he_had_a_picnic.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "He has a headache.",
+                  "He goes to school at 7:00.",
+                  "He needs seven oranges.",
+                  "He likes to go camping.",
+                  "He does his homework at five.",
+                  "He was at the restaurant last Sunday.",
+                  "He would like some chicken and rice."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Did she write a letter yesterday?",
+                "meaning": "她昨天寫信了嗎？",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "did_she_write_a_letter_yesterday.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Did you clean the room yesterday?",
+                  "Did you go swimming yesterday?",
+                  "Did she watch videos last night?",
+                  "Did you go to Sun Moon Lake last Friday?",
+                  "Did you go to the amusement park?",
+                  "Is she a nurse?",
+                  "Was she at the museum yesterday?",
+                  "Does she want to be a singer?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, she didn't. She drew a picture.",
+                "meaning": "不，她沒有。她畫了一張畫。",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "no_she_didnt_she_drew_a_picture.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, she isn't. She's a teacher.",
+                  "No, she doesn't. She has a stomachache.",
+                  "No, it's not. It's a dog.",
+                  "No, I don't. I have a dog.",
+                  "No, she doesn't. She likes coffee.",
+                  "No, she isn't. She's from the UK.",
+                  "No, she wasn't."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u3",
             "title": "句型 Unit 3",
-            "subtitle": "期末考範圍・6 筆",
+            "subtitle": "期末考範圍・10 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -52770,13 +54952,109 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I don't. I have lunch at twelve thirty.",
                   "No, I don't. I like tigers."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What would you like to eat?",
+                "meaning": "你想吃什麼？",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "what_would_you_like_to_eat.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What do you like to do in your free time?",
+                  "What would you like for breakfast?",
+                  "What sports do you like to play?",
+                  "What would you like for dinner?",
+                  "What subject do you like?",
+                  "What does he like to do in his free time?",
+                  "What do you want to be?",
+                  "What are you going to do tomorrow?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I'd like a bowl of noodles and a cup of tea.",
+                "meaning": "我想要一碗麵和一杯茶。",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "id_like_a_bowl_of_noodles_and_a_cup_of_tea.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I'd like some pizza, please.",
+                  "I would like some noodles and soup.",
+                  "We wish you a merry Christmas and a Happy New Year.",
+                  "I like to ride a bike.",
+                  "Yes, I'd like to try some sushi.",
+                  "He would like some chicken and rice.",
+                  "Would you like a piece of cake?",
+                  "It's a kite."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Would you like a piece of cake?",
+                "meaning": "你想要一塊蛋糕嗎？",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "would_you_like_a_piece_of_cake.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Would you like some beef sandwiches?",
+                  "Would you like some sandwiches?",
+                  "Would you like some rice for lunch?",
+                  "Would you like some mooncakes?",
+                  "Would you like to try some sushi?",
+                  "What would you like to eat?",
+                  "What would you like for breakfast?",
+                  "What would you like for dinner?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, please.",
+                "meaning": "好的，麻煩你。",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "yes_please.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Yes, I am.",
+                  "Yes, it is.",
+                  "Yes, I can.",
+                  "Yes, he is.",
+                  "Yes, she is.",
+                  "Yes!",
+                  "Yes, I do.",
+                  "Yes, he does."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u4",
             "title": "句型 Unit 4",
-            "subtitle": "期末考範圍・6 筆",
+            "subtitle": "期末考範圍・10 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -52797,7 +55075,6 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "Where are the dolls?",
-                  "Where was he / she yesterday?",
                   "Where was he last Sunday?",
                   "Where were you last night?",
                   "Where are you?",
@@ -52870,7 +55147,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Is the bibimbap salty?",
                   "Is he from the USA?",
-                  "Is he/she from the USA?",
                   "Where is the tea shop?",
                   "Are you going to have a picnic next weekend?",
                   "Is it hot?",
@@ -52894,7 +55170,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, he is.",
                   "Yes, she is.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am.",
                   "Yes, I can.",
@@ -52917,13 +55192,105 @@ const NOVA_GALAXY_PLANETS = [
                 ],
                 "similarSentences": [
                   "No, it's not. It's a dog.",
-                  "No, he's/she's not. He's/She's from the UK.",
                   "No, it's not.",
                   "No, I'm not. I'm going to the bookstore.",
                   "No, she isn't. She's from the UK.",
-                  "No, he / she wasn't. He / She was at the coffee shop.",
-                  "No, he/she doesn't. He/She has a cough.",
                   "No, I don't. I have lunch at twelve thirty."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "When is your birthday?",
+                "meaning": "你的生日是什麼時候？",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "when_is_your_birthday.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Is this your pencil?",
+                  "Is his birthday in May?",
+                  "What's your name?",
+                  "What color is it?",
+                  "Is it a cat?",
+                  "Is it a bear?",
+                  "Is he a teacher?",
+                  "Is she a nurse?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "My birthday is in October.",
+                "meaning": "我的生日在十月。",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "my_birthday_is_in_october.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "My name is Ken.",
+                  "My favorite subject is English.",
+                  "My name is Toby.",
+                  "My favorite season is fall.",
+                  "My hand hurts.",
+                  "My arm hurts.",
+                  "I go jogging in my free time."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Is his birthday in May?",
+                "meaning": "他的生日在五月嗎？",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "is_his_birthday_in_may.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Is it a cat?",
+                  "Is it a bear?",
+                  "Is he a teacher?",
+                  "Is she a nurse?",
+                  "Is he a doctor?",
+                  "Is this your pencil?",
+                  "Is today Friday?",
+                  "Is it hot?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "No, it isn't. It's in August.",
+                "meaning": "不，不是。他的生日在八月。",
+                "sourceUnit": "進階上學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "no_it_isnt_its_in_august.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, it isn't. It's Saturday.",
+                  "No, it isn't. It's Tuesday.",
+                  "No, it isn't. It's spicy.",
+                  "No, it isn't. It's a cat.",
+                  "No, it isn't. It's Thursday.",
+                  "No, it isn't.",
+                  "No, it isn't. It is cool.",
+                  "No, it's not. It's a dog."
                 ]
               }
             ]
@@ -55442,7 +57809,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u1",
             "title": "句型 Unit 1",
-            "subtitle": "期中考前範圍・5 筆",
+            "subtitle": "期中考前範圍・8 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -55567,13 +57934,85 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I wasn't. I was at the park.",
                   "No, I don't. I have lunch at twelve thirty."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Where's the tea shop?",
+                "meaning": "茶飲店在哪裡？",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "wheres_the_tea_shop.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Where's the eraser?",
+                  "Where's the kite?",
+                  "Where's the library?",
+                  "Where is the tea shop?",
+                  "Is the MRT station next to the tea shop?",
+                  "Where's Ken?",
+                  "Where's your mom?",
+                  "Where's Kevin?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's across from the police station.",
+                "meaning": "它在警察局對面。",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "its_across_from_the_police_station.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "No, it's not. It's across from the tea shop.",
+                  "It's under the chair.",
+                  "It's in the box.",
+                  "It's next to the zoo.",
+                  "It's between the science museum and the park.",
+                  "It's on the desk.",
+                  "It's between the bakery and the clinic.",
+                  "It's a kite."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It's between the bakery and the clinic.",
+                "meaning": "它在麵包店和診所之間。",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "its_between_the_bakery_and_the_clinic.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It's between the science museum and the park.",
+                  "It's under the chair.",
+                  "It's in the box.",
+                  "It's next to the zoo.",
+                  "It's sunny and warm.",
+                  "It's rainy and cool.",
+                  "It's on the desk.",
+                  "It's cool and dry in fall."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u2",
             "title": "句型 Unit 2",
-            "subtitle": "期中考前範圍・5 筆",
+            "subtitle": "期中考前範圍・9 筆",
             "category": "sentence",
             "examHalf": "midterm",
             "badgeIcon": "💬",
@@ -55619,7 +58058,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "I'm going to the park.",
                   "I'm going to the tea shop.",
-                  "I'm nine. / I'm nine years old.",
                   "I'm in the living room.",
                   "I'm from Japan.",
                   "I'm from Taiwan.",
@@ -55692,11 +58130,105 @@ const NOVA_GALAXY_PLANETS = [
                   "No, I'm not. I'm going to the bookstore.",
                   "No, I'm not.",
                   "No, I'm not. I'm sad.",
-                  "No, he / she wasn't. He / She was at the coffee shop.",
-                  "No, he's/she's not. He's/She's from the UK.",
                   "No, I don't. I have lunch at twelve thirty.",
                   "No, he doesn't. He goes to school on foot.",
                   "No, it's not. It's across from the tea shop."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "How does the mochi taste?",
+                "meaning": "麻糬吃起來味道如何？",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "how_does_the_mochi_taste.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "How does the grilled corn taste?",
+                  "How many oranges does he need?",
+                  "How many oranges does she need?",
+                  "How can we get to the park?",
+                  "How much is the dress?",
+                  "How much are the pants?",
+                  "How can I get to the zoo?",
+                  "How much is the hot dog?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It tastes sweet.",
+                "meaning": "它吃起來甜甜的。",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "it_tastes_sweet.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It tastes salty and spicy.",
+                  "Yes, it is.",
+                  "No, it isn't.",
+                  "No, it isn't. It's Saturday.",
+                  "No, it isn't. It is cool.",
+                  "No, it isn't. It's Tuesday.",
+                  "No, it isn't. It's spicy.",
+                  "No, it isn't. It's a cat."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "How does the grilled corn taste?",
+                "meaning": "烤玉米吃起來如何？",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "how_does_the_grilled_corn_taste.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "How does the mochi taste?",
+                  "How many oranges does he need?",
+                  "How many oranges does she need?",
+                  "How can we get to the park?",
+                  "How much is the dress?",
+                  "How much are the pants?",
+                  "How can I get to the zoo?",
+                  "How much is the hot dog?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "It tastes salty and spicy.",
+                "meaning": "它吃起來又鹹又辣。",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "midterm",
+                "image": "",
+                "audio": "it_tastes_salty_and_spicy.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "It tastes sweet.",
+                  "No, it isn't. It's spicy.",
+                  "We wish you a merry Christmas and a Happy New Year.",
+                  "Yes, it is.",
+                  "No, it isn't.",
+                  "No, it isn't. It's Saturday.",
+                  "No, it isn't. It is cool.",
+                  "No, it isn't. It's Tuesday."
                 ]
               }
             ]
@@ -55704,7 +58236,7 @@ const NOVA_GALAXY_PLANETS = [
           {
             "id": "sentence_u3",
             "title": "句型 Unit 3",
-            "subtitle": "期末考範圍・7 筆",
+            "subtitle": "期末考範圍・11 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -55877,13 +58409,107 @@ const NOVA_GALAXY_PLANETS = [
                   "No, it isn't.",
                   "No, it's not."
                 ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What will you do this summer?",
+                "meaning": "你今年暑假要做什麼？",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "what_will_you_do_this_summer.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What do you want for lunch?",
+                  "What time do you get up?",
+                  "What subject do you like?",
+                  "What do you like to do in your free time?",
+                  "What do you do in your free time?",
+                  "What do you want to be?",
+                  "What did you do yesterday?",
+                  "What sports do you like to play?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "I will go camping and take pictures.",
+                "meaning": "我要去露營和拍照。",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "i_will_go_camping_and_take_pictures.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "I go to school by bike.",
+                  "I go jogging in my free time.",
+                  "I like to go hiking.",
+                  "I would like some noodles and soup.",
+                  "I have an idea.",
+                  "I can't wait.",
+                  "I want a hot dog.",
+                  "I want two hamburgers."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Will she enjoy the hot spring?",
+                "meaning": "她會去泡溫泉嗎？",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "will_she_enjoy_the_hot_spring.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "How much is the hot dog?",
+                  "Was she at the museum yesterday?",
+                  "Who's she?",
+                  "Is she a nurse?",
+                  "How's the weather?",
+                  "Where's the eraser?",
+                  "Where's the kite?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "Yes, she will.",
+                "meaning": "是的，她會。",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "yes_she_will.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "Yes, she is.",
+                  "Yes, she does.",
+                  "Yes, she was.",
+                  "Yes, she did.",
+                  "Yes, I am.",
+                  "Yes, it is.",
+                  "Yes, I can."
+                ]
               }
             ]
           },
           {
             "id": "sentence_u4",
             "title": "句型 Unit 4",
-            "subtitle": "期末考範圍・5 筆",
+            "subtitle": "期末考範圍・8 筆",
             "category": "sentence",
             "examHalf": "final",
             "badgeIcon": "💬",
@@ -55953,7 +58579,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Is he from the USA?",
                   "How is the bibimbap?",
-                  "Is he/she from the USA?",
                   "Is the MRT station next to the tea shop?",
                   "Is he a doctor?",
                   "Is he a teacher?",
@@ -55977,7 +58602,6 @@ const NOVA_GALAXY_PLANETS = [
                 "similarSentences": [
                   "Yes, he is.",
                   "Yes, she is.",
-                  "Yes, he/she is.",
                   "Yes!",
                   "Yes, I am.",
                   "Yes, I can.",
@@ -56007,6 +58631,78 @@ const NOVA_GALAXY_PLANETS = [
                   "No, it's not. It's a dog.",
                   "No, I'm not. I'm sad.",
                   "No, she isn't. She's a teacher."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "What do you do on graduation day?",
+                "meaning": "你們在畢業典禮那天做什麼？",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "what_do_you_do_on_graduation_day.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "What do you want for lunch?",
+                  "What time do you get up?",
+                  "What subject do you like?",
+                  "What do you like to do in your free time?",
+                  "What do you do in your free time?",
+                  "What do you want to be?",
+                  "What did you do yesterday?",
+                  "What sports do you like to play?"
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "We sign yearbooks and sing the graduation song.",
+                "meaning": "我們簽畢業紀念冊和唱畢業歌。",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "we_sign_yearbooks_and_sing_the_graduation_song.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "We wish you a merry Christmas and a Happy New Year.",
+                  "We can get there by bike.",
+                  "We can get there by car.",
+                  "We should use fewer plastic bags.",
+                  "We give flowers to our teachers.",
+                  "It's between the science museum and the park.",
+                  "It's between the bakery and the clinic.",
+                  "I'm in the living room."
+                ]
+              },
+              {
+                "kind": "sentence",
+                "word": "",
+                "sentence": "We give flowers to our teachers.",
+                "meaning": "我們送花給老師。",
+                "sourceUnit": "進階下學期句型（翰林主題）",
+                "category": "sentence",
+                "examHalf": "final",
+                "image": "",
+                "audio": "we_give_flowers_to_our_teachers.mp3",
+                "editions": [
+                  "Here"
+                ],
+                "similarSentences": [
+                  "We wish you a merry Christmas and a Happy New Year.",
+                  "We can get there by bike.",
+                  "We can get there by car.",
+                  "We should use fewer plastic bags.",
+                  "We sign yearbooks and sing the graduation song.",
+                  "Nice to meet you.",
+                  "Nice to meet you, too.",
+                  "Go back to your seat."
                 ]
               }
             ]

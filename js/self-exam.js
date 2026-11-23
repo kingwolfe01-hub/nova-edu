@@ -202,13 +202,54 @@ function startSelfExam(examMode) {
   if (!queue.length) return alert("所選範圍目前沒有符合題型的題目，請改選其他單元或題型！");
 
   // Assign authentic sub-mode per question (listen_image / listen_word / listen_sentence / listen_zh)
-  selfExamQueue = queue.map((item, i) => {
+  let rawExamItems = queue.map((item, i) => {
     if (item._type === "word") {
       const subMode = (hasImage(item) && i % 2 === 0) ? "listen_image" : "listen_word";
       return { ...item, _subMode: subMode };
     }
     return { ...item, _subMode: i % 2 === 0 ? "listen_sentence" : "listen_zh" };
   });
+
+  if (typeof Grade3QuizEngine !== "undefined" && currentBook?.planetId === "planet2") {
+    const selectedIds = examMode === "unit"
+      ? [groups[Number(document.getElementById("exam-unit-select")?.value || 0)]?.id]
+      : (examMode === "custom" ? [...document.querySelectorAll(".custom-unit-chk:checked")].map(el => groups[Number(el.value)]?.id) : []);
+    const g3Extra = Grade3QuizEngine.getExamQuestionsForBook(currentBook, examMode, selectedIds);
+    if (g3Extra.length) {
+      rawExamItems = [...rawExamItems.slice(0, Math.max(4, rawExamItems.length - g3Extra.length)), ...g3Extra];
+    }
+  }
+
+  // Group same question types into structured exam sections (大題制：同類題連續作答，大題內隨機)
+  const EXAM_SECTIONS = [
+    { key: "sec_img", title: "聽音辨圖", desc: "請聽語音，選出正確的圖片", match: q => !q._isG3Rich && q._subMode === "listen_image" },
+    { key: "sec_word", title: "聽音辨字", desc: "請聽語音，選出正確的英文單字", match: q => !q._isG3Rich && q._subMode === "listen_word" },
+    { key: "sec_sent", title: "聽音辨句與句意", desc: "請聽整句語音，選出對應句子或中文", match: q => !q._isG3Rich && (q._subMode === "listen_sentence" || q._subMode === "listen_zh") },
+    { key: "sec_qal", title: "問答聽力測驗", desc: "請聽問句廣播，選出最合理的答句", match: q => q._isG3Rich && q.type === "qa_listening" },
+    { key: "sec_grm", title: "情境對話與文法測驗", desc: "請閱讀情境與句子，選出最正確的選項", match: q => q._isG3Rich && (q.type === "situational_qa" || q.type === "grammar_blank") },
+    { key: "sec_blk", title: "句子重組測驗", desc: "請依序點擊積木，排成正確的英文句子", match: q => q._isG3Rich && q.type === "block_puzzle" }
+  ];
+  const CN_NUMS = ["一", "二", "三", "四", "五", "六", "七"];
+  const sectionedQueue = [];
+  let activeSecNo = 0;
+  EXAM_SECTIONS.forEach(sec => {
+    const matched = shuffle(rawExamItems.filter(sec.match));
+    if (matched.length) {
+      const secLabel = `第${CN_NUMS[activeSecNo] || (activeSecNo + 1)}大題｜${sec.title}`;
+      matched.forEach((item, idxInSec) => {
+        sectionedQueue.push({
+          ...item,
+          _sectionTitle: secLabel,
+          _sectionDesc: sec.desc,
+          _sectionIndex: idxInSec + 1,
+          _sectionTotal: matched.length,
+          _isFirstInSection: idxInSec === 0
+        });
+      });
+      activeSecNo++;
+    }
+  });
+  selfExamQueue = sectionedQueue.length ? sectionedQueue : rawExamItems;
 
   selfExamIndex = 0;
   selfExamScore = 0;
@@ -227,7 +268,37 @@ function renderSelfExamQuestion() {
   }
   const q = selfExamQueue[selfExamIndex];
   document.getElementById("exam-runner-title").innerText = selfExamTitle;
-  document.getElementById("exam-runner-progress").innerText = `第 ${selfExamIndex + 1} / ${selfExamQueue.length} 題`;
+  document.getElementById("exam-runner-progress").innerText = `總進度 第 ${selfExamIndex + 1} / ${selfExamQueue.length} 題`;
+
+  let secBanner = document.getElementById("exam-section-banner");
+  if (!secBanner) {
+    const runnerEl = document.getElementById("self-exam-runner");
+    const hdrRow = runnerEl?.firstElementChild;
+    if (hdrRow) {
+      secBanner = document.createElement("div");
+      secBanner.id = "exam-section-banner";
+      hdrRow.insertAdjacentElement("afterend", secBanner);
+    }
+  }
+  if (secBanner && q._sectionTitle) {
+    secBanner.className = q._isFirstInSection
+      ? "p-3 rounded-2xl bg-indigo-600 text-white flex flex-wrap items-center justify-between gap-2 shadow-sm animate__animated animate__fadeIn"
+      : "p-2.5 rounded-2xl bg-indigo-50 border border-indigo-200 text-indigo-950 flex flex-wrap items-center justify-between gap-2";
+    secBanner.innerHTML = `
+      <div class="flex items-center gap-2">
+        <span class="px-2.5 py-0.5 rounded-lg text-xs font-black ${q._isFirstInSection ? "bg-amber-400 text-slate-950" : "bg-indigo-600 text-white"}">${escapeHtml(q._sectionTitle)}</span>
+        <span class="text-xs font-bold ${q._isFirstInSection ? "text-indigo-100" : "text-slate-600"}">${q._isFirstInSection ? "🔔 接下來都是同類題型！｜" : ""}${escapeHtml(q._sectionDesc || "")}</span>
+      </div>
+      <span class="text-xs font-black ${q._isFirstInSection ? "text-amber-300" : "text-indigo-700"}">本大題第 ${q._sectionIndex} / ${q._sectionTotal} 題</span>`;
+  }
+
+  const replayBtn = document.querySelector("#self-exam-runner button[onclick='replayCurrentExamAudio()']");
+  if (replayBtn) replayBtn.style.display = "inline-block";
+
+  if (q._isG3Rich) {
+    renderG3RichExamQuestion(q);
+    return;
+  }
 
   const imgBox = document.getElementById("exam-question-image");
   if (imgBox) {
@@ -339,4 +410,88 @@ function finishSelfExam() {
     total,
     wrongs: selfExamWrongs
   });
+}
+
+
+// 三年級進階題型於「4大自學模擬測驗（無即時提示擬真考卷）」的專用渲染
+let examBuiltBlocks = [];
+let examPoolBlocks = [];
+
+function renderG3RichExamQuestion(q) {
+  const imgBox = document.getElementById("exam-question-image");
+  const promptEl = document.getElementById("exam-question-prompt");
+  const optEl = document.getElementById("exam-question-options");
+  const replayBtn = document.querySelector("#self-exam-runner button[onclick='replayCurrentExamAudio()']");
+  if (replayBtn) replayBtn.style.display = (q.type === "qa_listening") ? "inline-block" : "none";
+
+  const typeTitles = {
+    qa_listening: "【問答聽力】請聽問句語音，選出最合理的答句",
+    grammar_blank: "【文法綜合挖空】請選出最適合填入空格的單字",
+    situational_qa: "【情境對話反應】請根據情境選出正確回應",
+    block_puzzle: "【句子重組測驗】請依序點擊積木排成正確句子"
+  };
+  if (promptEl) promptEl.innerText = typeTitles[q.type] || "請作答";
+
+  if (q.type === "qa_listening") {
+    if (imgBox) imgBox.innerHTML = `<div class="w-24 h-24 mx-auto rounded-2xl bg-violet-50 border-2 border-violet-200 flex items-center justify-center text-4xl">🗣️</div>`;
+    if (optEl) {
+      optEl.innerHTML = q.options.map((opt, idx) => {
+        const isOk = idx === q.correctIndex;
+        return `<button type="button" data-correct="${isOk ? '1' : '0'}" onclick="answerSelfExam(${isOk}, this)" class="p-4 rounded-2xl bg-white border-2 border-slate-200 hover:border-violet-400 font-black text-sm text-left transition">${String.fromCharCode(65 + idx)}. ${escapeHtml(opt)}</button>`;
+      }).join("");
+    }
+    playExamAudio({ audio: q.audioFile, word: q.promptAudio });
+  } else if (q.type === "grammar_blank") {
+    if (imgBox) imgBox.innerHTML = `<div class="p-4 rounded-2xl bg-amber-50 border-2 border-amber-200 text-lg font-black text-slate-900 max-w-lg mx-auto">${escapeHtml(q.sentence)}</div>`;
+    if (optEl) {
+      optEl.innerHTML = q.options.map((opt, idx) => {
+        const isOk = idx === q.correctIndex;
+        return `<button type="button" data-correct="${isOk ? '1' : '0'}" onclick="answerSelfExam(${isOk}, this)" class="p-4 rounded-2xl bg-white border-2 border-slate-200 hover:border-amber-400 font-black text-base text-center transition">${escapeHtml(opt)}</button>`;
+      }).join("");
+    }
+  } else if (q.type === "situational_qa") {
+    if (imgBox) imgBox.innerHTML = `<div class="p-4 rounded-2xl bg-sky-50 border-2 border-sky-200 text-xs font-bold text-slate-800 max-w-lg mx-auto text-left">${escapeHtml(q.situationZh)}</div>`;
+    if (optEl) {
+      optEl.innerHTML = q.options.map((opt, idx) => {
+        const isOk = idx === q.correctIndex;
+        return `<button type="button" data-correct="${isOk ? '1' : '0'}" onclick="answerSelfExam(${isOk}, this)" class="p-4 rounded-2xl bg-white border-2 border-slate-200 hover:border-sky-400 font-black text-sm text-left transition">${String.fromCharCode(65 + idx)}. ${escapeHtml(opt)}</button>`;
+      }).join("");
+    }
+  } else if (q.type === "block_puzzle") {
+    examBuiltBlocks = [];
+    examPoolBlocks = q.blocks.map((t, i) => ({ id: i, text: t, used: false }));
+    if (imgBox) imgBox.innerHTML = `<div class="p-3.5 rounded-2xl bg-indigo-50 border border-indigo-200 text-base font-black text-indigo-950 max-w-lg mx-auto">中文題意：${escapeHtml(q.promptZh)}</div>`;
+    if (optEl) {
+      optEl.innerHTML = `
+        <div class="col-span-full space-y-3">
+          <div id="exam-pz-ans" class="min-h-[52px] p-3 rounded-2xl bg-slate-100 border-2 border-dashed border-slate-300 flex flex-wrap justify-center gap-2"></div>
+          <div id="exam-pz-pool" class="flex flex-wrap justify-center gap-2"></div>
+          <div class="flex justify-center gap-2">
+            <button type="button" onclick="resetExamPuzzle()" class="px-4 py-2 rounded-xl bg-slate-200 text-slate-700 font-black text-xs">↩️ 清除</button>
+            <button type="button" onclick="submitExamPuzzle()" class="px-5 py-2 rounded-xl bg-emerald-500 text-slate-950 font-black text-xs">✅ 確認送出</button>
+          </div>
+        </div>`;
+      renderExamPuzzleUI();
+    }
+  }
+}
+
+function renderExamPuzzleUI() {
+  const aEl = document.getElementById("exam-pz-ans");
+  const pEl = document.getElementById("exam-pz-pool");
+  if (!aEl || !pEl) return;
+  aEl.innerHTML = examBuiltBlocks.length
+    ? examBuiltBlocks.map((b, i) => `<button type="button" onclick="removeExamPuzzleBlock(${i})" class="px-3 py-1.5 rounded-xl bg-sky-600 text-white font-black text-sm">${escapeHtml(b.text)}</button>`).join("")
+    : `<span class="text-xs font-bold text-slate-400">請點擊下方積木組出句子</span>`;
+  pEl.innerHTML = examPoolBlocks.map((b, i) => `<button type="button" ${b.used ? "disabled" : ""} onclick="pickExamPuzzleBlock(${i})" class="px-3 py-1.5 rounded-xl border-2 font-black text-sm ${b.used ? "opacity-30 bg-slate-100" : "bg-white border-indigo-300 text-indigo-950"}">${escapeHtml(b.text)}</button>`).join("");
+}
+function pickExamPuzzleBlock(i) { if (examPoolBlocks[i] && !examPoolBlocks[i].used) { examPoolBlocks[i].used = true; examBuiltBlocks.push(examPoolBlocks[i]); renderExamPuzzleUI(); } }
+function removeExamPuzzleBlock(i) { const r = examBuiltBlocks.splice(i, 1)[0]; if (r) r.used = false; renderExamPuzzleUI(); }
+function resetExamPuzzle() { examBuiltBlocks = []; examPoolBlocks.forEach(b => b.used = false); renderExamPuzzleUI(); }
+function submitExamPuzzle() {
+  const q = selfExamQueue[selfExamIndex];
+  if (!q || !examBuiltBlocks.length) return;
+  const userSeq = examBuiltBlocks.map(b => b.text);
+  const ok = userSeq.length === q.answer.length && userSeq.every((t, i) => t === q.answer[i]);
+  answerSelfExam(ok, null);
 }

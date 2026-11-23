@@ -86,6 +86,9 @@ function stopAllPracticeAudio() {
   if (typeof stopExamPlaybackAudio === "function") {
     try { stopExamPlaybackAudio(); } catch (e) {}
   }
+  if (typeof Grade3QuizEngine !== "undefined" && typeof Grade3QuizEngine.stopAudio === "function") {
+    try { Grade3QuizEngine.stopAudio(); } catch (e) {}
+  }
 }
 
 function getNovaDeviceId() {
